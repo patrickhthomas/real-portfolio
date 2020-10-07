@@ -42,6 +42,15 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	color: black;
+
+}
+
+a:hover {
+	font-size: 150%;
+}
+
 .down {
   border: solid black;
   border-width: 0 4px 4px 0;
@@ -55,7 +64,6 @@ table {
 
 .heroContainer {
 	background-filter: blur(5rem);
-	background-opacity: .4;
 	width: 100%;
 	margin-top: -32px;
 	margin-bottom: -32px;
@@ -83,9 +91,9 @@ table {
     100%{background-position:0% 50%, 50% 25%, background-size: 50%;}*/
 }
 @keyframes splatter {
-    0%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
-    50%{background-position: 52% 52%, 75% 75%; background-size: 300%, 200%;}
-    100%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
+    0%{background-position: 50% 50%, 50% 50%; background-size: 200%, 100%;}
+    50%{background-position: 60% 52%, 20% 20%; background-size: 300%, 100%;}
+    100%{background-position: 50% 50%, 50% 50%; background-size: 200%, 100%;}
 }
 
 .content {
@@ -120,6 +128,7 @@ img {
 
 #avatar {
 	max-width: 40%;
+	opacity: .8;
 }
 
 h1 {
@@ -202,29 +211,31 @@ p {
 	height: 64px;
 	background-color: white;
 	z-index: 5;
-	animation: gradient 5s infinite;
+	animation: gradient 24s ease infinite;
 
 }
 
 @keyframes gradient {
-	0% {box-shadow: 0px 10px 10px rgba(239, 208, 95, .4)};
-	25% {box-shadow: 0px 10px 10px rgba(239, 208, 95, 1)};
-	50% {box-shadow: 0px 10px 10px rgba(54, 136, 111, .4)};
-	100% {box-shadow: 0px 10px 10px rgba(239, 208, 95, .4)};
+	0% {border-bottom: 0px 5px 10px rgba(239, 208, 95, .4);}
+	25% {box-shadow: 0px 5px 10px rgba(213, 124, 106, 0.4);}
+	50% {box-shadow: 0px 5px 10px rgba(54, 136, 111, .4);} 
+	100% {box-shadow: 0px 5px 10px rgba(239, 208, 95, .4);}
 }
 
 .header-logo {
+	display: inline-block;
 	margin-left: 5%;
-	padding-top: 5%;
+	margin-top: 8px;
 }
 
 .navLinkLayout {
+	display: inline-block;
 	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	opacity: .8;
-	margin-top: 18px;
-	padding-right: 2%;
+	margin-top: 24px;
+	padding-right: 5%;
 }
 
 .navLink {
