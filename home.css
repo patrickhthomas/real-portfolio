@@ -42,6 +42,51 @@ table {
 	border-spacing: 0;
 }
 
+.down {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+.heroContainer {
+	background-filter: blur(5rem);
+	background-opacity: .4;
+	width: 100%;
+	margin-top: -32px;
+	margin-bottom: -32px;
+	padding-bottom: 64px;
+    background-image: url(images/solidSplattercopy.svg), url(images/solidSplatter.svg);
+    -webkit-animation: splatter 30s ease infinite;
+    -moz-animation: splatter 30s ease infinite;
+    -o-animation: splatter 30s ease infinite;
+    animation: splatter 30s ease infinite;
+    background-blend-mode: difference, difference; 
+}
+@-webkit-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}
+}
+@-moz-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}
+}
+@-o-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}*/
+}
+@keyframes splatter {
+    0%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
+    50%{background-position: 52% 52%, 75% 75%; background-size: 300%, 200%;}
+    100%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
+}
 
 .content {
 	margin-top: 32px;
@@ -52,12 +97,25 @@ img {
 	max-width: 100%;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.hero {
+  		width: 98%;
+  	}
+}
+
 .hero {
-	width: 50%;
+	background-color: rgba(360, 360, 360, .9);
+	background-image-filter: blur(10px);
+	max-width: 464px;
 	margin: auto;
+	padding-top: 64px;
 	text-align: center;
 	align-content: center;
 	margin-bottom: 32px;
+	box-shadow: 0 0 4rem 5rem rgba(360, 360, 360, .9);
 }
 
 #avatar {
@@ -142,10 +200,17 @@ p {
 	width: 100%;
 	display: block;
 	height: 64px;
-	box-shadow: 0rem 1rem 1rem #EFD05F;
 	background-color: white;
 	z-index: 5;
+	animation: gradient 5s infinite;
 
+}
+
+@keyframes gradient {
+	0% {box-shadow: 0px 10px 10px rgba(239, 208, 95, .4)};
+	25% {box-shadow: 0px 10px 10px rgba(239, 208, 95, 1)};
+	50% {box-shadow: 0px 10px 10px rgba(54, 136, 111, .4)};
+	100% {box-shadow: 0px 10px 10px rgba(239, 208, 95, .4)};
 }
 
 .header-logo {
@@ -222,4 +287,45 @@ p {
 	width: 50%;
 	float: left;
 
+}
+
+button {
+	width: 160px;
+	height: 36px;
+	border-radius: 6px;
+	border-color: white;
+	background-color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.yellowButton {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	align-content: center;
+	background-color: #EFD05F;
+	padding-bottom: 32px;
+}
+
+.redButton {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	align-content: center;
+	background-color: #D57C6A;
+	padding-bottom: 32px;
+}
+
+.greenButton {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	align-content: center;
+	background-color: #6AD5B4;
+	padding-bottom: 32px;
 }

@@ -42,14 +42,63 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	color: black;
+
+}
+
+a:hover {
+	font-size: 150%;
+}
+
 .content {
 	margin-top: 32px;
 }
 .hero {
-	width: 50%;
+	background-color: rgba(360, 360, 360, .9);
+	background-image-filter: blur(10px);
+	max-width: 464px;
 	margin: auto;
+	padding-top: 64px;
 	text-align: center;
 	align-content: center;
+	margin-bottom: 32px;
+	box-shadow: 0 0 4rem 5rem rgba(360, 360, 360, .9);
+}
+
+.heroContainer {
+	background-filter: blur(5rem);
+	background-opacity: .4;
+	width: 100%;
+	margin-top: -32px;
+	margin-bottom: -32px;
+	padding-bottom: 64px;
+    background-image: url(images/solidSplattercopy.svg), url(images/solidSplatter.svg);
+    -webkit-animation: splatter 30s ease infinite;
+    -moz-animation: splatter 30s ease infinite;
+    -o-animation: splatter 30s ease infinite;
+    animation: splatter 30s ease infinite;
+    background-blend-mode: difference, difference; 
+}
+@-webkit-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}
+}
+@-moz-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}
+}
+@-o-keyframes splatter {
+    0%{background-position:0% 50%, 50% 25%, background-size: 100%;}
+    50%{background-position:100% 50%, 0% 50%, background-size: 500%;}
+    100%{background-position:0% 50%, 50% 25%, background-size: 50%;}*/
+}
+@keyframes splatter {
+    0%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
+    50%{background-position: 52% 52%, 75% 75%; background-size: 300%, 200%;}
+    100%{background-position: 50% 50%, 80% 80%; background-size: 200%, 600%;}
 }
 
 #avatar {
@@ -88,7 +137,6 @@ p {
 
 .aboutOne {
 	width: 100%;
-	height: 
 	background-color: #EFD05F;
 }
 
@@ -117,9 +165,11 @@ p {
 }
 
 .whoContainer {
-	width: 100%;
+	width: 95%;
 	max-width: 464px;
 	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	background-color: #EFD05F;
 }
 
@@ -137,24 +187,33 @@ p {
 	width: 100%;
 	display: block;
 	height: 64px;
-	box-shadow: 0rem 1rem 1rem #EFD05F;
 	background-color: white;
 	z-index: 5;
+	animation: gradient 24s ease infinite;
 
+}
+
+@keyframes gradient {
+	0% {border-bottom: 0px 5px 10px rgba(239, 208, 95, .4);}
+	25% {box-shadow: 0px 5px 10px rgba(213, 124, 106, 0.4);}
+	50% {box-shadow: 0px 5px 10px rgba(54, 136, 111, .4);} 
+	100% {box-shadow: 0px 5px 10px rgba(239, 208, 95, .4);}
 }
 
 .header-logo {
+	display: inline-block;
 	margin-left: 5%;
-	padding-top: 5%;
+	margin-top: 8px;
 }
 
 .navLinkLayout {
+	display: inline-block;
 	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	opacity: .8;
-	margin-top: 18px;
-	padding-right: 2%;
+	margin-top: 24px;
+	padding-right: 5%;
 }
 
 .navLink {
@@ -170,10 +229,12 @@ p {
 }
 
 .thenContainer {
-	width: 100%;
+	width: 95%;
 	max-width: 464px;
 	margin: auto;
 	background-color: #D57C6A;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 
@@ -193,9 +254,11 @@ p {
 }
 
 .whyContainer {
-	width: 100%;
+	width: 95%;
 	max-width: 464px;
 	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
 
 }
 
