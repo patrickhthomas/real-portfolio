@@ -68,14 +68,18 @@ a:hover {
 	margin-top: -32px;
 	margin-bottom: -32px;
 	padding-bottom: 64px;
-    background-image: url(images/solidSplattercopy.svg), url(images/solidSplatter.svg);
+    background-image: url(images/clouds.svg), url(images/whisps.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg);
     -webkit-animation: splatter 90s linear infinite;
     -moz-animation: splatter 90s linear infinite;
     -o-animation: splatter 90s linear infinite;
-    animation: splatter 90s linear infinite;
-    background-blend-mode: difference, difference; 
+    animation: splatter 10s ease infinite;
+    background-blend-mode: normal;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+ 
 }
-@-webkit-keyframes splatter {
+
+
+/*@-webkit-keyframes splatter {
     0%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
     50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
     100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
@@ -89,11 +93,20 @@ a:hover {
     0%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
     50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
     100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
-}
-@keyframes splatter {
-    0%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
-    50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 75%;}
-    100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
+} */																				
+@keyframes splatter {.      /*   clouds    |whisps | sun   |  moon  |   stars |   stars2 */	  			             /*clouds, whisps, sun, moon, stars, stars2*/
+    0%{background-position:     100% 40%, -500% 50%, 0% 200%, 160% 5%,   50% -600%, 100% -550%;         background-size: 3%,     3%,     3%,  3%,   0%,    0%}
+    3%{background-position:    650% 40%, -500% 50%, 0% 200%, 160% 5%,   50% -600%, 100% -550%;        background-size: 50%,      70%,    3%, 20%,  0%,  0%}
+    10%{background-position:   650% 40%, -500% 50%, 0% 200%, 80% 5%,    50% -600%, 100% -150%;         background-size: 50%,     70%,    3%, 20%,  0%,  80%}
+    13%{background-position:   650% 40%, -200% 60%, 5% 200%,  80% 5%,   50%  5%,  100% 5%;         background-size: 50%,     70%,   3%, 20%,  80%,  80%}
+    45%{background-position:   650% 40%, 200% 60%, 5% 200%,  75% 7%,    40%   4%,  50% 4%;         background-size: 80%,     70%,   3%, 20%,  80%,  80%}
+    45.5%{background-position: 650% 40%, 200% 60%, 5% 200%,  75% 7%,      50% 0%, 100% -550%;         background-size:   80%,     70%,   3%, 20%,  80%,  80%}
+    51%{background-position:   650% 40%,  500% 50%, 0% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    5%, 20%,  0%,  0%}
+    52%{background-position:  500% 40%,  500% 50%, 0% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    20%, 20%,  0%,  0%}
+    75%{background-position:  100% 40%,  500% 50%, 50% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    40%, 20%,  0%,  0%}
+    90%{background-position:  0% 40%,  500% 50%, 50% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    40%, 20%,  0%,  0%}
+    97%{background-position:    -500% 40%,  500% 50%, 100% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    20%, 20%,  0%,  0%}
+    100%{background-position:   -500% 40%,   0% 50%, 0% 100%, 160% 5%,    0% -200%, 100% -200%;         background-size: 3%,      3%,     3%,  3%,   0%,    0%}
 }
 
 .content {
@@ -115,6 +128,7 @@ img {
 }
 
 .hero {
+	opacity: 0;
 	background-color: rgba(360, 360, 360, .9);
 	background-image-filter: blur(10px);
 	max-width: 464px;
