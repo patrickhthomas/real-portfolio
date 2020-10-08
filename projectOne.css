@@ -43,19 +43,80 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+	font-family: 'Yeseva One';
+	font-size: 36px;
+	opacity: .8;
+	line-height: 54px;
+}
+
+h2 {
+	font-family: 'Yeseva One';
+	font-size: 24px;
+	opacity: .8;
+	line-height: 36px;
+}
+
+p, li {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	opacity: .8;
+	line-height: 24px;
+}
+
+
 a {
 	color: black;
+	text-decoration: none;
 
 }
-
-
 
 a:hover {
-	font-size: 150%;
+	font-size: 125%;
+	text-decoration: underline;
 }
 
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: block;
+	height: 64px;
+	background-color: white;
+	z-index: 5;
+	animation: gradient 24s ease infinite;
+
+}
+
+.header-logo {
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 8px;
+}
+
+.navLinkLayout {
+	display: inline-block;
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	opacity: .8;
+	margin-top: 24px;
+	padding-right: 5%;
+}
+
+.navLink {
+	padding: 4px;
+}
+
+
+
+
+
+
 .content {
+	display: table;
 	margin-top: 32px;
+	width: 100%;
 }
 .hero {
 	background-color: rgba(360, 360, 360, .9);
@@ -82,7 +143,7 @@ a:hover {
 	text-align: left;
 }
 .heroContainer {
-	height: inherit;
+	display: flex;
 	background-filter: blur(5rem);
 	width: 100%;
 	margin-top: -32px;
@@ -122,38 +183,13 @@ a:hover {
 
 
 img {
-	max-width: 50%;
+	max-width: 464px;
 }
 
 
 
-h1 {
-	font-family: 'Yeseva One';
-	font-size: 36px;
-	opacity: .8;
-	line-height: 54px;
-}
 
-h2 {
-	font-family: 'Yeseva One';
-	font-size: 24px;
-	opacity: .8;
-	line-height: 36px;
-}
 
-p, li {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 18px;
-	opacity: .8;
-	line-height: 24px;
-}
-
-/*Coop*/
-
-.aboutOne {
-	width: 100%;
-	background-color: #EFD05F;
-}
 
 .yellowContainer {
 	width: 100%;
@@ -179,34 +215,12 @@ p, li {
 	padding-top: 64px;
 }
 
-.whoContainer {
-	width: 95%;
-	max-width: 464px;
-	margin: auto;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	background-color: #EFD05F;
-}
 
 
 
-#who-text {
-	width: 50%;
-	float: right;
-	background-color: #EFD05F;
-}
 
-.header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: block;
-	height: 64px;
-	background-color: white;
-	z-index: 5;
-	animation: gradient 24s ease infinite;
 
-}
+
 
 @keyframes gradient {
 	0% {border-bottom: 0px 5px 10px rgba(239, 208, 95, .4);}
@@ -215,71 +229,30 @@ p, li {
 	100% {box-shadow: 0px 5px 10px rgba(239, 208, 95, .4);}
 }
 
-.header-logo {
-	display: inline-block;
-	margin-left: 5%;
-	margin-top: 8px;
-}
-
-.navLinkLayout {
-	display: inline-block;
-	float: right;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 18px;
-	opacity: .8;
-	margin-top: 24px;
-	padding-right: 5%;
-}
-
-.navLink {
-	padding: 4px;
-}
 
 /*Dandelion*/
 
-.aboutTwo {
-	width: 100%;
-	display: inline-block;
-	background-color: #D57C6A;
-}
 
-.thenContainer {
+.sectionContainer {
 	width: 95%;
 	max-width: 464px;
 	margin: auto;
-	background-color: #D57C6A;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
 
 
-#then-text {
-	width: 50%;
-	float: left;
-	background-color: #D57C6A;
-}
 
 
 /*PB*/
 
-.aboutThree {
-	width: 100%;
-	display: inline-block;
-}
 
-.whyContainer {
-	width: 95%;
+
+
+
+/*Images*/
+#solution {
+	width: 90%;
 	max-width: 464px;
-	margin: auto;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-}
-
-
-#why-text {
-	width: 50%;
-	float: left;
-
 }

@@ -321,6 +321,25 @@ button {
 	padding-bottom: 32px;
 }
 
+#coopButton {
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	background-color: white;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 12px;
+	padding-right: 12px;
+	box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);  
+
+	/*padding-top:12px;
+	padding-bottom:12px;
+	padding-left:16px;
+	padding-right:16px;*/
+	border-radius: 6px;
+}
+
 .redButton {
 	display: flex;
 	justify-content: center;
