@@ -63,17 +63,18 @@ a:hover {
 
 
 .heroContainer {
-	background-filter: blur(5rem);
-	width: 100%;
+	width: 80%;
 	margin-top: -32px;
 	margin-bottom: -32px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 64px;
-    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg), linear-gradient(0deg, rgba(152,255,223,1)0%, rgba(0,0,0,1) 90%);
+    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg) /*linear-gradient(0deg, rgba(0, 0, 0, .5)0%, rgba(0,0,0, 1) 90%)*/;
     -webkit-animation: splatter 90s linear infinite;
     -moz-animation: splatter 90s linear infinite;
     -o-animation: splatter 90s linear infinite;
     animation: splatter 24s ease infinite;
-    background-blend-mode: normal, exclusion, overlay, multiply, normal, normal, difference, difference, normal;
+    background-blend-mode: normal, screen, overlay, multiply, normal, normal, difference, difference, normal;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
  
 }
@@ -94,7 +95,7 @@ a:hover {
     50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
     100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
 } */																				
-@keyframes splatter {.      /*   clouds  | clouds2  |whisps   | whisps2  | sun   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
+@keyframes splatter {      /*   clouds  | clouds2  |whisps   | whisps2  | sun   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
     0%{background-position:     100% 40%, 100% 30%, -600% 40%, 500% 50%,  0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 0%    */     background-size:   0%,     0%,      0%,     0%,     0%,   0%,   0%,    0%, 99%;}
     3%{background-position:    650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 3%    */   background-size:    0%,    00%,      0%,    00%,     0%,  20%,   0%,    0%, 99%;}
     10%{background-position:   650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 80% 5%,     50% -600%, 100% -150%, 0% -200%;      /* 10%   */    background-size:   50%,    50%,      3%,    70%,     3%,  20%,   0%,   80%, 99%;}
@@ -110,7 +111,19 @@ a:hover {
 }
 
 .content {
+	width: 100%;
+	margin: auto;
 	margin-top: 32px;
+	animation: sunrise 24s ease infinite;
+
+}
+
+@keyframes sunrise {
+	0% {background-color: black;}
+	45% {background-color: black;}
+	55% {background-color: white;}
+	95% {background-color: white;}
+	100% {background-color: black;}
 }
 
 
@@ -128,25 +141,33 @@ img {
 }
 
 .hero {
-
-	/*background-color: rgba(360, 360, 360, .9);*/
-
+	background-color: rgba(360, 360, 360, .2);
+	backdrop-filter: blur(30px) grayscale(.1) brightness(.8) ;
+	mix-blend-mode: screen;
 	max-width: 464px;
-	margin: auto;
-	padding-top: 64px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 64px;
+	padding: 5px;
 	text-align: center;
 	align-content: center;
 	margin-bottom: 32px;
+	border-radius: 20%;
+
+
+
+
 	
 }
 
-#me #me2 {
+#me {
 	color: white;
 }
 .title {
-	text-shadow: -2px 0px 2px white, -1px 0px 2px white, 1px 0px 2px white, 2px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;
-	color: black;
-	mix-blend-mode: lighten;
+	
+	/*text-shadow: -2px 0px 2px white, -1px 0px 2px white, 1px 0px 2px white, 2px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;*/
+	color: white;
+	mix-blend-mode: overlay;
 	max-width: 464px;
 	margin: auto;
 	margin-top: 32px;
@@ -158,7 +179,20 @@ img {
 #avatar {
 	max-width: 40%;
 	opacity: 1;
-	mix-blend-mode: screen;
+	mix-blend-mode: ;
+	animation: spin 2s ease;
+}
+
+
+
+@keyframes spin {
+	0% {}
+	100%{transform: rotate(1080deg);}
+}
+
+@keyframes bigbang {
+	0% {width: 0%; height: 0%;}
+	100% {width: 100%; height: 100%;}
 }
 
 h1 {
