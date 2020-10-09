@@ -68,13 +68,13 @@ a:hover {
 	margin-top: -32px;
 	margin-bottom: -32px;
 	padding-bottom: 64px;
-    background-image: url(images/clouds.svg), url(images/whisps.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg);
+    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg), linear-gradient(0deg, rgba(152,255,223,1)0%, rgba(0,0,0,1) 90%);
     -webkit-animation: splatter 90s linear infinite;
     -moz-animation: splatter 90s linear infinite;
     -o-animation: splatter 90s linear infinite;
-    animation: splatter 10s ease infinite;
-    background-blend-mode: normal;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    animation: splatter 24s ease infinite;
+    background-blend-mode: normal, exclusion, overlay, multiply, normal, normal, difference, difference, normal;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
  
 }
 
@@ -94,19 +94,19 @@ a:hover {
     50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
     100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
 } */																				
-@keyframes splatter {.      /*   clouds    |whisps | sun   |  moon  |   stars |   stars2 */	  			             /*clouds, whisps, sun, moon, stars, stars2*/
-    0%{background-position:     100% 40%, -500% 50%, 0% 200%, 160% 5%,   50% -600%, 100% -550%;         background-size: 3%,     3%,     3%,  3%,   0%,    0%}
-    3%{background-position:    650% 40%, -500% 50%, 0% 200%, 160% 5%,   50% -600%, 100% -550%;        background-size: 50%,      70%,    3%, 20%,  0%,  0%}
-    10%{background-position:   650% 40%, -500% 50%, 0% 200%, 80% 5%,    50% -600%, 100% -150%;         background-size: 50%,     70%,    3%, 20%,  0%,  80%}
-    13%{background-position:   650% 40%, -200% 60%, 5% 200%,  80% 5%,   50%  5%,  100% 5%;         background-size: 50%,     70%,   3%, 20%,  80%,  80%}
-    45%{background-position:   650% 40%, 200% 60%, 5% 200%,  75% 7%,    40%   4%,  50% 4%;         background-size: 80%,     70%,   3%, 20%,  80%,  80%}
-    45.5%{background-position: 650% 40%, 200% 60%, 5% 200%,  75% 7%,      50% 0%, 100% -550%;         background-size:   80%,     70%,   3%, 20%,  80%,  80%}
-    51%{background-position:   650% 40%,  500% 50%, 0% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    5%, 20%,  0%,  0%}
-    52%{background-position:  500% 40%,  500% 50%, 0% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    20%, 20%,  0%,  0%}
-    75%{background-position:  100% 40%,  500% 50%, 50% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    40%, 20%,  0%,  0%}
-    90%{background-position:  0% 40%,  500% 50%, 50% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    40%, 20%,  0%,  0%}
-    97%{background-position:    -500% 40%,  500% 50%, 100% 100%, 160% 5%,    0% -550%, 100% -550%;        background-size: 80%,     70%,    20%, 20%,  0%,  0%}
-    100%{background-position:   -500% 40%,   0% 50%, 0% 100%, 160% 5%,    0% -200%, 100% -200%;         background-size: 3%,      3%,     3%,  3%,   0%,    0%}
+@keyframes splatter {.      /*   clouds  | clouds2  |whisps   | whisps2  | sun   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
+    0%{background-position:     100% 40%, 100% 30%, -600% 40%, 500% 50%,  0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 0%    */     background-size:   0%,     0%,      0%,     0%,     0%,   0%,   0%,    0%, 99%;}
+    3%{background-position:    650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 3%    */   background-size:    0%,    00%,      0%,    00%,     0%,  20%,   0%,    0%, 99%;}
+    10%{background-position:   650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 80% 5%,     50% -600%, 100% -150%, 0% -200%;      /* 10%   */    background-size:   50%,    50%,      3%,    70%,     3%,  20%,   0%,   80%, 99%;}
+    13%{background-position:   650% 40%, -650% 30%,-600% 40%,  200% 50%,  5% 200%,  80% 5%,        50%  5%,  100% 5%, 0% -200%;          /* 13%   */     background-size:  50%,    50%,     50%,    70%,     3%,  20%,  80%,   80%, 99%;}
+    45%{background-position:   650% 40%, -650% 30%, 200% 40%,  -200% 50%, 5% 200%,  75% 7%,        40%   4%,  50% 4%, 0% -200%;         /* 45%   */     background-size:  80%,    80%,     90%,    70%,     3%,  20%,  80%,   80%, 99%;}
+    45.5%{background-position: 650% 40%, -650% 30%, 200% 40%,  -200% 50%, 5% 140%,  75% 7%,       50% 0%, 100% -550%, 0% -200%;      /* 45.5% */   background-size:    80%,    80%,     90%,    70%,     3%,  20%,  80%,   80%, 99%;}
+    51%{background-position:   650% 40%, -650% 30%,  500% 40%, -500% 50%, 0% 100%, 160% 5%,     0% -550%, 100% -550%, 0% -200%;      /* 51%   */    background-size:   80%,    80%,      3%,    70%,    40%,  20%,   0%,    0%, 99%;}
+    54%{background-position:  300% 40%, -250% 30%, 500% 40%,  -500% 50%,  0% 100%, 160% 5%,     0% -550%, 100% -550%, 0% -200%;      /* 54%   */      background-size: 80%,    80%,      3%,    70%,     40%, 20%,   0%,    0%, 99%;}
+    75%{background-position:  125% 40%, -100% 30%, 500% 40%,  -500% 50%,  inherit, 160% 5%,     0% -550%, 100% -550%, 0% -200%;     /* 75%   */      background-size: 80%,    80%,       3%,    70%,     40%, 20%,   0%,     0%, 99%;}
+    90%{background-position:    0% 40%,  100% 30%, 500% 40%,  -500% 50%, 100% 100%, 160% 5%,    0% -550%, 100% -550%, 0% -200%;     /* 90%   */     background-size:  80%,    80%,      3%,    70%,     40%, 20%,   0%,    0%, 99%;}
+    97%{background-position:  -500% 40%, 500% 30%, 500% 40%,  -500% 50%, 800% 140%, 160% 5%,    0% -550%, 100% -550%, 0% -200%;     /* 97%   */    background-size:   80%,    80%,      3%,    70%,     20%, 20%,   0%,    0%, 99%;}
+    100%{background-position: -500% 40%, 500% 30%,  0% 40%,      0% 50%, 200% 100%, 160% 5%,    0% -200%, 100% -200%, 0% -200%;     /* 100%  */      background-size:  0%,     0%,     0%,     0%,      0%,  0%,   0%,    0%, 99%;}
 }
 
 .content {
@@ -128,21 +128,37 @@ img {
 }
 
 .hero {
-	opacity: 0;
-	background-color: rgba(360, 360, 360, .9);
-	background-image-filter: blur(10px);
+
+	/*background-color: rgba(360, 360, 360, .9);*/
+
 	max-width: 464px;
 	margin: auto;
 	padding-top: 64px;
 	text-align: center;
 	align-content: center;
 	margin-bottom: 32px;
-	box-shadow: 0 0 4rem 5rem rgba(360, 360, 360, .9);
+	
+}
+
+#me #me2 {
+	color: white;
+}
+.title {
+	text-shadow: -2px 0px 2px white, -1px 0px 2px white, 1px 0px 2px white, 2px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;
+	color: black;
+	mix-blend-mode: lighten;
+	max-width: 464px;
+	margin: auto;
+	margin-top: 32px;
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.6849112426035503) 0%, rgba(0,0,0,0.6849112426035503) 10%, rgba(0,0,0, 1) 98%, rgba(0,0,0, 1) 100%);
+	box-shadow: 0 0 4rem 2rem rgba(360, 360, 360, .4);*/
+
 }
 
 #avatar {
 	max-width: 40%;
-	opacity: .8;
+	opacity: 1;
+	mix-blend-mode: screen;
 }
 
 h1 {
@@ -162,7 +178,7 @@ h2 {
 p {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
-	opacity: .8;
+	opacity: .9;
 	line-height: 24px;
 }
 
