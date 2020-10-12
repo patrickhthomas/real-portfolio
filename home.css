@@ -467,15 +467,28 @@ button {
 	padding-bottom: 32px;
 }
 
-footer.mdl-mini-footer {
-	bottom: 0;
-	padding: 0.5rem;
-	position: fixed;
+.footer {
 	width: 100%;
-	z-index: 1;
+	align-content: center;
 }
 
-footer.mdl-mini-footer > ul {
+
+
+.link-list {
+	display: flex;
+	width: 50%;
+	max-width: 464px;
 	margin: auto;
-	font-size: 2rem;
 }
+
+.footer-icon {
+	display: flex;
+	align-content: center;
+	margin: auto;
+}
+
+footer i {
+	width: 42px;
+}
+
+
