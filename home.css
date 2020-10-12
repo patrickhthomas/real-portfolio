@@ -58,24 +58,22 @@ a:hover {
   padding: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  padding-bottom: 
 }
 
 
 
 .heroContainer {
 	width: 100%;
-	margin-top: -32px;
-	margin-bottom: -32px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 64px;
-    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/sun.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg) /*linear-gradient(0deg, rgba(0, 0, 0, .5)0%, rgba(0,0,0, 1) 90%)*/;
+	margin: auto;
+    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg) /*linear-gradient(0deg, rgba(0, 0, 0, .5)0%, rgba(0,0,0, 1) 90%)*/;
     -webkit-animation: splatter 90s linear infinite;
     -moz-animation: splatter 90s linear infinite;
     -o-animation: splatter 90s linear infinite;
-    animation: splatter 24s ease infinite;
-    background-blend-mode: normal, normal, screen, screen, normal, normal, normal, normal, normal;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    animation: herosky 90s linear infinite;
+    background-position: fixed;
+    background-blend-mode: normal, lighten, lighten, screen, normal, normal, normal, normal, normal;
+    background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
  
 }
 
@@ -95,35 +93,41 @@ a:hover {
     50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
     100%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
 } */																				
-@keyframes splatter {      /*   clouds  | clouds2  |whisps   | whisps2  | sun   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
-    0%{background-position:     100% 40%, 100% 30%, -600% 40%, 500% 50%,  0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 0%    */     background-size:   0%,     0%,      0%,     0%,     0%,   0%,   0%,    0%, 99%;}
-    3%{background-position:    650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 160% 5%,    50% -600%, 100% -550%, 0% -200%;      /* 3%    */   background-size:    0%,    00%,      0%,    00%,     0%,  20%,   0%,    0%, 99%;}
-    10%{background-position:   650% 40%, -650% 30%, -600% 40%,  500% 50%, 0% 200%, 90% 5%,     50% -600%, 100% -150%, 0% -200%;      /* 10%   */    background-size:   50%,    50%,      3%,    70%,     3%,  20%,   0%,   80%, 99%;}
-    13%{background-position:   650% 40%, -650% 30%,-600% 40%,  200% 50%,  5% 200%,  90% 5%,        50%  5%,  100% 5%, 0% -200%;          /* 13%   */     background-size:  50%,    50%,     50%,    70%,     3%,  20%,  80%,   80%, 99%;}
-    45%{background-position:   650% 40%, -650% 30%, 200% 40%,  -200% 50%, 5% 200%,  90% 7%,        40%   4%,  50% 4%, 0% -200%;         /* 45%   */     background-size:  80%,    80%,     90%,    70%,     3%,  20%,  80%,   80%, 99%;}
-    45.5%{background-position: 650% 40%, -650% 30%, 200% 40%,  -200% 50%, 5% 140%,  85% 7%,       50% 0%, 100% -550%, 0% -200%;      /* 45.5% */   background-size:    80%,    80%,     90%,    70%,     3%,  20%,  80%,   80%, 99%;}
-    51%{background-position:   650% 40%, -650% 30%,  500% 40%, -500% 50%, 0% 100%, 160% 5%,     0% -550%, 100% -550%, 0% -200%;      /* 51%   */    background-size:   80%,    80%,      3%,    70%,    40%,  20%,   0%,    0%, 99%;}
-    54%{background-position:  300% 40%, -250% 30%, 500% 40%,  -500% 50%,  0% 100%, 160% 5%,     0% -550%, 100% -550%, 0% -200%;      /* 54%   */      background-size: 80%,    80%,      3%,    70%,     40%, 20%,   0%,    0%, 99%;}
-    75%{background-position:  125% 40%, -100% 30%, 500% 40%,  -500% 50%,  inherit, 160% 5%,     0% -550%, 100% -550%, 0% -200%;     /* 75%   */      background-size: 80%,    80%,       3%,    70%,     40%, 20%,   0%,     0%, 99%;}
-    90%{background-position:    0% 40%,  100% 30%, 500% 40%,  -500% 50%, 100% 100%, 160% 5%,    0% -550%, 100% -550%, 0% -200%;     /* 90%   */     background-size:  80%,    80%,      3%,    70%,     40%, 20%,   0%,    0%, 99%;}
-    97%{background-position:  -500% 40%, 500% 30%, 500% 40%,  -500% 50%, 800% 140%, 160% 5%,    0% -550%, 100% -550%, 0% -200%;     /* 97%   */    background-size:   80%,    80%,      3%,    70%,     20%, 20%,   0%,    0%, 99%;}
-    100%{background-position: -500% 40%, 500% 30%,  0% 40%,      0% 50%, 200% 100%, 160% 5%,    0% -200%, 100% -200%, 0% -200%;     /* 100%  */      background-size:  0%,     0%,     0%,     0%,      0%,  0%,   0%,    0%, 99%;}
+@keyframes herosky {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
+	0%{
+		background-size: 50%, 50%, 50%, 25%, 25%, 100%, 100%;
+		background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% -15%, 50% 0%, 50% -100%;
+	}
+
+	50%{
+		background-position: 50% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% 40%, 50% 100%;
+	}
+
+	100%{
+		background-size: 50%, 50%, 40%, 25%, 25%, 100%, 100%;
+		background-position: 200% 0%, 200% 10%, 400% 20%, 200% 20%, 100% -15%, 150% 0%, 50% -100%;
+	}
 }
+
 
 .content {
 	width: 100%;
 	margin: auto;
 	margin-top: 32px;
-	animation: sunrise 24s ease infinite;
+	background-image: url(images/background.svg);
+	background-repeat: repeat-x;
+	background-size: 2000px;
+	animation: sunrise 120s linear infinite alternate;
 
 }
 
 @keyframes sunrise {
-	0% {background-color: #6AD5B4;}
-	45% {background-color: #6AD5B4;}
-	55% {background-color: #EFD05F;}
-	95% {background-color: #EFD05F;}
-	100% {background-color: #6AD5B4;}
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 600% 0%;
+	}
 }
 
 
@@ -141,10 +145,7 @@ img {
 }
 
 .hero {
-	opacity: 0;
-	background-color: rgba(360, 360, 360, .2);
-	backdrop-filter: blur(30px) grayscale(.1) brightness(.8) ;
-	mix-blend-mode: screen;
+
 	max-width: 464px;
 	margin-left: auto;
 	margin-right: auto;
@@ -152,49 +153,76 @@ img {
 	padding: 5px;
 	text-align: center;
 	align-content: center;
-	margin-bottom: 32px;
-	border-radius: 20%;
-
-
-
-
-	
+	backdrop-filter: blur(4px);
+	background-color: rgba(360, 360, 360, .1);
+	mix-blend-mode: normal;
+	box-shadow: 0px 0px 20px 20px rgba(360, 360, 360, .1);
 }
 
-#me {
-	color: white;
-}
 .title {
 
-	
-	/*text-shadow: -2px 0px 2px white, -1px 0px 2px white, 1px 0px 2px white, 2px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;*/
-	color: white;
-	mix-blend-mode: overlay;
-	max-width: 464px;
-	margin: auto;
-	margin-top: 32px;
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.6849112426035503) 0%, rgba(0,0,0,0.6849112426035503) 10%, rgba(0,0,0, 1) 98%, rgba(0,0,0, 1) 100%);
-	box-shadow: 0 0 4rem 2rem rgba(360, 360, 360, .4);*/
+}
+
+.me {
+	color: black;
+	mix-blend-mode: luminosity;
+	text-shadow: 0px 0px 10px white, 
+				 2px 2px 10px white, 
+				-2px -2px 10px white;
+	padding-top: 32px;
 
 }
 
-#avatar {
+.me2 {
+	text-shadow: 0px 0px 10px white, 
+				 2px 2px 10px white, 
+				-2px -2px 10px white;
+
+	padding-bottom: 8px;
+}
+
+
+.bio {
+	text-shadow: 0px 0px 10px white, 
+				 2px 2px 10px white, 
+				-2px -2px 10px white;
+	padding-top: 8px;
+}
+
+
+
+
+.avatar {
+	mix-blend-mode: screen;
 	max-width: 40%;
 	opacity: 1;
-	mix-blend-mode: ;
-	animation: spin 2s ease;
+	animation: spin 1s;
+	border:  white, 
+	padding-bottom: 8px;
+	border-radius: 100%;
 }
 
 
 
 @keyframes spin {
-	0% {}
-	100%{transform: rotate(1080deg);}
+	0%{
+
+	}
+	90%{
+		transform: rotate(440deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes bigbang {
-	0% {width: 0%; height: 0%;}
-	100% {width: 100%; height: 100%;}
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
 }
 
 h1 {
@@ -211,6 +239,13 @@ h2 {
 	line-height: 36px;
 }
 
+h3 {
+	font-family: 'Josefin Sans', sans-serif, bold;
+	font-size: 20px;
+	opacity: .9;
+	line-height: 30px;
+}
+
 p {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
@@ -222,23 +257,24 @@ p {
 
 .projectOne {
 	width: 100%;
-	height: 
 	background-color: #EFD05F;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
-.yellowContainer {
+.firstContainer {
 	width: 100%;
 	display: flex;
 	background-color: #EFD05F; 
 }
 
-.redContainer {
+.secondContainer {
 	width: 100%;
 	display: flex;
 	background-color: #D57C6A; 
 }
 
-.greenContainer {
+.thirdContainer {
 	width: 100%;
 	display: flex;
 	background-color: #6AD5B4; 
@@ -246,23 +282,19 @@ p {
 
 
 
-.content {
-	padding-top: 64px;
-}
-
 .coopContainer {
-	width: 100%;
+	width: 96%;
 	max-width: 464px;
 	margin: auto;
 	background-color: #EFD05F;
 }
 
-#coop-img {
+.coop-img {
 	width: 50%;
 	display: inline-block;
 }
 
-#coop-text {
+.coop-text {
 	margin-top: 10%;
 	width: 50%;
 	float: right;
@@ -289,9 +321,11 @@ p {
 }
 
 .header-logo {
+	float: left;
 	display: inline-block;
 	margin-left: 5%;
 	margin-top: 8px;
+	width: 42px;
 }
 
 .navLinkLayout {
@@ -314,22 +348,25 @@ p {
 	width: 100%;
 	display: inline-block;
 	background-color: #D57C6A;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .dandelionContainer {
-	width: 100%;
+	width: 96%;
 	max-width: 464px;
 	margin: auto;
 	background-color: #D57C6A;
+
 }
 
-#dandelion-img {
+.dandelion-img {
 	width: 50%;
 	float: left;
 	background-color: #D57C6A;
 }
 
-#dandelion-text {
+.dandelion-text {
 	margin-top: 10%;
 	width: 50%;
 	float: left;
@@ -342,16 +379,20 @@ p {
 .projectThree {
 	width: 100%;
 	display: inline-block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: #6AD5B4;
+
 }
 
 .pbContainer {
-	width: 100%;
+	width: 96%;
 	max-width: 464px;
 	margin: auto;
 
 }
 
-#pb-img {
+.pb-img {
 	width: 45%;
 	float: left;
 	margin-top: 15%;
@@ -359,7 +400,7 @@ p {
 
 }
 
-#pb-text {
+.pb-text {
 	margin-top: 25%;
 	width: 50%;
 	float: left;
@@ -387,7 +428,7 @@ button {
 	padding-bottom: 32px;
 }
 
-#coopButton {
+.coopButton {
 	margin-top: 20px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
@@ -424,4 +465,17 @@ button {
 	align-content: center;
 	background-color: #6AD5B4;
 	padding-bottom: 32px;
+}
+
+footer.mdl-mini-footer {
+	bottom: 0;
+	padding: 0.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+footer.mdl-mini-footer > ul {
+	margin: auto;
+	font-size: 2rem;
 }
