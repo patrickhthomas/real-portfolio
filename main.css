@@ -214,7 +214,7 @@
 		mix-blend-mode: multiply;
 		animation: sunrise 3s ease;
 		background-position: 50% 130%;
-		background-size: 700px;
+		background-size: 700px, 100%;
 
 	}
 
