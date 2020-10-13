@@ -186,7 +186,6 @@
 	.homeHeroContainer {
 		max-width: 900px;
 		margin: auto;
-
 		width: 100%;
 		padding-top: 24px;
 	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars.svg);
@@ -208,13 +207,13 @@
 	}
 	
 	.homeHeroBackground {
-		width: %;
 		margin: auto;
 		margin-top: 32px;
 		background-image: url(images/background2.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
 		background-repeat: repeat-x;
 		mix-blend-mode: multiply;
-		animation: sunrise 15s linear infinite alternate;
+		animation: sunrise 3s ease;
+		background-position: 50% 130%;
 		background-size: 700px;
 
 	}
@@ -630,7 +629,7 @@
 		background-image: url(images/background.svg);
 		background-repeat: repeat-x;
 		background-size: 2000px;
-		animation: sunrise 10s ease infinite alternate;
+		animation: sunrise 3s ease 1;
 	
 	}
 	
@@ -824,10 +823,10 @@
 			background-position: 0% 130%;
 		}
 		50% {
-			background-position: 50% 120%
+			background-position: 100% 125%
 		}
 		100% {
-			background-position: 100% 130%;
+			background-position: 50% 130%;
 		}
 	}
 
@@ -984,6 +983,18 @@
 		}
 
 	}
+
+	@keyframes bigbang {
+		0% {
+			opacity: 0;
+		}
+		80%{
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	
 
 /*KEYFRAME ANIMATIONS*/
@@ -1007,6 +1018,8 @@
 		  		animation: herosky 90s linear infinite;
 		  	}
 		}
+
+
 			
 
 
@@ -1026,8 +1039,8 @@
 		background-image: url(images/background2.svg);
 		background-repeat: repeat-x;
 		mix-blend-mode: multiply;
-		background-size: 200%;
-		animation: sunrise 30s ease infinite alternate;
+		background-size: 500%;
+		background-position: 50% 100%;
 	}
 	
 	
@@ -1044,15 +1057,19 @@
 	.footer-icon {
 		align-content: center;
 		margin: auto;
-		mix-blend-mode: difference;
+		mix-blend-mode: normal;
+
 	}
 	
 	footer i {
 		font-size: 36px;
-		color: ;
+		color: rgba(360, 360, 360, .8);
 		text-shadow: -1px 1px 1px #6AD5B4,
-					 -2px 2px 1px #D57C6A,
-					 -3px 3px 1px #EFD05F;
+					 -2px 1px 1px #6AD5B4,
+					 -3px 2px 1px #D57C6A,
+					 -4px 2px 1px #D57C6A,
+					 -5px 3px 1px #EFD05F,
+					 -6px 3px 1px #EFD05F;
 	}
 	
 	footer h2, footer h3 {
