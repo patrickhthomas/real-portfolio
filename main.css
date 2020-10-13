@@ -49,6 +49,8 @@
 	body {
 		width: 100%;
 		margin: 0;
+		margin: auto;
+		max-width: 1660px;
 		padding: 0;
 	}
 	a {
@@ -182,16 +184,15 @@
 	
 	
 	.homeHeroContainer {
+		max-width: 900px;
+		margin: auto;
+
 		width: 100%;
 		padding-top: 24px;
-	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg);
-	    -webkit-animation: splatter 90s linear infinite;
-	    -moz-animation: splatter 90s linear infinite;
-	    -o-animation: splatter 90s linear infinite;
-	    animation: herosky 40s ease infinite;
-	    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, no-repeat, no-repeat, repeat-y;
-	    background-blend-mode: saturation; 
-	    
+	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars.svg);
+	    background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x;
+	    background-blend-mode: normal; 
+	    background-size: 100%, 100% 100%, 100% 100%, 100% 100%;
 	}
 
 	
@@ -203,72 +204,78 @@
 		width: 100%;
 		margin: auto;
 		margin-top: 32px;
-		background-color: hsla(161, 56%, 32%, .8);
-		background-image: url(images/background2.svg);
-		background-repeat: repeat-x;
-		mix-blend-mode: multiply;
-		background-size: 200%;
-		animation: sunrise 105s ease infinite alternate;
 	
 	}
 	
+	.homeHeroBackground {
+		width: %;
+		margin: auto;
+		margin-top: 32px;
+		background-image: url(images/background2.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
+		background-repeat: repeat-x;
+		mix-blend-mode: multiply;
+		animation: sunrise 15s linear infinite alternate;
+		background-size: 700px;
+
+	}
 
 	
 	.homeHero {
-		
+		padding-top: 250px;
+		padding-bottom: 250px;
 		width: 92%;
-		padding-top: 25%;
 		max-width: 464px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 64px;
 		text-align: left;
 		align-content: center;
-		background-color: rgba(360, 360, 360, .1);
 		mix-blend-mode: normal;
-		box-shadow: 0px 0px 20px 20px rgba(360, 360, 360, .1);
+
 	}
 
 
 	
 	
 	.me {
+		position: relative;
 		font-size: 24px;
 		color: black;
 		mix-blend-mode: normal;
 		padding-top: 32px;
 		font-weight: 700;
+		animation: comedown ease 1s 1;
 	
 	}
 	
 	.me2 {
-		
-		opacity: .9;
+		position: relative;
+		color: black;
+		opacity: 1;
 		mix-blend-mode: overlay;
 		font-size: 56px;
 		text-shadow: -1px 0px 0px white, 
-					 -7px 0px 0px white,
-					  -5px 0px 0px white, 
-					-2px 0px 0px white;
+					 -2px 0px 0px white,
+					  -3px 0px 0px white, 
+					-4px 0px 0px white;
 	
 		padding-bottom: 8px;
 		line-height: 48px;
 		font-weight: 700;
+		animation: comeup ease-out 2s 1, squeeze ease-out 2s 1;
 	}
-	
+
 
 	
 	.homeBioContainer {
-		text-shadow: 0px 0px 10px white, 
-					 2px 2px 10px white, 
-					-2px -2px 10px white;
+		background-color: white;
 		padding-top: 24px;
 		padding-bottom: 24px;
-		background-color: white;
 		width: 100%;
+
 	}
 
 	.homeBio {
+		max-height: 500px;
 		margin: auto;
 		width: 92%;
 		max-width: 464px;
@@ -814,13 +821,13 @@
 
 		@keyframes sunrise {
 		0% {
-			background-position: 0% 12%;
+			background-position: 0% 130%;
 		}
 		50% {
-			background-position: 50% 10%
+			background-position: 50% 120%
 		}
 		100% {
-			background-position: 100% 12%;
+			background-position: 100% 130%;
 		}
 	}
 
@@ -850,22 +857,160 @@
 
 		@keyframes herosky {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
-			background-size: 50%, 50%, 50%, 25%, 25%, 100%, 100%;
-			background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% 15%, 50% -20%, 50% 100%;
+			background-size: 70%, 50%, 50%, 25%, 40%, 100%, 60%;
+			background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% 5%, 50% -20%, 20% -5%;
 		}
 	
 		50%{
-			background-position: 50% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% 20%, 80% 0%;
+			background-position: 80% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% 10%, 80% -20%;
 		}
 	
 		100%{
-			background-size: 50%, 50%, 40%, 25%, 25%, 100%, 100%;
-			background-position: 200% 0%, 200% 10%, 400% 20%, 200% 20%, 100% 15%, 150% -20%, 50% 100%;
+			background-size: 70%, 50%, 40%, 25%, 40%, 100%, 60%;
+			background-position: -100% 0%, 200% 10%, 400% 20%, 200% 20%, 100% 5%, 150% -20%, 20% -5%;
 		}
+	}
+
+			@keyframes heroskybig {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
+		0%{
+			background-size: 60%, 40%, 40%, 25%, 25%, 60%, 40%;
+			background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% 5%, 50% -70%, 20% -5%;
+		}
+	
+		50%{
+			background-position: 80% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% -50%, 30% 20%;
+		}
+	
+		100%{
+			background-size: 60%, 40%, 40%, 25%, 25%, 60%, 40%;
+			background-position: -100% 0%, 200% 10%, 400% 20%, 200% 20%, 100% 5%, 150% -70%, 20% -5%;
+		}
+	}
+
+
+	@keyframes comedown{
+		0%{
+			top: -500px;
+		}
+		100%{
+			top: 0px;
+		
+		}
+	}
+
+		@keyframes comeup{
+		0%{
+			top: 1000px;
+		}
+		20%{
+			top: 1000px;
+		}
+		45%{
+			top: 0px;
+		}
+		60%{
+			top: 0px;
+		}
+		
+		66%{
+			top: 40px;,
+			
+		}
+		
+		88%{
+			top: 0px;
+		}
+		100%{
+			top: 0px;
+		}
+	}	
+
+	@keyframes squeeze {
+		0%{
+			line-height: 48px;
+		}
+		20%{
+			line-height: 48px;
+		}
+		
+		45%{
+			line-height: 48px;
+		}
+		55%{
+			line-height: 30px;
+		}
+		60%{
+			line-height: 48px; 
+		}
+		63%{
+			line-height: 48px;
+		}
+		66%{
+			line-height: 48px;  /*apex*/
+			
+		}
+		72%{
+			line-height: 48px;
+		}
+		77%{
+			line-height: 48px; /*apex*/
+		}
+		82%{
+			line-height: 48px;
+		}
+		85%{
+			line-height: 48px; /*apex*/
+		}
+		88%{
+			line-height: 48px;
+		}
+		90%{
+			line-height: 48px; /*apex*/
+		}
+		92%{
+			line-height: 48px;
+		}
+		94%{
+			line-height: 48px; /*apex*/
+		}
+		96%{
+			line-height: 48px;
+		}
+		98%{
+			line-height: 48px; /*apex*/
+		}
+		100%{
+			line-height: 48px;
+		}
+
 	}
 	
 
 /*KEYFRAME ANIMATIONS*/
+
+
+
+		@media only screen 
+		  and (min-device-width: 682px) 
+		  and (max-device-width: 2600px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+		  	.homeHeroContainer {
+		  		animation: heroskybig 90s linear infinite;
+		  	}
+		}
+
+		@media only screen 
+		  and (min-device-width: 220px) 
+		  and (max-device-width: 682px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+		  	.homeHeroContainer {
+		  		animation: herosky 90s linear infinite;
+		  	}
+		}
+			
+
+
+
 
 
 /*FOOTER*/
