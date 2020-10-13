@@ -173,26 +173,38 @@ p {
 /*HEADER*/
 
 
-main {
-	display: flex;
-	width: 100%;
+.container {
+	display: flexbox;
+	padding-top: 64px;
+	width: 92%;
+	max-width: 464px; 
+	margin: auto;
 }
 
-.construction {
-	display: flex;
-	width: 100%;
-	height: 369px;
+.square {
+	opacity: .5;
+	display: inline-flex;
+	width: 23%;
+	padding-bottom: 23%;
+	background-color: hsla(5, 100%, 50%, 0.77);
 }
 
-.construction h2 {
-	text-align: center;
+
+
+.square2 {
+	display: inline-flex;
+	width: 25%;
+	padding-bottom: 25%;
+	background-color: hsla(95, 100%, 50%, 0.77);
 }
+
+
+
 
 
 /*FOOTER*/
 
 .footer {
-
 	height: 160px;
 	width: 100%;
 	align-content: center;
