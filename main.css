@@ -209,7 +209,7 @@
 	.homeHeroBackground {
 		margin: auto;
 		margin-top: 32px;
-		background-image: url(images/background2.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
+		background-image: url(images/background.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
 		background-repeat: repeat-x;
 		mix-blend-mode: multiply;
 		animation: sunrise 3s ease;
@@ -1036,7 +1036,7 @@
 		padding-top: 32px;
 		padding-bottom: 128px;
 		background-color: white;
-		background-image: url(images/background2.svg);
+		background-image: url(images/background.svg);
 		background-repeat: repeat-x;
 		mix-blend-mode: multiply;
 		background-size: 500%;
