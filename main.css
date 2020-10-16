@@ -28,7 +28,7 @@
 	body {
 		line-height: 1;
 	}
-	ol, ul {
+	ol, ul , li{
 		list-style: none;
 	}
 	blockquote, q {
@@ -55,27 +55,19 @@
 	}
 	a {
 		color: black;
+		text-decoration: none;
 	
 	}
 	
-	a:hover {
-		font-size: 125%;
+	.navLinkLayout a:hover {
+		text-shadow: 0px 0px 4px #6AD5B4;
+		cursor: pointer;
 	}
 	
 	i:hover {
-		font-size: 125%;
+		text-shadow: 0px 0px 4px #6AD5B4;
 	}
 	
-	button {
-		width: 160px;
-		height: 36px;
-		border-radius: 6px;
-		border-color: white;
-		background-color: white;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 18px;
-		box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
-	}
 	
 	
 	
@@ -112,7 +104,7 @@
 		text-transform: uppercase;
 	}
 	
-	p {
+	p, li {
 		font-family: 'Josefin Sans', sans-serif;
 		font-size: 18px;
 		opacity: .9;
@@ -184,11 +176,11 @@
 	
 	
 	.homeHeroContainer {
-		max-width: 900px;
+	
 		margin: auto;
 		width: 100%;
 		padding-top: 24px;
-	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars.svg);
+	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars.svg);
 	    background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x;
 	    background-blend-mode: normal; 
 	    background-size: 100%, 100% 100%, 100% 100%, 100% 100%;
@@ -210,7 +202,7 @@
 		margin: auto;
 		margin-top: 32px;
 		background-image: url(images/background.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
-		background-repeat: repeat-x;
+		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
 		animation: sunrise 3s ease;
 		background-position: 50% 130%;
@@ -257,7 +249,7 @@
 					  -3px 0px 0px white, 
 					-4px 0px 0px white;
 	
-		padding-bottom: 8px;
+		padding-bottom: 48px;
 		line-height: 48px;
 		font-weight: 700;
 		animation: comeup ease-out 2s 1, squeeze ease-out 2s 1;
@@ -286,12 +278,18 @@
 		width: 92%;
 		max-width: 464px;
 		margin: auto;
+		cursor: pointer;
 	}
+
 
 	.homeCheckoutTxt {
 		width: 90%;
 		max-width: 464px;
 		float: left;
+	}
+
+	.homeCheckoutTxt:hover {
+		text-shadow: 0px 0px 4px #6AD5B4;
 	}
 
 	.homeCheckoutArw {
@@ -385,6 +383,10 @@
 		padding-right: 16px;
 		box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);  
 		border-radius: 6px;
+	}
+
+	.coopButton:hover {
+		box-shadow: 0px 0px 10px #6AD5B4; 
 	}
 	
 	/*Coop*/
@@ -512,6 +514,27 @@
 
 
 /*projectOne.HTML!!start!!*/
+
+.slideshow-container {
+
+  display: inline-block;
+  max-width: 1000px;
+  margin: auto;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.mySlides {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: auto;
+	vertical-align: middle;
+}
+
+/*CAROUSEL END*/
 	
 	.projectOneContent {
 		padding-top: 64px;
@@ -521,14 +544,13 @@
 	}
 	.projectOneHero {
 		background-color: rgba(360, 360, 360, .9);
-		background-image-filter: blur(10px);
+
 		max-width: 464px;
 		margin: auto;
 		padding-top: 64px;
 		text-align: center;
 		align-content: center;
 		margin-bottom: 32px;
-		box-shadow: 0 0 4rem 5rem rgba(360, 360, 360, .9);
 	}
 	
 	.listLeft {
@@ -623,173 +645,129 @@
 
 /*about.HTML!!start!!*/
 
-	.content {
+	.aboutHeroContainer {
+	
+		margin: auto;
 		width: 100%;
-		margin: auto;
-		background-image: url(images/background.svg);
-		background-repeat: repeat-x;
-		background-size: 2000px;
-		animation: sunrise 3s ease 1;
-	
-	}
-	
-	.hero {
-		max-width: 464px;
-		margin: auto;
-		text-align: center;
-		align-content: center;
-		margin-bottom: 32px;
-	}
-	
-	
-	.heroContainer {
-		width: 100%;
-		margin: auto;
-		padding-bottom: 64px;
-		padding-top: 64px;
-	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/whisps.svg), url(images/whisps2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars2.svg) /*linear-gradient(0deg, rgba(0, 0, 0, .5)0%, rgba(0,0,0, 1) 90%)*/;
-	    -webkit-animation: splatter 90s linear infinite;
-	    -moz-animation: splatter 90s linear infinite;
-	    -o-animation: splatter 90s linear infinite;
-	    animation: herosky 90s linear infinite;
-	    background-position: fixed;
-	    background-blend-mode: normal, lighten, lighten, screen, normal, normal, normal, normal, normal;
-	    background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
-	 
+		padding-top: 24px;
+	    background-image: url(images/clouds.svg), url(images/clouds2.svg), url(images/moon.svg), url(images/stars.svg), url(images/stars.svg);
+	    background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x;
+	    background-blend-mode: normal; 
+	    background-size: 100%, 100% 100%, 100% 100%, 100% 100%;
 	}
 
 	
+																				
 	
 	
-	.aboutOne {
+	
+	.aboutContent {
+		width: 100%;
+		margin: auto;
+		margin-top: 32px;
+	
+	}
+
+		.aboutContainer {
+		width: 100%;
+		display: flex; 
+	}
+	
+	.aboutHeroBackground {
+		margin: auto;
+		margin-top: 32px;
+		background-image: url(images/background.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
+		background-repeat: no-repeat;
+		mix-blend-mode: multiply;
+		animation: sunrise 3s ease;
+		background-position: 50% 130%;
+		background-size: 700px, 100%;
+
+	}
+
+	
+	.aboutHero {
+		padding-top: 250px;
+		padding-bottom: 250px;
+		width: 92%;
+		max-width: 464px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		align-content: center;
+		mix-blend-mode: normal;
+
+	}
+
+	.aboutHero h2 {
+		text-align: center;
+	}
+
+	.avatar {
+		display: block;
+		max-width: 160px;
+		margin: auto;
+		mix-blend-mode: multiply;
+		opacity: .8;
+
+	}
+
+	.aboutSectionOne {
 		width: 100%;
 		background-color: #EFD05F;
-	}
-	
-	.yellowContainer {
-		width: 100%;
-		display: flex;
-		background-color: #EFD05F; 
-	}
-	
-	.redContainer {
-		width: 100%;
-		display: flex;
-		background-color: #D57C6A; 
-	}
-	
-	.greenContainer {
-		width: 100%;
-		display: flex;
-		background-color: #6AD5B4; 
-	}
-	
-	
-	
-	.content {
-		padding-top: 64px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 	
 	.whoContainer {
-		width: 95%;
+		width: 92%;
 		max-width: 464px;
 		margin: auto;
-		margin-top: 5%;
-		margin-bottom: 5%;
 		background-color: #EFD05F;
 	}
-	
-	
-	
-	#who-text {
-		width: 50%;
-		float: right;
-		background-color: #EFD05F;
-	}
-	
-	.header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		display: block;
-		height: 64px;
-		background-color: white;
-		z-index: 5;
-		animation: gradient 24s ease infinite;
-	
-	}
-	
 
 	
-	.header-logo {
-		display: inline-block;
-		margin-left: 5%;
-		margin-top: 8px;
-	}
 	
-	.navLinkLayout {
-		display: inline-block;
-		float: right;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 18px;
-		opacity: .8;
-		margin-top: 24px;
-		padding-right: 5%;
-	}
-	
-	.navLink {
-		padding: 4px;
-	}
-	
-	
-	.aboutTwo {
+	.aboutSectionTwo {
+		padding-top: 32px;
+		padding-bottom: 32px;
 		width: 100%;
 		display: inline-block;
 		background-color: #D57C6A;
 	}
 	
 	.thenContainer {
-		width: 95%;
+		width: 92%;
 		max-width: 464px;
 		margin: auto;
-		background-color: #D57C6A;
-		margin-top: 5%;
-		margin-bottom: 5%;
+	
 	}
 	
 	
-	
-	#then-text {
-		width: 50%;
-		float: left;
-		background-color: #D57C6A;
-	}
-	
-	
-	
-	.aboutThree {
+	.aboutSectionThree {
 		width: 100%;
 		display: inline-block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		background-color: #6AD5B4;
+	
 	}
 	
 	.whyContainer {
-		width: 95%;
+		width: 92%;
 		max-width: 464px;
 		margin: auto;
-		margin-top: 5%;
-		margin-bottom: 5%;
 	
 	}
-	
-	
-	#why-text {
-		width: 50%;
-		float: left;
-	
-	}
+
+
 /*about.HTML!!end!!*/
 
-/*KEYFRAME ANIMATIONS*/
+/*KEYFRAME ANIMATIONS START*/
+
+
+
+
 	@-webkit-keyframes splatter {
 	    0%{background-position: 50% 50%, 100% 50%; background-size: 50%, 100%;}
 	    50%{background-position: 100% 0%, 0% 20%; background-size: 100%, 25%;}
@@ -856,36 +834,51 @@
 
 		@keyframes herosky {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
-			background-size: 70%, 50%, 50%, 25%, 40%, 100%, 60%;
-			background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% 5%, 50% -20%, 20% -5%;
+			background-size: 70%, 50%,  40%, 100%, 60%;
+			background-position: -100% 0%, -200% 10%,  100% 5%, 50% -20%, 20% -5%;
 		}
 	
 		50%{
-			background-position: 80% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% 10%, 80% -20%;
+			background-position: 80% 0%, 0% 10%, 100% 15%, 50% 10%, 80% -20%;
 		}
 	
 		100%{
-			background-size: 70%, 50%, 40%, 25%, 40%, 100%, 60%;
-			background-position: -100% 0%, 200% 10%, 400% 20%, 200% 20%, 100% 5%, 150% -20%, 20% -5%;
+			background-size: 70%, 50%, 40%, 100%, 60%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -20%, 20% -5%;
 		}
 	}
 
 			@keyframes heroskybig {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
-			background-size: 60%, 40%, 40%, 25%, 25%, 60%, 40%;
-			background-position: -100% 0%, -200% 10%, -200% 20%, -100% 20%, 100% 5%, 50% -70%, 20% -5%;
+			background-size: 60%, 40%, 25%, 60%, 40%;
+			background-position: -100% 0%, -200% 10%, 100% 5%, 50% -70%, 20% -5%;
 		}
 	
 		50%{
-			background-position: 80% 0%, 0% 10%, 0% 20%, 0% 20%, 100% 15%, 50% -50%, 30% 20%;
+			background-position: 80% 0%, 0% 10%, 100% 15%, 50% -50%, 30% 20%;
 		}
 	
 		100%{
-			background-size: 60%, 40%, 40%, 25%, 25%, 60%, 40%;
-			background-position: -100% 0%, 200% 10%, 400% 20%, 200% 20%, 100% 5%, 150% -70%, 20% -5%;
+			background-size: 60%, 40%, 25%, 60%, 40%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -70%, 20% -5%;
 		}
 	}
 
+			@keyframes heroskybigger {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
+		0%{
+			background-size: 40%, 20%, 25%, 50%, 20%;
+			background-position: -100% 0%, -200% 10%, 100% 5%, 50% -70%, 20% -5%;
+		}
+	
+		50%{
+			background-position: 80% 0%, 0% 10%, 100% 15%, 50% -50%, 30% 20%;
+		}
+	
+		100%{
+			background-size: 40%, 20%, 25%, 50%, 20%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -70%, 20% -5%;
+		}
+	}
 
 	@keyframes comedown{
 		0%{
@@ -997,16 +990,33 @@
 	}
 	
 
-/*KEYFRAME ANIMATIONS*/
+/*KEYFRAME ANIMATIONS END*/
+
+/*MEDIA QUERIES START*/
 
 
 
 		@media only screen 
-		  and (min-device-width: 682px) 
+		  and (min-device-width: 1100px) 
 		  and (max-device-width: 2600px)
 		  and (-webkit-min-device-pixel-ratio: 2) {
 		  	.homeHeroContainer {
+		  		animation: heroskybigger 90s linear infinite;
+		  	}
+		  	.aboutHeroContainer {
+		  		animation: herosky 90s linear infinite;
+		  	}
+		}
+
+		@media only screen 
+		  and (min-device-width: 682px) 
+		  and (max-device-width: 1100px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+		  	.homeHeroContainer {
 		  		animation: heroskybig 90s linear infinite;
+		  	}
+		  	.aboutHeroContainer {
+		  		animation: herosky 90s linear infinite;
 		  	}
 		}
 
@@ -1017,10 +1027,12 @@
 		  	.homeHeroContainer {
 		  		animation: herosky 90s linear infinite;
 		  	}
+		  	.aboutHeroContainer {
+		  		animation: herosky 90s linear infinite;
+		  	}
 		}
 
-
-			
+/*MEDIA QUERIES END*/			
 
 
 
