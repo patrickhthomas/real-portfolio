@@ -215,7 +215,7 @@
 		padding-top: 250px;
 		padding-bottom: 250px;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin-left: auto;
 		margin-right: auto;
 		text-align: left;
@@ -235,6 +235,8 @@
 		padding-top: 32px;
 		font-weight: 700;
 		animation: comedown ease 1s 1;
+		margin: auto;
+		max-width: 464px;
 	
 	}
 	
@@ -252,6 +254,8 @@
 		padding-bottom: 48px;
 		line-height: 48px;
 		font-weight: 700;
+		max-width: 464px;
+		margin: auto;
 		animation: comeup ease-out 2s 1, squeeze ease-out 2s 1;
 	}
 
@@ -262,6 +266,8 @@
 		padding-top: 24px;
 		padding-bottom: 24px;
 		width: 100%;
+		max-width: 582px;
+		margin: auto;
 
 	}
 
@@ -269,14 +275,14 @@
 		max-height: 500px;
 		margin: auto;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 	}
 
 	.checkoutContainer {
 		padding-top: 16px;
 		display: flex;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		cursor: pointer;
 	}
@@ -284,7 +290,7 @@
 
 	.homeCheckoutTxt {
 		width: 90%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		float: left;
 	}
 
@@ -294,7 +300,7 @@
 
 	.homeCheckoutArw {
 		position: right bottom;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	}
 	
@@ -341,7 +347,7 @@
 	
 	.coopContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -403,7 +409,7 @@
 	
 	.dandelionContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	
 	}
@@ -447,7 +453,7 @@
 	
 	.pbContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	
 	}
@@ -489,7 +495,7 @@
 		display: flexbox;
 		padding-top: 64px;
 		width: 92%;
-		max-width: 464px; 
+		max-width: 474px; /*NEW*/ 
 		margin: auto;
 	}
 	
@@ -561,7 +567,7 @@
 	.projectOneHero {
 		background-color: rgba(360, 360, 360, .9);
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		padding-top: 64px;
 		text-align: center;
@@ -579,7 +585,7 @@
 	
 	.introContainer {
 		width: 100%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -652,7 +658,7 @@
 	
 	.staticContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	}
 	
@@ -661,7 +667,7 @@
 
 	#solution {
 		width: 90%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 	}
 
 	.backToTop {
@@ -718,7 +724,7 @@
 		padding-top: 250px;
 		padding-bottom: 250px;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -749,7 +755,7 @@
 	
 	.whoContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -766,7 +772,7 @@
 	
 	.thenContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	
 	}
@@ -783,7 +789,7 @@
 	
 	.whyContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	
 	}
@@ -1024,6 +1030,7 @@
 
 
 
+
 		@media only screen 
 		  and (min-device-width: 1100px) 
 		  and (max-device-width: 2600px)
@@ -1033,6 +1040,23 @@
 		  	}
 		  	.aboutHeroContainer {
 		  		animation: herosky 90s linear infinite;
+		  	}
+		  	.projectOne {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
+		  	}
+		  	.projectTwo {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
+		  		padding-top: 32px;
+		  		padding-bottom: 32px;
+		  	}
+		  	.projectThree {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
 		  	}
 		}
 
@@ -1045,6 +1069,10 @@
 		  	}
 		  	.aboutHeroContainer {
 		  		animation: herosky 90s linear infinite;
+		  	}
+		  	.coopContainer, .firstContainer, .firstButton, .projectOne .dandelionContainer, .pbContainer, .container, .projectOneHero, .introContainer, .staticContainer, .#solution, .aboutHero, .whoContainer, .thenContainer, .whyContainer
+		  	{
+		  		max-width: 474px;
 		  	}
 		}
 
@@ -1090,7 +1118,7 @@
 		padding-bottom: 16px;
 		display: flex;
 		width: 95%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	}
 	
@@ -1122,7 +1150,7 @@
 	footer p {
 		text-align: center;
 		width: 95%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		padding-bottom: 16px;
 	}
