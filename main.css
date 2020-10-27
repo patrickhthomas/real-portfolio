@@ -205,8 +205,8 @@
 		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
 		animation: sunrise 3s ease;
-		background-position: 50% 130%;
-		background-size: 700px, 100%;
+		background-position: center;
+		background-size: 1500px, 100%;
 
 	}
 
@@ -215,7 +215,7 @@
 		padding-top: 250px;
 		padding-bottom: 250px;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin-left: auto;
 		margin-right: auto;
 		text-align: left;
@@ -235,6 +235,8 @@
 		padding-top: 32px;
 		font-weight: 700;
 		animation: comedown ease 1s 1;
+		margin: auto;
+		max-width: 464px;
 	
 	}
 	
@@ -252,6 +254,8 @@
 		padding-bottom: 48px;
 		line-height: 48px;
 		font-weight: 700;
+		max-width: 464px;
+		margin: auto;
 		animation: comeup ease-out 2s 1, squeeze ease-out 2s 1;
 	}
 
@@ -262,6 +266,8 @@
 		padding-top: 24px;
 		padding-bottom: 24px;
 		width: 100%;
+		max-width: 582px;
+		margin: auto;
 
 	}
 
@@ -269,14 +275,14 @@
 		max-height: 500px;
 		margin: auto;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 	}
 
 	.checkoutContainer {
 		padding-top: 16px;
 		display: flex;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		cursor: pointer;
 	}
@@ -284,7 +290,7 @@
 
 	.homeCheckoutTxt {
 		width: 90%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		float: left;
 	}
 
@@ -294,7 +300,7 @@
 
 	.homeCheckoutArw {
 		position: right bottom;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	}
 	
@@ -341,7 +347,7 @@
 	
 	.coopContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 600px; /*NEW*/
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -372,7 +378,7 @@
 
 	}
 	
-	.coopButton {
+	.activeButton {
 		text-align: center;
 		font-family: 'Josefin Sans', sans-serif;
 		font-size: 18px;
@@ -385,15 +391,28 @@
 		border-radius: 6px;
 	}
 
-	.coopButton:hover {
+	.activeButton:hover {
 		box-shadow: 0px 0px 10px #6AD5B4; 
+	}
+
+	.inactiveButton {
+		text-align: center;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 18px;
+		opacity: .8;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+		box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);  
+		border-radius: 6px;
 	}
 	
 	/*Coop*/
 	
 	
 	
-	/*Dandelion*/
+	/*Affirmative*/
 	
 	.projectTwo {
 		width: 100%;
@@ -401,22 +420,23 @@
 		background-color: #D57C6A;
 	}
 	
-	.dandelionContainer {
+	.affirmativeContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 700px;
 		margin: auto;
 	
 	}
 	
-	.dandelion-img {
+	.affirmative-img {
 		width: 48%;
 		float: left;
 		padding-top: 15%;
 		padding-bottom: 7%;
 		padding-right: 2%;
+		vertical-align: center;
 	}
 	
-	.dandelion-text {
+	.affirmative-text {
 		padding-top: 20%;
 		padding-bottom: 7%;
 		padding-left: 2%;
@@ -432,7 +452,7 @@
 		align-content: center;
 		padding-bottom: 32px;
 	}
-	/*Dandelion*/
+	/*Affirmative*/
 	
 	/*PB*/
 	
@@ -447,7 +467,7 @@
 	
 	.pbContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 600px; /*NEW*/
 		margin: auto;
 	
 	}
@@ -455,8 +475,8 @@
 	.pb-img {
 		width: 48%;
 		float: left;
-		padding-top: 15%;
-		padding-bottom: 7%;
+		padding-top: 7%;
+		padding-bottom: 5%;
 		padding-right: 2%;
 		
 	
@@ -481,6 +501,29 @@
 		padding-bottom: 32px;
 	}
 	/*PB*/
+
+		.dandelionContainer {
+		width: 92%;
+		max-width: 600px; /*NEW*/
+		margin: auto;
+	
+	}
+	
+	.dandelion-img {
+		width: 48%;
+		float: left;
+		padding-top: 15%;
+		padding-bottom: 20%;
+		padding-right: 2%;
+	}
+	
+	.dandelion-text {
+		padding-top: 20%;
+		padding-bottom: 7%;
+		padding-left: 2%;
+		width: 48%;
+		float: left;
+	}
 /*!!home.HTML!!end!!*/
 
 
@@ -489,7 +532,7 @@
 		display: flexbox;
 		padding-top: 64px;
 		width: 92%;
-		max-width: 464px; 
+		max-width: 474px; /*NEW*/ 
 		margin: auto;
 	}
 	
@@ -519,15 +562,54 @@
 
 .carouselContainer{
 	display: flex;
-	width: 100%;
+	max-width: 100%;
 	margin: auto;
+	
+}
+
+.carouselContainer1, .carouselContainer2, .carouselContainer3, .carouselContainer4, .carouselContainer6, .carouselContainer7 {
+	display: flex;
+	max-width: 100%;
+	margin: auto;
+	padding-bottom: 16px;
+	
+}
+
+.carousel1, .carousel2, .carousel3, .carousel4, .carousel5, .carousel6, .carousel7 {
+	float: left;
+	display: flex;
+	width: 494px;
 	max-width: 600px;
+	overflow-x: auto;
+	margin: auto;
+	box-shadow: -5px 0px 5px rgba(0, 0, 0, .2);
+
+
+
+}
+
+#sketches {
+	padding-bottom: 16px;
+}
+
+.coopText1, .coopText2, .coopText5 {
+	padding-bottom: 32px;
+}
+
+#solution {
+	display: block;
+	margin: auto;
+}
+
+#coopBottomImg {
+	display: block;
+	margin: auto;
 }
 
 .carousel {
 	float: left;
 	display: flex;
-	width: 600px;
+	width: 494px;
 	max-width: 600px;
 	overflow-x: auto;
 	margin: auto;
@@ -551,22 +633,52 @@
 
 /*CAROUSEL END*/
 
-	
-	.projectOneContent {
+		.projectOneContent {
 		padding-top: 64px;
 		margin-top: 32px;
 		width: 100%;
 		max-width: 2200px;
 	}
+
+	.projectOneHeroContainer {
+		display: flex;
+		background-filter: blur(5rem);
+		width: 100%;
+		margin-top: -32px;
+		margin-bottom: -32px;
+		padding-bottom: 64px;
+		align-content: center;
+	}
+	#coopHeroImg {
+		display: block;
+		width: 60%;
+		padding: 5%;
+		margin: auto;
+	}
+	
+
+
 	.projectOneHero {
 		background-color: rgba(360, 360, 360, .9);
 		width: 92%;
-		max-width: 464px;
+		max-width: 472px;
 		margin: auto;
 		padding-top: 64px;
-		text-align: center;
 		align-content: center;
 		margin-bottom: 32px;
+	}
+
+	.listLeft {
+		float: left;
+		width: 40%;
+		margin: auto;
+		text-align: left;
+	}
+	
+	.listRight {
+		float: right;
+		width: 40%;
+		text-align: left;
 	}
 
 	.projectOneSectionOne {
@@ -579,7 +691,6 @@
 	
 	.introContainer {
 		width: 100%;
-		max-width: 464px;
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -609,20 +720,7 @@
 		width: 40%;
 		text-align: left;
 	}
-	.projectOneHeroContainer {
-		display: flex;
-		background-filter: blur(5rem);
-		width: 100%;
-		margin-top: -32px;
-		margin-bottom: -32px;
-		padding-bottom: 64px;
-	    background-image: url(images/solidSplattercopy.svg), url(images/solidSplatter.svg);
-	    -webkit-animation: splatter 90s linear infinite;
-	    -moz-animation: splatter 90s linear infinite;
-	    -o-animation: splatter 90s linear infinite;
-	    animation: splatter 90s linear infinite;
-	    background-blend-mode: difference, difference; 
-	}
+
 
 
 
@@ -652,7 +750,7 @@
 	
 	.staticContainer {
 		width: 92%;
-		max-width: 464px;
+		
 		margin: auto;
 	}
 	
@@ -661,7 +759,7 @@
 
 	#solution {
 		width: 90%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 	}
 
 	.backToTop {
@@ -708,8 +806,8 @@
 		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
 		animation: sunrise 3s ease;
-		background-position: 50% 130%;
-		background-size: 700px, 100%;
+		background-position: center;
+		background-size: 1500px, 100%;
 
 	}
 
@@ -718,7 +816,7 @@
 		padding-top: 250px;
 		padding-bottom: 250px;
 		width: 92%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -749,7 +847,7 @@
 	
 	.whoContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 800px; /*NEW*/
 		margin: auto;
 		background-color: #EFD05F;
 	}
@@ -766,7 +864,7 @@
 	
 	.thenContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 800px;
 		margin: auto;
 	
 	}
@@ -783,7 +881,7 @@
 	
 	.whyContainer {
 		width: 92%;
-		max-width: 464px;
+		max-width: 800px;
 		margin: auto;
 	
 	}
@@ -826,13 +924,12 @@
 
 		@keyframes sunrise {
 		0% {
-			background-position: 0% 130%;
+			background-position: center bottom;
 		}
-		50% {
-			background-position: 100% 125%
-		}
+
+		
 		100% {
-			background-position: 50% 130%;
+			background-position: center;
 		}
 	}
 
@@ -862,49 +959,43 @@
 
 		@keyframes herosky {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
-			background-size: 70%, 50%,  40%, 100%, 60%;
-			background-position: -100% 0%, -200% 10%,  100% 5%, 50% -20%, 20% -5%;
+			background-size: 70%, 50%,  25%, 100%, 60%;
+			background-position: -80% 0%, 180% 10%, 100% 5%, 130% -7000%, 10% -12000%;
 		}
 	
-		50%{
-			background-position: 80% 0%, 0% 10%, 100% 15%, 50% 10%, 80% -20%;
-		}
 	
 		100%{
-			background-size: 70%, 50%, 40%, 100%, 60%;
-			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -20%, 20% -5%;
+			background-size: 70%, 50%, 30%, 100%, 60%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		}
 	}
 
 			@keyframes heroskybig {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
 			background-size: 60%, 40%, 25%, 60%, 40%;
-			background-position: -100% 0%, -200% 10%, 100% 5%, 50% -70%, 20% -5%;
+			background-position: -80% 0%, 180% 10%, 100% 5%, 130% -7000%, 10% -12000%;
 		}
+		
 	
-		50%{
-			background-position: 80% 0%, 0% 10%, 100% 15%, 50% -50%, 30% 20%;
-		}
+
 	
 		100%{
 			background-size: 60%, 40%, 25%, 60%, 40%;
-			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -70%, 20% -5%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		}
 	}
 
 			@keyframes heroskybigger {      /*   clouds  | clouds2  |whisps   | whisps2   |  moon  |   stars |   stars2 */	  			                         /*clouds, clouds2, whisps, whisps2, sun, moon, stars, stars2*/
 		0%{
-			background-size: 40%, 20%, 25%, 50%, 20%;
-			background-position: -100% 0%, -200% 10%, 100% 5%, 50% -70%, 20% -5%;
+			background-size: 45%, 28%, 10%, 40%, 30%;
+			background-position: -80% 0%, 180% 10%, 100% 5%, 130% -7000%, 10% -12000%;
 		}
 	
-		50%{
-			background-position: 80% 0%, 0% 10%, 100% 15%, 50% -50%, 30% 20%;
-		}
+		
 	
 		100%{
-			background-size: 40%, 20%, 25%, 50%, 20%;
-			background-position: -100% 0%, 200% 10%, 100% 5%, 150% -70%, 20% -5%;
+			background-size: 42%, 30%, 15%, 40%, 30%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		}
 	}
 
@@ -1024,16 +1115,187 @@
 
 
 
+
 		@media only screen 
 		  and (min-device-width: 1100px) 
 		  and (max-device-width: 2600px)
 		  and (-webkit-min-device-pixel-ratio: 2) {
+		  	.footer {
+		  		float: left;
+		  	}
 		  	.homeHeroContainer {
-		  		animation: heroskybigger 90s linear infinite;
+		  		animation: heroskybigger 3s ease;
+		  		background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+		  		background-size: 42%, 30%, 15%, 40%, 30%;
+				background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		  	}
 		  	.aboutHeroContainer {
-		  		animation: herosky 90s linear infinite;
+		  		animation: heroskybigger 3s ease;
+		  		background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+		  		background-size: 42%, 30%, 15%, 40%, 30%;
+				background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		  	}
+		  	.projectOne {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
+		  	}
+		  	.projectTwo {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
+		  		padding-top: 32px;
+		  		padding-bottom: 32px;
+		  	}
+		  	.projectThree {
+		  		width: 50%;
+		  		float: left;
+		  		height: 540px;
+		  	}
+		  	.coop-img {
+		  		padding-bottom: 0px;
+		  		padding-top: 20px;
+		  	}
+		  	.listLeft {
+				display: block;
+				padding-left: 10%;
+				float: left;
+				width: 20%;
+				max-width: 200px;
+			}
+			.projectOneHeroText {
+				width: 40%;
+				float: left;
+			}
+
+			.projectOneHero {
+				width: 80%;
+				max-width: 1200px;
+			}
+
+			.listRight {
+				display: block;
+				float: right;
+				max-width: 200px;
+				width: 20%;
+			} 
+
+			.staticContainer {
+				width: 80%;
+				max-width: 1200px;
+			}
+
+			.coopText1 {
+				width: 45%;
+				float: left;
+			}
+
+			.coopText2 {
+				width: 45%;
+				float: left;
+				padding-left: 10%;
+			}
+
+			.coopText3 {
+				max-width: 30%;
+				float: left;
+				padding-right: 10%;
+			}
+			#swot, #sketches {
+				width: 60%;
+				float: right;
+			}
+
+			.row2 {
+				display:inline-block;
+				padding-top: 64px;
+				width: 100%;
+			}
+
+			.coopText4 {
+				float: left;
+				width: 30%;
+				
+			}
+
+			.coopText5{
+				padding-top: 32px;
+				display: inline-block;
+				max-width: 100%;
+				padding-bottom: 64px;
+				float: left;
+			}
+
+			.coopText6 {
+				float: left;
+				width: 30%;
+				
+			}
+
+			.row3, .row4, .row5, .row6{
+				padding-bottom: 64px;
+				width: 100%;
+				display: inline-block;
+			}
+			.coopText7, .coopText9 {
+				float: left;
+				width: 30%;
+			
+			}
+
+			.row10 {
+				padding-top: 32px;
+			}
+
+			.coopText8 {
+				width: 40%;
+				display: inline-block;
+				padding-bottom: 32px;
+			}
+
+
+
+			#solution {
+				width: 50%;
+				margin-left: 25%;
+				padding-top: 62px;
+			}
+
+			#coopBottomImg {
+				width: 60%;
+				float: right;
+			}
+
+			
+
+			
+
+			
+			
+
+			
+
+			.carouselContainer1, .carouselContainer2 {
+				
+			}
+
+			.carousel1, .carousel2 {
+				width: 100%;
+				max-width: 800px;
+			}
+
+			.carousel3 {
+				width: 100%;
+				max-width: 1200px;
+			}
+
+			.carousel4, .carousel5 {
+				width: 100%;
+				max-width: 720px;
+			}
+
+			
+			
 		}
 
 		@media only screen 
@@ -1041,11 +1303,27 @@
 		  and (max-device-width: 1100px)
 		  and (-webkit-min-device-pixel-ratio: 2) {
 		  	.homeHeroContainer {
-		  		animation: heroskybig 90s linear infinite;
+		  		background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+		  		animation: heroskybig 3s ease;
+		  		background-size: 60%, 40%, 25%, 60%, 40%;
+				background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		  	}
 		  	.aboutHeroContainer {
-		  		animation: herosky 90s linear infinite;
+		  		background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+		  		animation: heroskybig 3s ease;
+		  		background-size: 60%, 40%, 25%, 60%, 40%;
+				background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		  	}
+		  	.carousel1, .carousel2, .carousel3, .carousel4, .carousel5, .carousel6, .carousel7 {
+		  	float: left;
+			display: flex;
+			width: 100%;
+			max-width: 800px;
+			overflow-x: auto;
+			margin: auto;
+			box-shadow: -5px 0px 5px rgba(0, 0, 0, .2);*/
+			}
+		
 		}
 
 		@media only screen 
@@ -1053,11 +1331,18 @@
 		  and (max-device-width: 682px)
 		  and (-webkit-min-device-pixel-ratio: 2) {
 		  	.homeHeroContainer {
-		  		animation: herosky 90s linear infinite;
+		  	background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+			background-size: 70%, 50%, 30%, 100%, 60%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
+		  	animation: herosky 3s ease;
 		  	}
 		  	.aboutHeroContainer {
-		  		animation: herosky 90s linear infinite;
-		  	}
+			background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+			background-size: 70%, 50%, 30%, 100%, 60%;
+			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
+		  	animation: herosky 3s ease;
+		  }
+
 		}
 
 /*MEDIA QUERIES END*/			
@@ -1078,9 +1363,8 @@
 		background-color: white;
 		background-image: url(images/background.svg);
 		background-repeat: repeat-x;
-		mix-blend-mode: multiply;
-		background-size: 500%;
-		background-position: 50% 100%;
+		background-size: 800px;
+		background-position: center;
 	}
 	
 	
@@ -1090,7 +1374,7 @@
 		padding-bottom: 16px;
 		display: flex;
 		width: 95%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 	}
 	
@@ -1122,7 +1406,7 @@
 	footer p {
 		text-align: center;
 		width: 95%;
-		max-width: 464px;
+		max-width: 474px; /*NEW*/
 		margin: auto;
 		padding-bottom: 16px;
 	}
