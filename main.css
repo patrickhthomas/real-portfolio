@@ -27,6 +27,7 @@
 	}
 	body {
 		line-height: 1;
+
 	}
 	ol, ul , li{
 		list-style: none;
@@ -69,7 +70,10 @@
 	}
 	
 	
-	
+	main {
+		position: relative;
+		overflow: hidden;
+	}
 	
 	
 	.staticImage {
@@ -655,6 +659,7 @@
 #coopBottomImg {
 	display: block;
 	margin: auto;
+	max-width: 600px;
 }
 
 .carousel {
@@ -824,6 +829,22 @@
 
 	.backToTop {
 		cursor: pointer;
+	}
+
+	#colorImage {
+		max-width: 100%;
+
+
+	}
+
+	#finalImg {
+		max-width: 200px;
+	}
+
+	#preferenceImg {
+		max-width: 50%;
+		margin: auto;
+
 	}
 /*projectOne.HTML!!end!!*/
 
@@ -1303,6 +1324,10 @@
 			
 			}
 
+			.row6 {
+				max-height: 800px;
+			}
+
 			.row10 {
 				padding-top: 32px;
 			}
@@ -1324,9 +1349,16 @@
 			#coopBottomImg {
 				width: 60%;
 				float: right;
+				overflow: hidden;
+
 			}
 
-			
+			/*.bottomImgContainer {
+				position: absolute;
+				overflow: hidden;
+				width: 100%;
+			}
+			*/
 
 			
 
@@ -1383,6 +1415,10 @@
 			margin: auto;
 			box-shadow: -5px 0px 5px rgba(0, 0, 0, .2);
 			}
+
+			#coopBottomImg {
+				width: 60%;
+			}
 		
 		}
 
@@ -1402,6 +1438,9 @@
 			background-position: -100% 0%, 200% 10%, 100% 5%, 100% 0%, 20% -5%;
 		  	animation: herosky 3s ease;
 		  }
+		  #coopBottomImg {
+				width: 60%;
+			}
 
 		}
 
