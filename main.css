@@ -125,7 +125,7 @@
 			display: block;
 			height: 64px;
 			background-color: white;
-			z-index: 5;
+			z-index: 2;
 			animation: gradient 24s ease infinite;
 		
 		}
@@ -616,6 +616,7 @@
 /*CAROUSEL START*/
 
 .carouselContainer{
+	position: relative;
 	display: flex;
 	max-width: 100%;
 	margin: auto;
@@ -627,6 +628,7 @@
 	max-width: 100%;
 	margin: auto;
 	padding-bottom: 16px;
+
 	
 }
 
@@ -691,9 +693,10 @@
 
 	#preferenceImg {
 		width: 92%;
-		max-width: 600px;
+		max-width: 400px;
 		display: block;
 		margin: auto;
+		padding-top: 10px;
 		padding-bottom: 64px;
 	}
 
@@ -831,6 +834,7 @@
 		cursor: pointer;
 	}
 
+<<<<<<< Updated upstream
 	#colorImage {
 		max-width: 100%;
 
@@ -845,6 +849,10 @@
 		max-width: 50%;
 		margin: auto;
 
+=======
+	#colorsImage {
+		max-width: 100%;
+>>>>>>> Stashed changes
 	}
 /*projectOne.HTML!!end!!*/
 
@@ -1347,6 +1355,7 @@
 			}
 
 			#coopBottomImg {
+<<<<<<< Updated upstream
 				width: 60%;
 				float: right;
 				overflow: hidden;
@@ -1359,21 +1368,24 @@
 				width: 100%;
 			}
 			*/
-
-			
-
-			
-			
-
-			
-
-			.carouselContainer1, .carouselContainer2 {
-				
+=======
+				width: 25%;
+				right: 100px;
+				position: absolute;
 			}
+
+		.scrollRight {
+			position: absolute;
+			z-index: 2;
+		}
+			
+>>>>>>> Stashed changes
+
 
 			.carousel1, .carousel2 {
 				width: 100%;
 				max-width: 800px;
+				position: absolute;
 			}
 
 			.carousel3 {
