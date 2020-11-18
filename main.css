@@ -46,7 +46,6 @@
 	}
 /*DEMS DA RULES*/
 
-/*but I play by MY own rules*/
 	body {
 		width: 100%;
 		margin: 0;
@@ -114,7 +113,6 @@
 		opacity: .9;
 		line-height: 24px;
 	}
-/*but I play by MY own rules*/
 
 /*HEADER*/
 		
@@ -173,13 +171,7 @@
 
 /*!!home.HTML!!start!!*/
 
-
-	
-	
-	
-	
-	
-	.homeHeroContainer {
+.homeHeroContainer {
 	
 		margin: auto;
 		width: 100%;
@@ -195,14 +187,14 @@
 	
 	
 	
-	.homeContent {
+.homeContent {
 		width: 100%;
 		margin: auto;
 		margin-top: 32px;
 	
 	}
 	
-	.homeHeroBackground {
+.homeHeroBackground {
 		margin: auto;
 		margin-top: 32px;
 		background-image: url(images/background.svg), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8199513381995134) 30%, rgba(0,0,0,0.8953771289537713) 98%);
