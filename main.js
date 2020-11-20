@@ -1,3 +1,8 @@
+window.onscroll = function () {
+    scrollRotate();
+    scrollRotate2();
+};
+
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -46,4 +51,16 @@ window.onclick = function(event) {
   if (event.target == styleGuideWindow) {
     styleGuideWindow.style.display = "none";
   }
+}
+
+
+
+function scrollRotate() {
+    let image = document.getElementById("animateObject");
+    image.style.transform = "rotate(" + window.pageYOffset/10 +"deg)";
+}
+
+function scrollRotate2() {
+    let image = document.getElementById("animateObject2");
+    image.style.transform = "rotate(" + window.pageYOffset/-7 +"deg)";
 }
