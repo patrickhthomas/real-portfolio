@@ -1,6 +1,11 @@
 window.onscroll = function () {
-    scrollRotate();
-    scrollRotate2();
+    moveRotate();
+    moveRotate2();
+    moveRotate3();
+    moveRotate4();
+    moveRotate5();
+    moveRotate6();
+    moveRotate7();
 };
 
 window.smoothScroll = function(target) {
@@ -55,12 +60,48 @@ window.onclick = function(event) {
 
 
 
-function scrollRotate() {
-    let image = document.getElementById("animateObject");
-    image.style.transform = "rotate(" + window.pageYOffset/10 +"deg)";
-}
 
-function scrollRotate2() {
-    let image = document.getElementById("animateObject2");
-    image.style.transform = "rotate(" + window.pageYOffset/-7 +"deg)";
-}
+    function moveRotate() {
+        let image = document.getElementById("animateObject");
+        image.style.transform += "rotate(" + window.pageYOffset/-200 +"deg)";
+        image.style.transform += "translateX(" + window.pageYOffset/-17 +"px)";
+        image.style.transform += "translateY(" + window.pageYOffset/-77 +"px)";
+
+    }
+    
+    function moveRotate2() {
+        let image = document.getElementById("animateObject2");
+        image.style.transform += "rotate(" + window.pageYOffset/200 +"deg)";
+        image.style.transform += "translateX(" + window.pageYOffset/17 +"px)";
+        image.style.transform += "translateY(" + window.pageYOffset/77 +"px)";
+    }
+    
+    function moveRotate3() {
+        let image = document.getElementById("animateObject6");
+        image.style.transform += "rotate(" + window.pageYOffset/130 +"deg)";
+        image.style.transform += "translateY(" + window.pageYOffset/-70 +"px)";
+    }
+    
+    function moveRotate4() {
+        let image = document.getElementById("animateObject4");
+        image.style.transform += "translateY(" + window.pageYOffset/-70 +"px)";
+        image.style.transform += "translateX(" + window.pageYOffset/-70 +"px)";
+    }
+    
+    function moveRotate5() {
+        let image = document.getElementById("animateObject5");
+        image.style.transform += "translateY(" + window.pageYOffset/-70 +"px)";
+        image.style.transform += "translateX(" + window.pageYOffset/-70 +"px)";
+    }
+    
+    function moveRotate6() {
+        let image = document.getElementById("animateObject6");
+        image.style.transform += "translateY(" + window.pageYOffset/-70 +"px)";
+        image.style.transform += "translateX(" + window.pageYOffset/-70 +"px)";
+    }
+    
+    function moveRotate7() {
+        let image = document.getElementById("animateObject7");
+        image.style.transform += "rotate(" + window.pageYOffset/130 +"deg)";
+        image.style.transform += "translateY(" + window.pageYOffset/-70 +"px)";
+    }

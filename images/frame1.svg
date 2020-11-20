@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.49" height="99.086" viewBox="0 0 59.49 99.086">
+  <g opacity="0.45">
+    <g>
+      <g>
+        <polygon points="59.372 51.522 55.449 70.441 41.51 56.48 41.161 0.125 59.372 51.522" fill="#231f20"/>
+        <polygon points="55.449 70.441 26.448 98.942 13.925 68.509 55.449 70.441" fill="#231f20"/>
+        <polygon points="55.449 70.441 13.925 68.509 41.51 56.48 55.449 70.441" fill="#231f20"/>
+        <polygon points="41.161 0.125 41.51 56.48 13.925 68.509 0.125 44.236 41.161 0.125" fill="#231f20"/>
+        <polygon points="26.448 98.942 0.125 44.236 13.925 68.509 26.448 98.942" fill="#231f20"/>
+        <polygon points="0.125 44.236 26.448 98.942 10.04 70.161 0.125 44.236" fill="#231f20"/>
+      </g>
+      <g>
+        <polyline points="41.51 56.48 55.449 70.441 59.372 51.522 41.161 0.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+        <polyline points="41.51 56.48 13.925 68.509 0.125 44.236 41.161 0.125 41.51 56.48 40.936 1.129" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+        <polyline points="55.449 70.441 26.448 98.942 13.925 68.509" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+        <line x1="55.449" y1="70.441" x2="13.925" y2="68.509" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+        <polyline points="0.125 44.236 10.04 70.161 26.448 98.942" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+        <line x1="0.125" y1="44.236" x2="26.448" y2="98.942" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.25"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <polygon points="41.569 56.527 41.265 0.993 59.227 51.694 55.349 70.323 41.569 56.527" fill="#231f20"/>
+        <path d="M41.4,1.734,59.086,51.67l-3.813,18.4L41.73,56.51,41.4,1.734M41.137.254l.344,56.361,13.943,13.96,3.921-18.923L41.137.254Z" fill="#fff"/>
+      </g>
+      <g>
+        <polygon points="14.059 68.7 41.452 56.763 55.247 70.574 26.47 98.866 14.059 68.7" fill="#231f20"/>
+        <path d="M41.424,56.912,55.069,70.573,26.515,98.647,14.222,68.766l27.2-11.854m.057-.3L13.9,68.634,26.425,99.086l29-28.511L41.481,56.615Z" fill="#fff"/>
+      </g>
+      <g>
+        <polygon points="0.257 44.397 41.014 0.57 41.355 56.533 13.951 68.475 0.257 44.397" fill="#231f20"/>
+        <path d="M40.89.886l.34,55.565L14,68.315.411,44.416,40.89.886m.247-.632L.1,44.38,13.9,68.634,41.481,56.615,41.137.254Z" fill="#fff"/>
+      </g>
+      <g>
+        <polygon points="1.794 47.606 13.788 68.696 24.676 95.161 1.794 47.606" fill="#231f20"/>
+        <path d="M3.481,50.824,13.666,68.729l9.258,22.5L3.481,50.824M.1,44.38,26.425,99.086,13.9,68.634.1,44.38Z" fill="#fff"/>
+      </g>
+      <g>
+        <polygon points="10.133 70.246 1.295 47.145 24.754 95.901 10.133 70.246" fill="#231f20"/>
+        <path d="M2.489,49.914l20.6,42.811L10.258,70.218l-7.769-20.3M.1,44.38l9.921,25.927,16.4,28.779L.1,44.38Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

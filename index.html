@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,600;0,700;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://kit.fontawesome.com/8b6e4ed6e1.js" crossorigin="anonymous"></script>
 
 
@@ -40,7 +40,12 @@
   <main class="homeContent">
     <div class="animateContainer">
       <img class="animateObject" id="animateObject" src="images/framed.svg">
-      <img class="animateObject2" id="animateObject2" src="images/framed.svg">
+      <img class="animateObject2" id="animateObject2" src="images/frame3.svg">
+      <img class="animateObject3" id="animateObject3" src="images/frame1.svg">
+      <img class="animateObject4" id="animateObject4" src="images/frame2.svg">
+      <img class="animateObject5" id="animateObject5" src="images/frame3.svg">
+      <img class="animateObject6" id="animateObject6" src="images/frame4.svg">
+      <img class="animateObject7" id="animateObject7" src="images/frame5.svg">
     </div>
 
     <section class="homeHeroBackground">
@@ -64,7 +69,7 @@
     </section>
 
     <section class="projectOne" id="projectOne">
-      <div class="firstContainer">
+      <div data-aos="fade-up-right" class="firstContainer">
         <div class="coopContainer">
           <figure class="coop-img">
             <img class="staticImage" alt="Image of the Coop mobile app displayed on an Android phone" src="images/projectOne.png">
@@ -83,7 +88,7 @@
 
     <section class="projectTwo">
       <div class="secondContainer">
-        <div class="affirmativeContainer">
+        <div data-aos="fade-up-left" class="affirmativeContainer">
           <figure class="affirmative-img">
             <img class="staticImage" alt="Image of the Dandelion Signage" src="images/affirmative.png">
           </figure>
@@ -100,7 +105,7 @@
     </section>
 
     <section class="projectThree">
-      <div class="thirdContainer">
+      <div data-aos="fade-up-right" class="thirdContainer">
         <div class="pbContainer">
           <figure class="pb-img">
             <img class="staticImage" alt="Image of the PinkBike app on an Android phone" src="images/projectThree.png">
@@ -118,7 +123,7 @@
     </section>
 
     <section class="projectFour" id="projectOne">
-      <div class="firstContainer">
+      <div data-aos="fade-up-left" class="firstContainer">
         <div class="coopContainer">
           <figure class="dandelion-img">
             <img class="staticImage" alt="Image of the Dandelion Signage" src="images/projectTwo.png">
@@ -167,6 +172,10 @@
     <img class="staticImage" src="images/colorlogo.svg">
   </footer>
   <script type="text/javascript" src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
 
