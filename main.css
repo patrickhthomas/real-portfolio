@@ -177,15 +177,14 @@
 			width: 100%;
 			padding-top: 24px;
 			background: rgba(35, 31, 32, .2);
-			background-blend-mode: overlay;
 		}
-	
+
 		
 	.animateObject {
 		position: absolute;
 		scroll-behavior: fixed;
 		width: 40%;
-		z-index: -1;
+		z-index: 0;
 		top: 10%;
 		mix-blend-mode: multiply;
 	}
@@ -196,49 +195,49 @@
 	.animateObject2 {
 		position: absolute;
 		width: 50%;
-		z-index: -1;
-		mix-blend-mode: difference;
+		z-index: 0;
+		mix-blend-mode: normal;
 		top: 0%;
 		left: 60%;
 	}
 	
 	.animateObject3 {
 		position: absolute;
-		z-index: -1;
-		mix-blend-mode: difference;
+		z-index: 0;
+		mix-blend-mode: normal; 
 		top: 2%;
 		left: 20%;
 	}
 	
 	.animateObject4 {
 		position: absolute;
-		z-index: -1;
-		mix-blend-mode: overlay;
+		z-index: 0;
+		mix-blend-mode: normal; 
 		top: 4%;
 		left: 30%;
 	}
 	
 	.animateObject5 {
 		position: absolute;
-		z-index: -1;
-		mix-blend-mode: overlay;
+		z-index: 0;
+		mix-blend-mode: normal;
 		top: 7%;
 		left: 40%;
 	}
 	
 	.animateObject6 {
 		position: absolute;
-		z-index: -1;
+		z-index: 0;
 		opacity: .5;
 		mix-blend-mode: normal;
 		top: 8%;
 		left: 50%;
 	}
-	
+	 
 	.animateObject7 {
 		position: absolute;
-		z-index: -1;
-		mix-blend-mode: hard-light;
+		z-index: 0;
+		mix-blend-mode: normal;
 		top: 10%;
 		left: 60%;
 	}													
@@ -249,11 +248,12 @@
 			width: 100%;
 			margin: auto;
 			margin-top: 32px;
-			background-color: #231F20;
+			background: linear-gradient(90deg, rgba(35, 31, 32, 1) -10%, rgba(35, 31, 32, 1) 50%, rgba(35, 31, 32, 1) 110%);
+			background-blend-mode: overlay;
 			background-repeat: repeat-y;
 			background-size: 200%;
 			background-position: top;
-			mix-blend-mode: overlay;
+			
 		}
 		
 	.homeHeroBackground {
@@ -360,39 +360,50 @@
 		
 	
 		
-		
-		
-	
-		
 		/*Coop*/
 		
 		.projectOne {
+			position: relative;
 			width: 100%;
 			padding-top: 32px;
 			padding-bottom: 32px;
+
 		}
 	
 		.projectFour {
+			position: relative;
 			width: 100%;
 			padding-top: 32px;
 			padding-bottom: 32px;
 		}
 		
-		.firstContainer {
-			width: 100%;
-			display: flex; 
+		.projectOne, .projectTwo, .projectThree, .projectFour {
+			opacity: .8;
 		}
-		
-		.secondContainer {
-			width: 100%;
-			display: flex;
+
+		.projectOne:hover {
+			opacity: 1;
+			box-shadow: 0px 0px 45px rgba(239, 208, 95, .3);
+
 		}
-		
-		.thirdContainer {
-			width: 100%;
-			display: flex;
+
+		.projectTwo:hover {
+			opacity: 1;
+			box-shadow: 0px 0px 45px rgba(239, 208, 95, .3);
 		}
-		
+
+		.projectThree:hover {
+			opacity: 1;
+			box-shadow: 0px 0px 45px rgba(239, 208, 95, .3);
+		}
+
+		.projectFour:hover {
+			opacity: 1;
+			box-shadow: 0px 0px 45px rgba(239, 208, 95, .3);
+		}
+
+
+	
 		
 		
 		.coopContainer {
@@ -467,6 +478,7 @@
 		/*Affirmative*/
 		
 		.projectTwo {
+			position: relative;
 			width: 100%;
 			display: inline-block;
 		
@@ -509,6 +521,7 @@
 		/*PB*/
 		
 		.projectThree {
+			position: relative;
 			width: 100%;
 			display: inline-block;
 			padding-top: 32px;
@@ -915,16 +928,16 @@
 	
 	
 	.aboutContent {
-		width: 100%;
-		margin: auto;
-		margin-top: 32px;
-		background-color: #231F20;
-		background-repeat: repeat-y;
-		background-size: 200%;
-		background-position: top;
-		mix-blend-mode: overlay;
-	
-	}
+			width: 100%;
+			margin: auto;
+			margin-top: 32px;
+			background: linear-gradient(90deg, rgba(35, 31, 32) 20%, rgba(0, 0, 0, 0) 100%);
+			background-blend-mode: multiply;
+			background-repeat: repeat-y;
+			background-size: 200%;
+			background-position: top;
+			
+		}
 
 		.aboutContainer {
 		width: 100%;
@@ -1239,9 +1252,12 @@
 		  	}
 
 		  	.projectOne {
+		  		position: obsolute;
 		  		width: 50%;
 		  		float: left;
 		  		height: 540px;
+		  		background-color: black;
+		  		z-index: 3;
 		  		background: linear-gradient(135deg, rgba(84,82,82,0.6520681265206812) 0%, rgba(249,242,242,0.8199513381995134) 50%, rgba(255,255,255,0.8199513381995134) 100%)
 		  	}
 
