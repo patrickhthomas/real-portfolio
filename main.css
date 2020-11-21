@@ -378,7 +378,7 @@
 		}
 		
 		.projectOne, .projectTwo, .projectThree, .projectFour {
-			opacity: .8;
+			opacity: .9;
 		}
 
 		.projectOne:hover {
