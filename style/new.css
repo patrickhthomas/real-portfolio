@@ -8,11 +8,11 @@ a {
 }
 
 button {
-  border: none;
-  background-color: transparent;
-  font-family: inherit;
-  padding: 0;
-  cursor: pointer;
+	border: none;
+	background-color: transparent;
+	font-family: inherit;
+	padding: 0;
+	cursor: pointer;
 }
 
 p {	
@@ -70,7 +70,7 @@ img {
 
 body {
 
-  background-color: #EBEBEB;
+	background-color: #EBEBEB;
 }
 
 .modalMenu {
@@ -138,65 +138,65 @@ body {
 
 
 .border {
-  background-color: #FFFFFF;
-  border: 2px solid white;
-  transition: 1s ease;
-  margin-bottom: 36px;
+	background-color: #FFFFFF;
+	border: 2px solid white;
+	transition: 1s ease;
+	margin-bottom: 36px;
 }
 
 .hero[data-view='inview-top'],
 .hero[data-view='inview-bottom'] {
-  transition: 1s ease;
-  box-shadow: -8px 8px 0 #EFD05F, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
-  border: 2px solid black;
-  border-radius: 2px;
-  margin-top: 80px;
+	transition: 1s ease;
+	box-shadow: -8px 8px 0 #EFD05F, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
+	border: 2px solid black;
+	border-radius: 2px;
+	margin-top: 80px;
 }
 
 .a[data-view='inview-top'],
 .a[data-view='inview-bottom'] {
-  transition: 1s ease;
-  box-shadow: -8px 8px 0 #D57C6A, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
-  border: 2px solid black;
-  border-radius: 2px;
+	transition: 1s ease;
+	box-shadow: -8px 8px 0 #D57C6A, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
+	border: 2px solid black;
+	border-radius: 2px;
 }
 
 .b[data-view='inview-top'],
 .b[data-view='inview-bottom'] {
-  transition: 1s ease;
-  box-shadow: -8px 8px 0 #6AD5B4, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
-  border: 2px solid black;
-  border-radius: 2px;
+	transition: 1s ease;
+	box-shadow: -8px 8px 0 #6AD5B4, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
+	border: 2px solid black;
+	border-radius: 2px;
 }
 
 .c[data-view='inview-top'],
 .c[data-view='inview-bottom'] {
-  transition: 1s ease;
-  box-shadow: -8px 8px 0 #EFD05F, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
-  border: 2px solid black;
-  border-radius: 2px;
+	transition: 1s ease;
+	box-shadow: -8px 8px 0 #EFD05F, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
+	border: 2px solid black;
+	border-radius: 2px;
 }
 
 .d[data-view='inview-top'],
 .d[data-view='inview-bottom'] {
-  transition: 1s ease;
-  box-shadow: -8px 8px 0 #D57C6A, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
-  border: 2px solid black;
-  border-radius: 2px;
+	transition: 1s ease;
+	box-shadow: -8px 8px 0 #D57C6A, -9px 9px 0 black, -9px 7px 0 black, -7px 9px 0 black;
+	border: 2px solid black;
+	border-radius: 2px;
 }
 
 .border [data-view='outview-top'] {
-  background-color: #FFFFFF;
-  border: 2px solid white;
-  transition: 1s ease;
-  margin-top: 80px;
+	background-color: #FFFFFF;
+	border: 2px solid white;
+	transition: 1s ease;
+	margin-top: 80px;
 }
 
 .border[data-view='outview-bottom'] {
-  background-color: #FFFFFF;
-  border: 2px solid white;
-  transition: 1s ease;
-  margin-top: 80px;
+	background-color: #FFFFFF;
+	border: 2px solid white;
+	transition: 1s ease;
+	margin-top: 80px;
 }
 
 
@@ -215,14 +215,14 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 8px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8px;
-  grid-template-rows: repeat(8px);
-  grid-gap: 8px;
-  grid-template-areas:
-    ". . . . . . . . . . . . .";
-  grid-template-rows: auto;
- }
+	display: grid;
+	grid-template-columns: 8px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8px;
+	grid-template-rows: repeat(8px);
+	grid-gap: 8px;
+	grid-template-areas:
+	". . . . . . . . . . . . .";
+	grid-template-rows: auto;
+}
 
 
 .header {
@@ -304,8 +304,8 @@ body {
 }
 
 .a, .b, .c, .d{
-	  background-color: #FFFFFF;
-	  margin-top: 36px;
+	background-color: #FFFFFF;
+	margin-top: 36px;
 } 
 
 .boxWrapper {
@@ -316,7 +316,7 @@ body {
 
 .box {
 
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 
@@ -345,101 +345,101 @@ body {
 }
 
 @media only screen
- and (min-width: 768px) {
- 	.hero {
- 		width: 346px;
- 	}
- 	.divider {
- 		width: 25%;
- 	}
- 	.info {
- 		display: grid;
- 		grid-template-columns: 1fr 1fr 1fr 1fr;
- 		grid-template-areas:
- 		  "ll ll lc lr"
- 	}
+and (min-width: 768px) {
+	.hero {
+		width: 346px;
+	}
+	.divider {
+		width: 25%;
+	}
+	.info {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"ll ll lc lr"
+	}
 
- 	.info ul {
- 		display: block;
- 	}
-
-
-
-
- 	.ll {
- 		grid-area: ll;
- 		align-items: start;
- 	}
- 	.lr {
- 		grid-area: lr;
- 		padding-top: 16px;
- 	}
- 	.work {
- 		width: 100%;
- 		display: grid;
- 		grid-template-columns: 1fr 1fr 1fr 1fr;
- 		grid-auto-rows: minmax(100px, auto);
- 		grid-template-areas: 
- 			"t t t t"
- 			"a a a a"
- 			"b b b b"
- 			"c c c c"
- 			"d d d d"
- 	}
-
- 	.work h2 {
- 		grid-area: t;
- 	}
+	.info ul {
+		display: block;
+	}
 
 
 
-.a, .b, .c, .d {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: 
-    ". b"
-    "a b"
-    "c b"
-    ". b"
+
+	.ll {
+		grid-area: ll;
+		align-items: start;
+	}
+	.lr {
+		grid-area: lr;
+		padding-top: 16px;
+	}
+	.work {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas: 
+		"t t t t"
+		"a a a a"
+		"b b b b"
+		"c c c c"
+		"d d d d"
+	}
+
+	.work h2 {
+		grid-area: t;
+	}
+
+
+
+	.a, .b, .c, .d {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+		". b"
+		"a b"
+		"c b"
+		". b"
+	}
+
+
+	.a {
+		grid-area: a;
+	}
+
+	.bottom {
+		grid-area: b;
+		padding:5%;
+	}
+
+	.top {
+		grid-area: a;
+		padding:0%;
+		padding-left: 20%;
+		
+	}
+
+	.middle {
+		grid-area: c;
+		padding: 0%;
+		padding-left: 20%;
+	}
+
+
+
+	.b {
+		grid-area: b;
+
+	}
+
+	.c {
+		grid-area: c;
+
+	}
+
+	.d {
+		grid-area: d;
+
+	}
 }
-
-
- 	.a {
- 		grid-area: a;
- 	}
-
- 	.bottom {
- 		grid-area: b;
- 		padding:5%;
- 	}
-
- 	.top {
- 		grid-area: a;
- 		padding:0%;
- 		padding-left: 20%;
- 		
- 	}
-
- 	.middle {
- 		grid-area: c;
- 		padding: 0%;
- 		padding-left: 20%;
- 	}
-
-
-
- 	.b {
- 		grid-area: b;
-
- 	}
-
- 	.c {
- 		grid-area: c;
-
- 	}
-
- 	.d {
- 		grid-area: d;
-
- 	}
- }
