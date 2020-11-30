@@ -27,13 +27,7 @@
 <script src="https://kit.fontawesome.com/8b6e4ed6e1.js" crossorigin="anonymous"></script>
 </head>
   <body class="body">
-    <div class="modalMenu" id="modalMenu">
-        <button class="navItem">Work</button>
-        <button class="navItem">About</button>
-        <button class="navItem">Blog</button>
-      </div>
-    <div class="wrapper">  
-      <div class="header">
+     <div class="header">
         <img src="images/headerlogo.svg">
         <button class="button" id="navButton">
           <div class="bar"></div>
@@ -43,13 +37,21 @@
           <div class="bar"></div>
         </button>
       </div>
+    <div class="modalMenu" id="modalMenu">
+        <button type="button" class="navItem"><a href="index.html">Work</a></button>
+        <button type="button" class="navItem"><a href="about.html">About</a></button>
+        <button type="button" class="navItem"><a href="about.html">Blog</a></button>
+      </div>
+    <div class="wrapper">  
+
       <div class="boxWrapper">
         <div class="box hero border" id="card">
-        <h1 class="bit top">Patrick Thomas</h1>  
-        <h3 class="bit middle">Product Designer</h3>
-        <p class="bit bottom">Thanks for being here. I'm a designer from Philadelphia, PA with a background in operations management and digital marketing. In addition to taking photos and riding bikes, I enjoy creating designs that are nice to look at and even nicer to use.</p>
+        <h1 class="bit me">Patrick Thomas</h1>  
+        <h3 class="bit title">Product Designer</h3>
+        <p class="bit blurb">Thanks for being here. I'm a designer from Philadelphia, PA with a background in operations management and digital marketing. In addition to taking photos and riding bikes, I enjoy creating designs that are nice to look at and even nicer to use.</p>
       </div>
       <div class="box info">
+        <div class="list ll">
         <h3>Skills</h3>
         <div class="divider yellow"></div>
         <ul class="info list">
@@ -59,18 +61,33 @@
           <li>Mobile design</li>
           <li>Front end dev</li>
         </ul>
+      </div>
+        <div class="list lc">
         <h3>Tools</h3>
         <div class="divider red"></div>
         <ul class="info list">
-          <li>Prototyping</li>
-          <li>User testing</li>
-          <li>Brand identity</li>
-          <li>Mobile design</li>
-          <li>Front end dev</li>
+          <li>HTML/CSS</li>
+          <li>Javascript</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Figma</li>
         </ul>
+        </div>
+        <div class="list lr">
+        <ul class="info list lr">  
+          <li>Adobe XD</li>
+          <li>Sketch</li>
+          <li>Axure</li>
+          <li>InVision</li>
+          <li>SwiftUI</li>
+        </ul>
+        </div>
+      
+      </div>
+      <div class="work">
         <h2>Recent Work&#8675;</h2>
         <div class="divider green"></div>  
-      </div>    
+          
       <div class="box a border" id="card">
         <h3 class="bit top">Affirmative App</h3>
         <p class="bit middle">An app that promotes mental wellbeing and directs users towards resources that suit their needs.</p>
@@ -92,6 +109,7 @@
         <img class="bit bottom" src="images/PBPreview.svg">        
       </div>
     </div>
+    
     <div class="footerContainer">
       </div>
       <footer class="footer">
