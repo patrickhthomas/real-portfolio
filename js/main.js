@@ -1,97 +1,99 @@
-
-
+{
 
 const config = {
   // Add root here so rootBounds in entry object is not null
-  root: document,
+  root: null,
   // Margin to when element should take action
-  rootMargin: '0%',
+  rootMargin: '-30%',
   // Fine tune threshold. The callback will fired 30 times during intersection. You can change it to any number yout want
-  threshold: [...Array(24).keys()].map(x => x / 48)
+  threshold: [.1, .5, .2, .1]
 };
 
 let observer = new IntersectionObserver(function(entries, observer) {
 
   entries.forEach((entry, index) => {
-    var element = entry.target;
+    const element = entry.target;
 
-    var viewportOffset = entry.getBoundingClientRect();
     // Get root elemenet (document) coords
-    var margin = entry.intersectionRatio;
-    var top = viewportOffset.top;
+    const rootTop = entry.rootBounds.top;
+    const rootBottom = entry.rootBounds.height;
 
     // Get div coords
-    var divTop = entry.rootBounds.top; // -50 to count for the margine in config
-    var divBottom = entry.rootBounds.bottom;
+    const topBound = entry.intersectionRatio; // -50 to count for the margine in config
+    const bottomBound = entry.boundingClientRect.bottom;
 
     let className;
 
-
     // Do calculations to get class names
-    if (margin > 0.3 && divBottom < margin) {
+    if (entry.isIntersecting != true) {
       className = "outview-top";
-    console.log ("current margin is" + " " + entry.intersectionRatio);
-    console.log ("current offset is" + " " + window.pageYOffset);
-    console.log(divTop);
-    console.log(divBottom);
-
-    } else if ((divTop) > top) {
+    } else if (entry.isIntersecting != true) {
       className = "outview-bottom";
-    console.log ("current margin is" + " " + entry.intersectionRatio);
-    console.log ("current offset is" + " " + window.pageYOffset);
-    console.log(divTop);
-    console.log(divBottom);
-
-    } else if ((divTop + 0) < top && divBottom > top) {
+    } else if (entry.isIntersecting = true) {
       className = "inview-top";
-    console.log ("current margin is" + " " + entry.intersectionRatio);
-    console.log ("current offset is" + " " + window.pageYOffset);
-    console.log(divTop);
-    console.log(divBottom);
-
-    } else if ((divTop + 0) < margin && divBottom > margin) {
+    } else if (entry.isIntersecting = true) {
       className = "inview-bottom";
-    console.log ("current margin is" + " " + entry.intersectionRatio);
-    console.log ("current offset is" + " " + window.pageYOffset);
-    console.log(divTop);
-    console.log(divBottom);
-
     }
-    element.setAttribute('data-view', className);
-
-    console.log ("current margin is" + " " + entry.intersectionRatio);
-    console.log ("current offset is" + " " + window.pageYOffset);
-    console.log(divTop);
-    console.log(divBottom);
-
-
+    element.setAttribute('data-value', className);
 
   })
 }, config);
 
 const viewbox = document.querySelectorAll('.border');
-viewbox.forEach(image => {
-  observer.observe(image);
-  config;
+viewbox.forEach(card => {
+  observer.observe(card);
 });
+}
 
 
+/*var images = document.querySelectorAll('card');
+var config = {
+  rootMargin: '0px',
+  threshold: 0.01
+};
+
+var observer;
+
+if ('IntersectionObserver' in window) {
+  observer = new IntersectionObserver(onChange, config);
+  images.forEach(img => observer.observe(img));
+} else {
+  console.log('%cIntersection Observers not supported', 'color: red');
+  images.forEach(image => loadImage(image));
+}
+
+var loadImage = image => {
+  image.classList.add('inview');
+}
+
+function onChange(changes, observer) {
+  changes.forEach(change => {
+    if (change.intersectionRatio > 0) {
+      // Stop watching and load the image
+      loadImage(change.target);
+      observer.unobserve(change.target);
+    }
     
+  });
+}*/
 
 
 
 
 
 
+// --------------------------------------------------
 window.onload = function openClose() {
-  document.getElementById("navButton").onclick = function modal() {
-	var element = document.getElementById("modalMenu");
-	const style = getComputedStyle(element);
-	const display = style.display;
-	if (display == "none") {
-		element.classList.add("modalOpen");
-	} else {
-	element.classList.remove("modalOpen");	
+	document.getElementById("navButton").onclick = function modal() {
+		var element = document.getElementById("modalMenu");
+		const style = getComputedStyle(element);
+		const display = style.display;
+		if (display == "none") {
+			element.classList.add("modalOpen");
+		} else {
+			element.classList.remove("modalOpen");	
+		}
+	}
 }
-}
-}
+
+
