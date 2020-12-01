@@ -1,5 +1,8 @@
-{
 
+
+
+{
+const mediaQuery = window.matchMedia('(min-width: 1024px)')
 const config = {
   // Add root here so rootBounds in entry object is not null
   root: null,
@@ -25,9 +28,9 @@ let observer = new IntersectionObserver(function(entries, observer) {
     let className;
 
     // Do calculations to get class names
-    if (entry.isIntersecting != true) {
+    if (entry.isIntersecting != true || mediaQuery.matches) {
       className = "outview-top";
-    } else if (entry.isIntersecting != true) {
+    } else if (entry.isIntersecting != true || mediaQuery.matches) {
       className = "outview-bottom";
     } else if (entry.isIntersecting = true) {
       className = "inview-top";
@@ -44,6 +47,9 @@ viewbox.forEach(card => {
   observer.observe(card);
 });
 }
+    
+
+
 
 
 /*var images = document.querySelectorAll('card');
