@@ -14,6 +14,8 @@ const config = {
 
 let observer = new IntersectionObserver(function(entries, observer) {
 
+
+
   entries.forEach((entry, index) => {
     const element = entry.target;
 
@@ -39,15 +41,53 @@ let observer = new IntersectionObserver(function(entries, observer) {
     }
     element.setAttribute('data-value', className);
 
+
+
   })
 }, config);
+
+
 
 const viewbox = document.querySelectorAll('.border');
 viewbox.forEach(card => {
   observer.observe(card);
 });
 }
-    
+
+
+
+//
+{
+
+/*
+// Select the node that will be observed for mutations
+const targetNode = document.getElementById('card');
+
+// Options for the observer (which mutations to observe)
+const config = { attributes: true, childList: true, subtree: true, characterData: true };
+
+// Callback function to execute when mutations are observed
+const callback = function(mutationsList, observer) {
+    // Use traditional 'for loops' for IE 11
+    for(const mutation of mutationsList) {
+        if (mutation.type === 'characterData') {
+            console.log('A child node has been added or removed.');
+        }
+        else if (mutation.type === 'attributes') {
+            console.log('The ' + mutation.attributeName + ' attribute was modified.');
+        }
+    }
+};
+
+// Create an observer instance linked to the callback function
+const observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(targetNode, config);
+
+
+*/
+}
 
 
 

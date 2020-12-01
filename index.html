@@ -29,7 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
-  <body class="body">
+  <body class="index">
    <div class="header">
     <img src="images/headerlogo.svg">
     <button class="button" id="navButton">
@@ -89,30 +89,32 @@
         </div>
 
       </div>
-      <div class="work">
+      <div class="work" id="cardBox">
         <h2>Recent Work&#8675;</h2>
         <div class="divider green"></div>  
 
         <div class="border index a" id="card a">
           <h3 class="bit top">Affirmative App</h3>
           <p class="bit middle">An app that promotes mental wellbeing and directs users towards resources that suit their needs.</p>
-          <img class="bit bottom" src="images/AffirmativePreview.svg">        
+          <img class="bit bottom" src="images/AffirmativePreview.svg">  
+          <button class="projectButton" id="projectButtona">View Project</button>      
         </div>
-        <!--<button>View Project</button>-->
         <div class="border index b" id="card b">
           <h3 class="bit top">Coop</h3>
           <p class="bit middle">How can we make remote work more productive and less inhitibiting for creative professionals?</p> 
-          <img class="bit bottom" src="images/CoopPreview.svg">               
+          <img class="bit bottom" src="images/CoopPreview.svg">   
+          <button class="projectButton" id="projectButtonb"><a class="projectOneLink" href="projectOne.html">View Project</a></button>
         </div>
         <div class="border index c" id="card c">
           <h3 class="bit top">Dandelion</h3>
           <p class="bit middle">Creating a brand indentity for a new business and building a website that helps to showcase it.</p>
-          <img class="bit bottom" src="images/DandelionPreview.svg">        
+          <img class="bit bottom" src="images/DandelionPreview.svg"> 
+          <button class="projectButton" id="projectButtonc">View Project</button>       
         </div>
         <div class="border index d" id="card d">
           <h3 class="bit top">Pinkbike Buy/Sell</h3>
           <p class="bit middle">An unsoliciited UX study, redesigning a popular desktop marketplace for mobile.</p>
-          <img class="bit bottom" src="images/PBPreview.svg">        
+          <img class="bit bottom" src="images/PBPreview.svg"> <button class="projectButton" id="projectButtond">View Project</button>       
         </div>
       </div>
 
@@ -149,6 +151,7 @@
         <img class="staticImage" src="images/headerlogo.svg">
       </footer>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/buttons.js"></script>
   </body>
   
   </html>
