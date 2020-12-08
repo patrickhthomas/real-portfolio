@@ -59,7 +59,7 @@ h3 {
 	font-size: 24px;
 	letter-spacing: .96px;
 	text-transform: uppercase;
-	color: #1E2221;
+	color: #1E2221; 
 }
 
 
@@ -449,9 +449,10 @@ body {
 	margin-bottom: 6px;
 	margin-left: 32px;
 	width: 44px;
-	border-radius: 2px;
+	border-radius: 0px;
 	height: 5px;
 	background-color: #1E2221;
+	box-shadow: 2px 2px 2px lightgray;
 }
 
 .ham {
@@ -506,6 +507,30 @@ body {
 	padding-bottom: 15%;
 }
 
+.wrapper.affirmative {
+	width: 100%;
+
+}
+
+.iframeWrapper {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 16px 1fr 16px;
+	grid-template-rows: 88px 1fr 88px;
+	grid-template-areas: 
+		". . ."
+		". b ."
+		". . ."
+		
+}
+
+iframe {
+    grid-area: b;
+    width: 100%;
+    height: 667px;
+    width: 375px;
+    margin: auto;
+}
 
 
 @media only screen
