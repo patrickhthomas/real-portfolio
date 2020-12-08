@@ -366,9 +366,23 @@ body {
 }
 
 
+.wrapper.Blog {
+	display: grid;
+	grid-template-columns: 100px 1fr 10px;
+	grid-auto-rows: minmax (400px, auto);
+	grid-template-areas: 
+	". . a"
+	". b ."
+	". b ."
+	". c ."
+	". c ."
+}
+
+
 
 
 .footer {
+
 	grid-column: 1/15;
 	grid-row: 4/12;
 	display: block;
@@ -376,6 +390,7 @@ body {
 	background-color: #FFFFFF;
 	text-align: center;
 	margin-bottom: -10%;
+
 }
 
 .footer h3 {
