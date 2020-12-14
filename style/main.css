@@ -24,6 +24,10 @@ p {
 	color: #1E2221;
 }
 
+em {
+	font-weight: 800;
+}
+
 li {	
 	font-size: 20px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -62,6 +66,16 @@ h3 {
 	color: #1E2221; 
 }
 
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height: 32px;
+	font-size: 20px;
+	letter-spacing: .96px;
+	text-transform: capitalize;
+	color: #1E2221; 
+}
+
 
 
 img {
@@ -72,6 +86,203 @@ body {
 
 	background-color: #EBEBEB;
 }
+
+
+  [data-component="slideshow"] .slide {
+  	position: absolute;
+    opacity: 0%;
+    transition: .5s ease;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    transition: 1s ease;
+    opacity: 100%;
+  }
+
+[role="list"] {
+	min-height: 300px;
+	max-width: 600px;
+}
+
+.slide img {
+	width: 100%;
+}
+
+img {
+  	width: 100%;
+  }
+
+
+hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+}
+
+/*MODAL GELLERY ATTEMPT*/
+
+ /* Style the Image Used to Trigger the Modal */
+.myImg1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(100,100,100,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+ /*Affirmative Styles*/ 
+
+.affirmative {
+	width: 100%;
+}
+.wrapper.affirmative {
+	display: grid;
+	grid-template-columns: 4% 92% 4%;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+	grid-row-gap: 48px;
+	grid-template-areas: 
+	". a ."
+	". b ."
+	". c ."
+	". d ."
+	". e ."
+	". f ."
+	". g ."
+	". h ."
+
+}
+
+.affirmative p {
+	padding-bottom: 8px;
+}
+
+.affirmative h2 {
+	padding-bottom: 16px;
+	padding-top: 32px;
+}
+
+.affirmative h3  {
+	margin-bottom: 16px;
+	padding-top: 16px;
+	border-bottom: 1px dashed black;
+}
+
+.affirmative h4  {
+	padding-top: 16px;
+}
+
+.affirmative.intro {
+	grid-area: a;
+}
+
+.affirmative.goals {
+	grid-area: b;
+}
+
+.affirmative.evolution {
+	grid-area: c;
+}
+
+.affirmative.discover {
+	grid-area: d;
+}
+
+.affirmative.definition {
+	grid-area: e;
+}
+
+.affirmative.ideate {
+	grid-area: f;
+}
+
+.quote {
+	width: 80%;
+	margin: auto;
+	padding: 16px;
+}
+
+
+  /*Affirmative Styles END*/ 
 
 .seeButton {
 	transition: .3s ease;
