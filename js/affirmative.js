@@ -1,82 +1,92 @@
-{
-
-  var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-  
-  // Apply to all slideshows that you define with the markup wrote
-  slideshows.forEach(initSlideShow);
-
-  function initSlideShow(slideshow) {
-
-    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
-
-    var index = 0, time = 3000;
-    slides[index].classList.add('active');  
-    
-    setInterval( () => {
-      slides[index].classList.remove('active');
-      
-      //Go over each slide incrementing the index
-      index++;
-      
-      // If you go over all slides, restart the index to show the first slide and start again
-      if (index === slides.length) index = 0; 
-      
-      slides[index].classList.add('active');
-
-  }, time);
+window.onload = function openClose() {
+    document.getElementById("navButton").onclick = function modal() {
+        var element = document.getElementById("modalMenu");
+        const style = getComputedStyle(element);
+        const display = style.display;
+        if (display == "none") {
+            element.classList.add("modalOpen");
+        } else {
+            element.classList.remove("modalOpen");  
+        }
+    }
 }
 
+$('.clickIt').click(function() {
+    var showIt = $('#hidden');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+}   else {
+    showIt.addClass("hidden");
 }
-var slideshows = document.querySelectorAll('[data-component="slideshowOne"]');
+})
 
-  // Apply to all slideshows that you define with the markup wrote
-  slideshows.forEach(initSlideShow);
 
-  function initSlideShow(slideshow) {
-
-    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
-
-    var index = 0, time = 3000;
-    slides[index].classList.add('active');  
-    
-    setInterval( () => {
-      slides[index].classList.remove('active');
-      
-      //Go over each slide incrementing the index
-      index++;
-      
-      // If you go over all slides, restart the index to show the first slide and start again
-      if (index === slides.length) index = 0; 
-      
-      slides[index].classList.add('active');
-
-  }, time);
+$('.clickIt2').click(function() {
+    var showIt = $('#hidden2');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+}   else {
+    showIt.addClass("hidden");
 }
+})
 
-{
 
-// Get the modal
-var modal = document.getElementById('myModal1');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName(".myImg1")
-
-var captionText = document.getElementById("caption");
-
-$('img').click(function(){
-    modal.style.display = "block";
-    var modalImg = $('.Img1');
-    var newSrc = this.getAttribute('src');
-    modalImg.attr('src', newSrc);
-    console.log(newSrc);
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+$('.clickIt3').click(function() {
+    var showIt = $('#hidden3');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+}   else {
+    showIt.addClass("hidden");
 }
-}
+})
 
+$('.clickIt4').click(function() {
+    var showIt = $('#hidden4');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+}   else {
+    showIt.addClass("hidden");
+}
+})
+
+$('#last4').click(function() {
+    var showIt = $('#hidden4');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "block") {
+    showIt.addClass("hidden");
+}   else {
+    showIt.addClass("hidden");
+}
+})
+
+
+$('.clickIt5').click(function() {
+    var showIt = $('#hidden5');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+}   else {
+    showIt.addClass("hidden");
+}
+})
+
+$('#last5').click(function() {
+    var showIt = $('#hidden5');
+    var hideIt = document.getElementById("#accordionTitle");
+    var disp = showIt.css('display');
+    if (disp === "block") {
+    showIt.addClass("hidden");
+}   else {
+    showIt.addClass("hidden");
+}
+})
