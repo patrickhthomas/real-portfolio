@@ -11,10 +11,8 @@ window.onload = function openClose() {
     }
 }
 
-$('.clickIt').click(function() {
+$('.accordion.clickIt').click(function() {
     var showIt = $('#hidden');
-    var hideIt = document.getElementById("#accordionTitle");
-    var caret = document.getElementById("#caret");
     var disp = showIt.css('display');
     if (disp === "none") {
     showIt.removeClass("hidden");
@@ -26,9 +24,8 @@ $('.clickIt').click(function() {
 })
 
 
-$('.clickIt2').click(function() {
+$('.accordion.clickIt2').click(function() {
     var showIt = $('#hidden2');
-    var hideIt = document.getElementById("#accordionTitle");
     var caret = document.getElementById("#caret2");
     var disp = showIt.css('display');
     if (disp === "none") {
@@ -41,9 +38,8 @@ $('.clickIt2').click(function() {
 })
 
 
-$('.clickIt3').click(function() {
+$('.accordion.clickIt3').click(function() {
     var showIt = $('#hidden3');
-    var hideIt = document.getElementById("#accordionTitle");
     var caret = document.getElementById("#caret3");
     var disp = showIt.css('display');
     if (disp === "none") {
@@ -55,9 +51,8 @@ $('.clickIt3').click(function() {
 }
 })
 
-$('.clickIt4').click(function() {
+$('.accordion.clickIt4').click(function() {
     var showIt = $('#hidden4');
-    var hideIt = document.getElementById("#accordionTitle");
     var caret = document.getElementById("#caret4");
     var disp = showIt.css('display');
     if (disp === "none") {
@@ -71,7 +66,6 @@ $('.clickIt4').click(function() {
 
 $('#last4').click(function() {
     var showIt = $('#hidden4');
-    var hideIt = document.getElementById("#accordionTitle");
     var disp = showIt.css('display');
     if (disp === "block") {
     showIt.addClass("hidden");
@@ -81,9 +75,8 @@ $('#last4').click(function() {
 })
 
 
-$('.clickIt5').click(function() {
+$('.accordion.clickIt5').click(function() {
     var showIt = $('#hidden5');
-    var hideIt = document.getElementById("#accordionTitle");
     var caret = document.getElementById("#caret5");
     var disp = showIt.css('display');
     if (disp === "none") {
@@ -97,11 +90,61 @@ $('.clickIt5').click(function() {
 
 $('#last5').click(function() {
     var showIt = $('#hidden5');
-    var hideIt = document.getElementById("#accordionTitle");
     var disp = showIt.css('display');
     if (disp === "block") {
     showIt.addClass("hidden");
 }   else {
     showIt.addClass("hidden");
+}
+})
+
+$('.accordion.clickItflow').click(function() {
+    var showIt = $('#hiddenflow');
+    var caret = document.getElementById("#caretflow");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+    $ ("#caretflow").css("transform", "rotate(90deg");
+}   else {
+    showIt.addClass("hidden");
+    $ ("#caretflow").css("transform", "rotate(0deg");
+}
+})
+
+$('.accordion.clickItbrand').click(function() {
+    var showIt = $('#hiddenbrand');
+    var caret = document.getElementById("#caretbrand");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+    $ ("#caretbrand").css("transform", "rotate(90deg");
+}   else {
+    showIt.addClass("hidden");
+    $ ("#caretbrand").css("transform", "rotate(0deg");
+}
+})
+$('.accordion.clickItbrand2').click(function() {
+    var showIt = $('#hiddenbrand2');
+    var caret = document.getElementById("#caretbrand2");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+    $ ("#caretbrand2").css("transform", "rotate(90deg");
+}   else {
+    showIt.addClass("hidden");
+    $ ("#caretbrand2").css("transform", "rotate(0deg");
+}
+})
+
+$('.accordion.clickItuse').click(function() {
+    var showIt = $('#hiddenuse');
+    var caret = document.getElementById("#caretuse");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+    $ ("#caretuse").css("transform", "rotate(90deg");
+}   else {
+    showIt.addClass("hidden");
+    $ ("#caretuse").css("transform", "rotate(0deg");
 }
 })
