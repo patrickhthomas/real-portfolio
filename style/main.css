@@ -5,6 +5,17 @@ a:active {
 
 a {
 	color: #1E2221;
+
+}
+
+button a {
+	font-size: 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	line-height: 27px;
+	letter-spacing: -.5px;
+	color: #1E2221;
+
 }
 
 button {
@@ -13,14 +24,11 @@ button {
 	font-family: inherit;
 	padding: 0;
 	cursor: pointer;
-	appearance: none;
 }
 
 button:active {
 	border: none;
 	background-color: transparent;
-	font-family: inherit;
-	padding: 0;
 	cursor: pointer;
 }
 
@@ -95,6 +103,15 @@ h4 {
 	color: #1E2221; 
 }
 
+h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 500;
+	line-height: 32px;
+	font-size: 20px;
+	letter-spacing: .96px;
+	text-transform: capitalize;
+	color: #1E2221; 
+}
 
 
 img {
@@ -138,7 +155,33 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
 }
 
-/*MODAL GELLERY ATTEMPT*/
+/*Blog*/
+
+.wrapper.blog {
+	display: grid;
+	grid-template-columns: 4% 92% 4%;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+	grid-row-gap: 48px;
+	grid-template-areas: 
+	". title ."
+	". b ."
+	". a ."
+
+
+}
+
+.blogTitle {
+	grid-area: title;
+}
+
+.post1 {
+	grid-area: a;
+}
+
+.post2 {
+	grid-area: b;
+}
 
 
 
@@ -225,6 +268,14 @@ hr {
 	transition: 1s ease;
 }
 
+.fas.fa-caret-right {
+
+	font-size: 24px;
+	color: #D57C6A;
+
+
+}
+
   /*Affirmative Styles END*/ 
 
 .seeButton {
@@ -271,6 +322,9 @@ hr {
 	box-shadow: -2px 2px 2px gray;
 }
 
+#projectButtond, #projectButtonc {
+	font-size: 14px;
+}
 .avatar {
 	display: none;
 }
