@@ -35,9 +35,7 @@ button:active {
 button:focus {
 	outline: 0;
 	border: none;
-	background-color: transparent;
 	font-family: inherit;
-	padding: 0;
 	cursor: pointer;
 }
 
@@ -209,7 +207,7 @@ hr {
 }
 
 .affirmative p {
-	padding-bottom: 8px;
+	padding: 16px;
 }
 
 .affirmative h2 {
@@ -251,6 +249,14 @@ hr {
 	grid-area: f;
 }
 
+.affirmative.prototyping {
+	grid-area: g;
+}
+
+.affirmative.solidify {
+	grid-area: h;
+}
+
 .quote {
 	width: 80%;
 	margin: auto;
@@ -260,23 +266,71 @@ hr {
 .hidden {
 	display: none;
 	opacity: 0%;
+	z-index: -2;
 }
 
-.hidden.shown {
-	display: block;
-	opacity: 100%;
-	transition: 1s ease;
+
+
+.affirmative.evolution {
+	max-width: 400px;
+}
+
+.hiddenContainerGrid {
+	display: grid;
+	grid-template-columns:minmax(0,100%);
+	grid-gap: 32px;	
+	justify-content: center;
+}
+
+.hiddenContainerGrid img {
+	width: 80%;
+	margin: auto;
+
+}
+
+.hiddenContainerGrid span {
+	background-color: white;
+
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
+}
+
+.stories h5 {
+	text-align: center;
+	text-decoration: underline;
+	padding-top: 16px;
+}
+.stories p {
+	padding-left: 36px;
+	padding-right: 36px;
 }
 
 .fas.fa-caret-right {
-
+	position: absolute;
+	padding-top: 6px;
 	font-size: 24px;
-	color: #D57C6A;
+	color: black;
+
 
 
 }
 
+.accordion {
+	background-color: #EFD05F;
+	text-align: left;
+	padding-left: 16px;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: -2px 2px 4px rgba(0, 0, 0, .2);
+	z-index: 4;
+}
+
+
+.accordion h5 {
+	padding-top: 4px;
+	margin-left: 16px;
+
   /*Affirmative Styles END*/ 
+}
 
 .seeButton {
 	transition: .3s ease;
@@ -574,10 +628,7 @@ hr {
 
 }
 
-#hidden5 {
-	width: 80%;
-	margin: auto;
-}
+
 
 #hidden5 img {
 	padding-bottom: 32px;
@@ -751,6 +802,25 @@ iframe {
 
 @media only screen
 and (min-width: 768px) {
+
+
+	.wrapper.affirmative {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+	grid-row-gap: 48px;
+	grid-template-areas: 
+	". a ."
+	". b ."
+	". c ."
+	". d ."
+	". e ."
+	". f ."
+	". g ."
+	". h ."
+
+}
 
 	.footer p {
 	max-width: 343px;
