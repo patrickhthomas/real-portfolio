@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="109" viewBox="0 0 83 109">
+  <defs>
+    <radialGradient id="a" cx="13.73" cy="117.17" r="25.157" gradientTransform="translate(-38.078 -60.942) rotate(-31.07)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbfcff" stop-opacity="0.4"/>
+      <stop offset="0.216" stop-color="#f2f3f6" stop-opacity="0.396"/>
+      <stop offset="0.421" stop-color="#d7d7da" stop-opacity="0.383"/>
+      <stop offset="0.623" stop-color="#aaa9ac" stop-opacity="0.363"/>
+      <stop offset="0.821" stop-color="#6c696b" stop-opacity="0.334"/>
+      <stop offset="1" stop-color="#231f20" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="b" cx="6.158" cy="162.035" r="21.167" xlink:href="#a"/>
+    <radialGradient id="c" cx="-10.285" cy="119.466" r="29.682" xlink:href="#a"/>
+    <radialGradient id="d" cx="-14.831" cy="158.478" r="19.781" xlink:href="#a"/>
+    <radialGradient id="e" cx="-14.942" cy="158.582" r="20.063" xlink:href="#a"/>
+  </defs>
+  <g style="isolation: isolate">
+    <g>
+      <image width="83" height="109" opacity="0.38" xlink:href="data:image/png;base64,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" style="mix-blend-mode: screen"/>
+      <g>
+        <g>
+          <g>
+            <polygon points="52.95 37.218 62.306 54.123 42.644 52.635 5.639 10.109 52.95 37.218" fill="#e3e3e3"/>
+            <polygon points="62.306 54.123 58.898 94.655 29.556 79.723 62.306 54.123" fill="#c6c6c6"/>
+            <polygon points="62.306 54.123 29.556 79.723 42.644 52.635 62.306 54.123" fill="#c6c6c6"/>
+            <polygon points="42.644 52.635 29.556 79.723 3.268 70.309 5.639 10.109 42.644 52.635" fill="#efefef"/>
+            <polygon points="29.556 79.723 58.898 94.655 3.268 70.309 29.556 79.723" fill="#9f9f9f"/>
+            <polygon points="3.268 70.309 58.898 94.655 27.686 83.509 3.268 70.309" fill="#9f9f9f"/>
+          </g>
+          <g>
+            <polyline points="42.644 52.635 62.306 54.123 52.95 37.218 5.639 10.109" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+            <polyline points="42.644 52.635 29.556 79.723 3.268 70.309 5.639 10.109 42.644 52.635 6.123 11.017" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+            <polyline points="62.306 54.123 58.898 94.655 29.556 79.723" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+            <line x1="62.306" y1="54.123" x2="29.556" y2="79.723" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+            <polyline points="3.268 70.309 27.686 83.509 58.898 94.655" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+            <line x1="3.268" y1="70.309" x2="58.898" y2="94.655" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="0.15"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <polygon points="42.707 52.67 6.052 10.512 52.977 37.404 62.242 54.16 42.707 52.67" fill="url(#a)"/>
+            <path d="M6.4,10.8,52.9,37.448l9.206,16.626L42.773,52.6,6.4,10.8m-.7-.572,37,42.519,19.674,1.5L53.014,37.338,5.7,10.227Z" fill="#fff"/>
+          </g>
+          <g>
+            <polygon points="29.716 79.807 42.768 52.778 62.293 54.314 58.9 94.652 29.716 79.807" fill="url(#b)"/>
+            <path d="M42.791,52.9l19.421,1.48L58.835,94.534,29.815,79.773,42.791,52.9m-.09-.157L29.616,79.84,58.965,94.769l3.41-40.524L42.7,52.746Z" fill="#fff"/>
+          </g>
+          <g>
+            <polygon points="3.371 70.367 5.772 10.418 42.644 52.794 29.578 79.747 3.371 70.367" fill="url(#c)"/>
+            <path d="M5.839,10.61,42.523,52.77,29.54,79.653,3.5,70.332,5.839,10.61M5.7,10.227,3.346,70.437l26.27,9.4L42.7,52.746,5.7,10.227Z" fill="#fff"/>
+          </g>
+          <g>
+            <polygon points="5.377 71.244 29.591 79.911 56.634 93.668 5.377 71.244" fill="url(#d)"/>
+            <path d="M7.405,72.049l22.143,7.925L54.3,92.565,7.405,72.049M3.346,70.437,58.965,94.769,29.616,79.84l-26.27-9.4Z" fill="#fff"/>
+          </g>
+          <g>
+            <polygon points="27.794 83.563 4.97 71.229 56.96 93.973 27.794 83.563" fill="url(#e)"/>
+            <path d="M6.6,72.022,54.957,93.179,27.841,83.5,6.6,72.022M3.346,70.437l24.423,13.2,31.2,11.136L3.346,70.437Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
