@@ -1092,7 +1092,9 @@ and (min-width: 768px) {
 		margin-left: 20%;
 		
 	}
-
+.list.lr {
+	padding-top: 56px;
+}
 
 }
 
@@ -1280,6 +1282,9 @@ and (min-width: 1024px){
 	.c img {
 		width: 70%;
 	}
+.list.lr {
+	padding-top: 56px;
+}
 
 }
 
@@ -1292,6 +1297,10 @@ and (min-width: 1224px){
 	max-width: 343px;
 	margin: auto;
 
+}
+
+.list.lr {
+	padding-top: 56px;
 }
 
 	.boxWrapper {
