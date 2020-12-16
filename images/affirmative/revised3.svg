@@ -1,0 +1,49 @@
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<g filter="url(#filter1_b)">
+<rect x="16" y="12" width="80" height="80" rx="15" fill="white" fill-opacity="0.01"/>
+<rect x="16.5" y="12.5" width="79" height="79" rx="14.5" stroke="url(#paint0_linear)"/>
+<rect x="16.5" y="12.5" width="79" height="79" rx="14.5" stroke="url(#paint1_linear)"/>
+</g>
+<rect x="16.5" y="12.5" width="79" height="79" rx="14.5" fill="white" fill-opacity="0.4"/>
+<rect x="16.5" y="12.5" width="79" height="79" rx="14.5" stroke="url(#paint2_linear)"/>
+<rect x="16.5" y="12.5" width="79" height="79" rx="14.5" stroke="url(#paint3_linear)"/>
+<rect x="28" y="24" width="26.4921" height="26.492" rx="1" fill="#DB675C"/>
+<rect x="57.5078" y="24" width="26.4921" height="26.492" rx="1" fill="#4C6ABF"/>
+<rect x="57.5078" y="53.5078" width="26.4921" height="26.492" rx="1" fill="#5CDB95"/>
+<rect x="28" y="53.5078" width="26.4921" height="26.492" rx="1" fill="#4C6ABF"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="2" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="-2" dy="4"/>
+<feGaussianBlur stdDeviation="7"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.392157 0 0 0 0 0.407843 0 0 0 0 0.596078 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_b" x="15" y="11" width="82" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="0.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="16" y1="23.4712" x2="21.5781" y2="78.0392" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-color="white" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="96" y1="27.8327" x2="90.661" y2="90.6937" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.5"/>
+<stop offset="1" stop-color="#053DB4" stop-opacity="0.12"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="16" y1="23.4712" x2="21.5781" y2="78.0392" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-color="white" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="96" y1="27.8327" x2="90.661" y2="90.6937" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.5"/>
+<stop offset="1" stop-color="#053DB4" stop-opacity="0.12"/>
+</linearGradient>
+</defs>
+</svg>

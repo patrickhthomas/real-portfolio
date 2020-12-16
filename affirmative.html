@@ -47,16 +47,21 @@
 <div class="wrapper affirmative"> 
 
   <div class="affirmative intro">
+    <div class="hiddenContainerGrid">
     <h3>Affirmative.</h3>
-    <p>Affirmative is a positive thinking app for IOS that emulates a deck of affirmations. In other words, it’s a collection of positive statements presented in a playing card format that the user can then read, collect, and share. More importantly, Affirmative houses a growing library of resources committed to assisting those strugglings with a wide variety of mental health issues. </p>
+    <span><p>Affirmative is a positive thinking app for IOS that emulates a deck of affirmations. In other words, it’s a collection of positive statements presented in a playing card format that the user can then read, collect, and share. More importantly, Affirmative houses a growing library of resources committed to assisting those strugglings with a wide variety of mental health issues. </p></span>
+    
+    <span><p><em>My role:</em>  User research, user flows, information architecture, sketching, wireframing, brand development, UI design, prototyping, usability testing.</p></span></div>
     <br>
-    <p><em>My role:</em>  User research, user flows, information architecture, sketching, wireframing, brand development, UI design, prototyping, usability testing.</p>
+    <p>If you want to cut to the chase, click the button below to open up the Figma prototype in a new tab.</p><br>
+      <button class="figmaButton" id="figma"><a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/xcE96toHlmSD2rypfzD9ss/Affirmative-Final?node-id=131%3A1876&viewport=381%2C429%2C0.06556179374456406&scaling=scale-down"> Go to Figma Prototype</a></button>
+      <p>...or continue scrolling to read the case study.</p>
   </div>
 
   <div class="affirmative goals">
     <h3>The Challenge</h3>
     <p>
-    A handful of applications exist that present affirmations, but there are few that give their users the option to reach out for further assistance when their self-help app doesn’t solve all of their problems. The primary challenge would be to design a system that strikes a balance between promoting the benefits of positive thinking and acknowledging the pitfalls of relying upon it for serious issues.</p>
+    A handful of applications exist that give users ways to practice posititve self-talk (affirmations), but there are few that give their users the option to reach out for further assistance when their self-help app doesn’t immediately solve all of their problems. The primary challenge was to design a system that strikes a balance between promoting the benefits of positive thinking and acknowledging the pitfalls of relying upon it for serious issues, while also providing options to remedy those pitfalls.</p>
 
     <h3>The Goal</h3>
     <p><em>1.</em> Design an iOS app in the mental wellness genre that breaks the mold of self-help cliches.</p>
@@ -71,424 +76,606 @@
     <h4>Evolution of the design</h4>
     <p><em>Discover:</em><br>Competitive research, user surveys, interviews, personas</p>
     <p><em>Definition:</em>
-    <br>User stories, minimum viable functionality, information architecture, content creation, user flows</p>
-    <p><em>Ideation:</em>
-    <br>Sketches, wireframing, initial testing, intro to brand development</p>
-    <p><em>Prototyping + Testing:</em>
-    <br>Test functionality, comprehension and communication of content, usability</p>
-    <p><em>Solidification</em>
-    <br>Another primer of preference and usability testing, then revise, rinse, repeat</p>
-  </div>
+      <br>User stories, minimum viable functionality, information architecture, content creation, user flows</p>
+      <p><em>Ideation:</em>
+        <br>Sketches, wireframing, initial testing, intro to brand development</p>
+        <p><em>Prototyping + Testing:</em>
+          <br>Test functionality, comprehension and communication of content, usability</p>
+          <p><em>Solidification</em>
+            <br>Another primer of preference and usability testing, then revise, rinse, repeat</p>
+          </div>
 
 
-  <div class="affirmative discover">
-    <h3>Discovery</h3>
-    <h4>
-    Researching the competition</h4>
-    <p>My analysis of the competition ecompassed a review of their branding, content, and functionality, but at this point I was interested in reviewing user flows to help define the minimum viable product and proactively preventing convoluted flows from emerging in the upcoming design.</p>
+          <div class="affirmative discover">
+            <h3>Discovery</h3>
+            <h4>
+            Researching the competition</h4>
+            <p>My analysis of the competition ecompassed a review of their branding, content, and functionality, but at this point I was interested in reviewing user flows to help define the minimum viable product and proactively preventing convoluted flows from emerging in the upcoming design.</p>
 
 
 
 
-       <button class="accordion clickIt"><i id="caret" class="fas fa-caret-right"></i><h5 id="" class="clickIt">  Competition's user flows</h5></button>
-  <div class="hidden" id="hidden">        
+            <button class="accordion clickIt"><i id="caret" class="fas fa-caret-right"></i><h5 id="" class="clickIt">  Competition's user flows</h5></button>
+            <div class="hidden" id="hidden">        
 
-          <img src="images/affirmative/compflow1.jpg"/>
-     
+              <img src="images/affirmative/compflow1.jpg"/>
 
 
-          <img src="images/affirmative/compflow2.jpg"/>
 
+              <img src="images/affirmative/compflow2.jpg"/>
 
-          <img class="myImg1" src="images/affirmative/compflow3.jpg"/>
 
-</div>
+              <img class="myImg1" src="images/affirmative/compflow3.jpg"/>
 
+            </div>
 
 
 
 
-    <p>I still had a relatively loose idea of the scope the product, but was able to define some initial necessary functions:
-      <em><br><br>
-      - Quick access to a positive affirmation statement
-      <br><br>
-      - The ability to share affirmations
-      <br><br>
-      - The ability to filter/sort affirmations by category
-      <br><br>
-    - Access to additional resources</em></p>
-    <h4>User surveys</h4>
-    <p>The potential users I surveyed yielded results that helped expound on these functions, and provided insight into how the presentation of said functions could effect the experience.</p>
-    <br>
-    <p><em>Notable results and quotes:</em></p>
-    <p class="quote"><em>80%</em> are familiar with the concept of affirmation</p>
 
+            <p>I still had a relatively loose idea of the scope the product, but was able to define some initial necessary functions:
+              <em><br><br>
+                - Quick access to a positive affirmation statement
+                <br><br>
+                - The ability to share affirmations
+                <br><br>
+                - The ability to filter/sort affirmations by category
+                <br><br>
+              - Access to additional resources</em></p>
+              <h4>User surveys</h4>
+              <p>The potential users I surveyed yielded results that helped expound on these functions, and provided insight into how the presentation of said functions could effect the experience.</p>
+              <br>
+              <p><em>Notable results and quotes:</em></p>
+              <p class="quote"><em>80%</em> are familiar with the concept of affirmation</p>
 
-    <p class="quote"><em>60%</em> practice affirmation themselves</p>
 
-    <p class="quote"><em>50%</em> find it helpful</p>
+              <p class="quote"><em>60%</em> practice affirmation themselves</p>
 
-    <p class="quote">those who are unfamiliar do <em>not</em> think it’s something that they might enjoy/appreciate</p>
+              <p class="quote"><em>50%</em> find it helpful</p>
 
-    <p class="quote"><em>No one</em> reported handling their stress in a very healthy way</p>
+              <p class="quote">those who are unfamiliar do <em>not</em> think it’s something that they might enjoy/appreciate</p>
 
-    <p class="quote">over <em>90%</em> reported low confidence in themselves</p>
+              <p class="quote"><em>No one</em> reported handling their stress in a very healthy way</p>
 
-    <p class="quote">The <em>majority</em> can easily laugh at themselves</p>
+              <p class="quote">over <em>90%</em> reported low confidence in themselves</p>
 
-    <p class="quote"><em>No one</em> has a positive opinion of self help materials</p>
+              <p class="quote">The <em>majority</em> can easily laugh at themselves</p>
 
-    <p class="quote"><em>93%</em> think there might be an unnecessary stigma surrounding mental wellness</p>
+              <p class="quote"><em>No one</em> has a positive opinion of self help materials</p>
 
-    <p class="quote"><em>60%</em> reported an decrease in their own mental wellbeing since the COVID crisis</p>
+              <p class="quote"><em>93%</em> think there might be an unnecessary stigma surrounding mental wellness</p>
 
-    <p class="quote"><em>75%</em> were between the ages of 18-50, <em>40%</em> 26-35</p>
+              <p class="quote"><em>60%</em> reported an decrease in their own mental wellbeing since the COVID crisis</p>
 
-    <p class="quote"><em>“I could definitely cut myself some slack.”</em></p>
+              <p class="quote"><em>75%</em> were between the ages of 18-50, <em>40%</em> 26-35</p>
 
-    <p class="quote"><em>“I’m always open to new things, and I don’t doubt that positive thinking can make you feel better.”</em></p>
+              <p class="quote"><em>“I could definitely cut myself some slack.”</em></p>
 
-    <p class="quote"><em>“I try to make positive affirmations a daily part of my routine...At first I thought they were kind of lame, but I really think it helps me out.”</em></p>
-  </div>
+              <p class="quote"><em>“I’m always open to new things, and I don’t doubt that positive thinking can make you feel better.”</em></p>
 
-  <div class="affirmative definition">
-    <h3>Definition</h3>
-    <h4>Personas</h4>
-    <p>It was important to remain approachable and accessible to users from all walks of life, so I surveyed and interviewed a wide range of demographics, and I developed personas based on the diverse responses I collected</p>
-     <button class="accordion clickIt2"><i id="caret2" class="fas fa-caret-right"></i> <h5 id="" class="clickIt2"> User personas</h5></button>
+              <p class="quote"><em>“I try to make positive affirmations a daily part of my routine...At first I thought they were kind of lame, but I really think it helps me out.”</em></p>
+            </div>
 
-  <div class="hidden" id="hidden2">        
+            <div class="affirmative definition">
+              <h3>Definition</h3>
+              <h4>Personas</h4>
+              <p>It was important to remain approachable and accessible to users from all walks of life, so I surveyed and interviewed a wide range of demographics, and I developed personas based on the diverse responses I collected</p>
+              <button class="accordion clickIt2"><i id="caret2" class="fas fa-caret-right"></i> <h5 id="" class="clickIt2"> User personas</h5></button>
 
+              <div class="hidden" id="hidden2"> 
 
-          <img src="images/affirmative/Affirmation-Personas-01.jpg" />
+              <div class="hiddenContainerGrid">       
 
 
-  
-          <img src="images/affirmative/Affirmation-Personas-02.jpg" />
-  </div>
-  
+                <img src="images/affirmative/Affirmation-Personas-01.jpg" />
 
 
-    <!--IMG-->
-    <!--paragraph-->
-    <h4>User Stories</h4>
-    <p>Armed with survey data and freshly developed personas I began painting a picture of the motivations behind the needs and desires of future users, and in turn provided ideas for features that would address those needs. <em>Here are a few:</em></p>
-    <div class="hiddenContainerGrid">
-    <span class="affirmative stories">
-      <h5> I <em>need</em> to be able to...</h5>
-      <p>Access mental health resources</p>
-      <p>So that I have the ability to seek help from professionals equipped to properly assess my particular issue.</p>
-      <p><em>Solution:</em> Ensure that the library of resources is front-facing, easy to access, and easy to navigate.</p>
-      <br>
-    </span>
-
-    <span class="affirmative stories">
-      <h5> I <em>need</em> to be able to...</h5>
-      <p>Quickly be shown a positive affirmation</p>
-      <p>So that I can feel calmer, happier, or better about myself.</p>
-      <p><em>Solution:</em> Allow users to bypass onboarding, or make the sign in/sign up process as brief as possible.</p>
-      <br>
-    </span>
-
-    <span class="affirmative stories">
-      <h5> I <em>want</em> to be able to...</h5>
-      <p>Create and save my own custom affirmations</p>
-      <p>So that I record and recall a positive statement that is particularly effective for me.</p>
-      <p><em>Solution:</em> Allow users to personalize their own affirmation messages by providing an easy to access "add affirmation" feature.</p>
-      <br>
-    </span>
-  </div>
-    <h4>Sitemapping/content creation</h4>
-    <p>The content of Affirmative is constantly evolving as a result of the growing library of resources and the neccessity to refresh and update affirmation statements, but before I could begin wireframing and laying out content I had to have an extensive idea of what exactly that content would be. So I set about compiling as many resources for mental wellness and spreadsheets full of affirmations as possible, then established the static copy, images, and graphics.</p>
-    <img src="images/affirmative/sitemap.png" />
-    <h4>User flows</h4>
-     <p>Previous research indicated that a consistent complaint in similar apps is the inflated onboarding, onslaught of CTAs, and overcomplication of the road to the primary functionality. I knew that I had to prioritize quick and easy access to the contents of the app and set about designing flows that fit the bill.</p>
-  <button class="accordion clickItflow"><i id="caretflow" class="fas fa-caret-right"></i><h5 id="" class="clickItflow">  Initial user flow</h5></button>
-  <div class="hidden" id="hiddenflow">        
-
-     <img src="images/affirmative/initialflow.png" />
-
-</div>
-<p>A simple solution than the lengthy flow above would be to supply a prominently displayed option for the user to <em>choose</em> to bypass onboarding if they want to get to the primary functions quickly.</p>
- <img src="images/affirmative/simplifiedflow.png">
-
-  </div>
-
-  <div class="affirmative ideate">
-    <h3>Ideation</h3>
-    <h4>Sketching + Wireframing</h4>
-
-    
-    <p>The initial idea was to bypass onboarding entirely and allow users to be thrust immediately into the main function: picking a random affirmation card. However, iterating and testing wireframe sketches proved this to be wildly shortsighted, and gave users no context or introduction to the functions or brand.</p>
-
-   
-    <p>With the pared down onboarding flow in mind, I started the wireframing process by prioritizing flows from app launch to 2 destinations: random affirmation, and the mental health resources library.</p>
-    <!--IMG-->
-
-  <button class="accordion clickIt3"><i id="caret3" class="fas fa-caret-right"></i> <h5 id="" class="clickIt3"> Wireframe sketches</h5></button>
-  <div class="hidden" id="hidden3">        
-
-        <div class="hiddenContainerGrid">
-          <img src="images/affirmative/sketch1.jpg" />
- 
-
-          <img src="images/affirmative/sketch2.jpg" />
-       
-          <img src="images/affirmative/sketch3.jpg" />
-
-          <img src="images/affirmative/sketch5.jpg" />
-
-          <img src="images/affirmative/sketch5.jpg" />
-        </div>
-
-</div>
-<h4>Paper protoype + testing</h4>
- <p>I worked out several different options for a pared down onboarding process and an engaging presentation of the affirmations. I put those options in front of testers in the forms of low fidelity and paper prototypes.</p>
-
-
-  <button class="accordion clickIt4"><i id="caret4" class="fas fa-caret-right"></i> <h5 id="" class="clickIt4"> Paper prototype</h5></button>
-  <div class="hidden" id="hidden4">        
-
-        <div class="hiddenContainerGrid">
-          <img src="images/affirmative/paper1.jpg" />
-
-          <img src="images/affirmative/paper2.jpg" />
-
-          <img src="images/affirmative/paper3.jpg" />
-          <img src="images/affirmative/paper4.jpg" />
-          <img src="images/affirmative/paper5.jpg" />
-          <img src="images/affirmative/paper6.jpg" />
-          <img src="images/affirmative/paper7.jpg" />
-          <img src="images/affirmative/paper8.jpg" />
-          <img src="images/affirmative/paper9.jpg" />
-          <img src="images/affirmative/paper10.jpg" />
-          <img src="images/affirmative/paper11.jpg" />
-          <img src="images/affirmative/paper12.jpg" />
-          <img src="images/affirmative/paper13.jpg" />
-          <img src="images/affirmative/paper14.jpg" />
-
-</div>
-
-
-</div>
-
-  <p>Neccessary revisions became apparent while testing first and second iterations of wireframes and paper prototypes. </p>
-
-  <button class="accordion clickIt5"><i id="caret5" class="fas fa-caret-right"></i><h5 id="" class="clickIt5">  Wireframe revisions</h5></button>
-  <div class="hidden" id="hidden5">    
-
-        <div class="hiddenContainerGrid">    
-
-          <span>
-            <p>Card view, 1st iteration</p>
-          <img src="images/affirmative/wirecard1.jpg" />
+
+                <img src="images/affirmative/Affirmation-Personas-02.jpg" />
+
+              </div>
+              </div>
+
+
+
+              <!--IMG-->
+              <!--paragraph-->
+              <h4>User Stories</h4>
+              <p>Armed with survey data and freshly developed personas I began painting a picture of the motivations behind the needs and desires of future users, and in turn provided ideas for features that would address those needs. <em>Here are a few:</em></p>
+              <div class="hiddenContainerGrid">
+                <span class="affirmative stories">
+                  <h5> I <em>need</em> to be able to...</h5>
+                  <p>Access mental health resources</p>
+                  <p>So that I have the ability to seek help from professionals equipped to properly assess my particular issue.</p>
+                  <p><em>Solution:</em> Ensure that the library of resources is front-facing, easy to access, and easy to navigate.</p>
+                  <br>
+                </span>
+
+                <span class="affirmative stories">
+                  <h5> I <em>need</em> to be able to...</h5>
+                  <p>Quickly be shown a positive affirmation</p>
+                  <p>So that I can feel calmer, happier, or better about myself.</p>
+                  <p><em>Solution:</em> Allow users to bypass onboarding, or make the sign in/sign up process as brief as possible.</p>
+                  <br>
+                </span>
+
+                <span class="affirmative stories">
+                  <h5> I <em>want</em> to be able to...</h5>
+                  <p>Create and save my own custom affirmations</p>
+                  <p>So that I record and recall a positive statement that is particularly effective for me.</p>
+                  <p><em>Solution:</em> Allow users to personalize their own affirmation messages by providing an easy to access "add affirmation" feature.</p>
+                  <br>
+                </span>
+              </div>
+              <h4>Sitemapping/content creation</h4>
+              <p>The content of Affirmative is constantly evolving as a result of the growing library of resources and the neccessity to refresh and update affirmation statements, but before I could begin wireframing and laying out content I had to have an extensive idea of what exactly that content would be. So I set about compiling as many resources for mental wellness and spreadsheets full of affirmations as possible, then established the static copy, images, and graphics.</p>
+              <img src="images/affirmative/sitemap.png" />
+              <h4>User flows</h4>
+              <p>Previous research indicated that a consistent complaint in similar apps is the inflated onboarding, onslaught of CTAs, and overcomplication of the road to the primary functionality. I knew that I had to prioritize quick and easy access to the contents of the app and set about designing flows that fit the bill.</p>
+              <button class="accordion clickItflow"><i id="caretflow" class="fas fa-caret-right"></i><h5 id="" class="clickItflow">  Initial user flow</h5></button>
+              <div class="hidden" id="hiddenflow">        
+
+               <img src="images/affirmative/initialflow.png" />
+
+             </div>
+             <p>A simple solution than the lengthy flow above would be to supply a prominently displayed option for the user to <em>choose</em> to bypass onboarding if they want to get to the primary functions quickly.</p>
+             <img src="images/affirmative/simplifiedflow.png">
+
+           </div>
+
+           <div class="affirmative ideate">
+            <h3>Ideation</h3>
+            <h4>Sketching + Wireframing</h4>
+
+
+            <p>The initial idea was to bypass onboarding entirely and allow users to be thrust immediately into the main function: picking a random affirmation card. However, iterating and testing wireframe sketches proved this to be wildly shortsighted, and gave users no context or introduction to the functions or brand.</p>
+
+
+            <p>With the pared down onboarding flow in mind, I started the wireframing process by prioritizing flows from app launch to 2 destinations: random affirmation, and the mental health resources library.</p>
+            <!--IMG-->
+
+            <button class="accordion clickIt3"><i id="caret3" class="fas fa-caret-right"></i> <h5 id="" class="clickIt3"> Wireframe sketches</h5></button>
+            <div class="hidden" id="hidden3">        
+
+              <div class="hiddenContainerGrid tile">
+                <img src="images/affirmative/sketch1.jpg" />
+
+
+                <img src="images/affirmative/sketch2.jpg" />
+
+                <img src="images/affirmative/sketch3.jpg" />
+
+                <img src="images/affirmative/sketch5.jpg" />
+
+                <img src="images/affirmative/sketch5.jpg" />
+              </div>
+
+            </div>
+            <h4>Paper protoype + testing</h4>
+            <p>I worked out several different options for a pared down onboarding process and an engaging presentation of the affirmations. I put those options in front of testers in the forms of low fidelity and paper prototypes.</p>
+
+
+            <button class="accordion clickIt4"><i id="caret4" class="fas fa-caret-right"></i> <h5 id="" class="clickIt4"> Paper prototype</h5></button>
+            <div class="hidden" id="hidden4">        
+
+              <div class="hiddenContainerGrid tile">
+                <span>
+                  <img src="images/affirmative/paper1.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/paper2.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper3.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/paper4.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper5.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper6.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper7.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper8.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper9.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper10.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper11.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper12.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper13.jpg" />
+                </span>
+                <span>
+                  <img src="images/affirmative/paper14.jpg" />
+                </span>
+              </div>
+
+
+            </div>
+
+            <p>Neccessary revisions became apparent while testing first and second iterations of wireframes and paper prototypes. </p>
+
             <p>Presenting the user with the name of the category that the card is in (deck name) was superfluous and impeded comprehension of the more important content: the card title and the affirmation.</p>
-         </span>
+            <br>
 
-         <span>
-          <p>Card view, 2nd iteration</p>
-          <img src="images/affirmative/wirecard2.jpg" />
-          <p>More clarity was required to shed light on what functions were possible within the card view. This would prove important as analysis of future usability tests would neccessitate the home screen layout being reorganized to take on some of the burden of the action bar.</p>
-        </span>
+            <p>More clarity was required to shed light on what functions were possible within the card view. This would prove important as analysis of future usability tests would neccessitate the home screen layout being reorganized to take on some of the burden of the action bar.</p>
+            <br>
 
-        <span>
-          <p>Card view, 3rd iteration</p>
-          <img src="images/affirmative/wirecard3.jpg" />
-          <p>Revisions based on reactions from the introductory round of prototyping led me to this layout, which proper fixates the line of site on the content of the card, then grounds the experience at the bottom center where the user can assess acting on a row of action buttons prior to deciding to draw another card.</p>
-        </span>
+            <p>Revisions based on reactions from the introductory round of prototyping led me to this layout, which proper fixates the line of site on the content of the card, then grounds the experience at the bottom center where the user can assess acting on a row of action buttons prior to deciding to draw another card.</p>
 
-        <span>
-          <p>Home screen and action bar</p>
-          <img src="images/affirmative/wirehome1.jpg" />
-        </span>
+            <button class="accordion clickIt5"><i id="caret5" class="fas fa-caret-right"></i><h5 id="" class="clickIt5">  Wireframe revisions</h5></button>
+            <div class="hidden" id="hidden5">    
 
-        <span>
-          <p>Home screen with added context</p>
-          <img src="images/affirmative/wirehome2.jpg" />
-        </span>
+              <div class="hiddenContainerGrid tile">    
 
-        <span>
-          <p>Home screen with added functions</p>
-          <img src="images/affirmative/wirehome3.jpg" />
-        </span>
+                <span>
+                  <p>Card view, 1st iteration</p>
+                  <img src="images/affirmative/wirecard1.jpg" />
 
-        <span>
-          <p>Home screen with more functions</p>
-          <img src="images/affirmative/wirehome4.jpg" />
-        </span>
+                </span>
 
-   </div>
+                <span>
+                  <p>Card view, 2nd iteration</p>
+                  <img src="images/affirmative/wirecard2.jpg" />
+
+                </span>
+
+                <span>
+                  <p>Card view, 3rd iteration</p>
+                  <img src="images/affirmative/wirecard3.jpg" />
+
+                </span>
+
+                <span>
+                  <p>Home screen and action bar</p>
+                  <img src="images/affirmative/wirehome1.jpg" />
+                </span>
+
+                <span>
+                  <p>Home screen with added context</p>
+                  <img src="images/affirmative/wirehome2.jpg" />
+                </span>
+
+                <span>
+                  <p>Home screen with added functions</p>
+                  <img src="images/affirmative/wirehome3.jpg" />
+                </span>
+
+                <span>
+                  <p>Home screen with more functions</p>
+                  <img src="images/affirmative/wirehome4.jpg" />
+                </span>
+
+              </div>
 
 
 
 
 
 
+            </div>
+            <p>The home screen and the card view overlay (and subsequent actions) are the most liable to highlight weak spots in the logic and information architecture of the app, and as a new iteration overtook its predecessor, I was finding that it was imparative to triple check that it wasn't interrupting a current flow or path.</p>
+            <h4>Brand Development</h4>
+            <p>Branding an application that inherently fits into the self-help genre is difficult to do without careening down the slippery slope of new age cliches, but it was vital to avoid these pitfalls. First of all, most users find branding of affirmations related products off-putting. Secondly, a primary motivation of this app is to ensure people reach out for help when they really need it, and the archetypical branding of self-help products relies upon the notion that the product itself is enough to "heal" the user.</p>
+            <button class="accordion clickItbrand"><i id="caretbrand" class="fas fa-caret-right"></i><h5 id="" class="clickItbrand">  Preliminary sketches and ideas</h5></button>
+            <div class="hidden" id="hiddenbrand">    
+
+              <div class="hiddenContainerGrid tile">    
+                <span>
+
+                  <img src="images/affirmative/uncompressed/logosketches.jpg" />
+
+                </span>
+
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/initiallogin.jpg" />
+
+                </span>
+                <span>
+
+                  <img src="images/affirmative/uncompressed/initiallogin2.jpg" />
+
+                </span>
+                <span>
+
+                  <img src="images/affirmative/brandcard1.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/brandcard2.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/brandcard3.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/initialstyle.jpg" />
+
+                </span>
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+
+            <p>In the next section I'll go into further detail about user testing, but it's worth noting here that due to feedback given during one of the sessions discussed below, I was compelled to reassess my branding choices. One user in particular felt very strongly that the messaging of the app was starkly contrasted to the general aesthetic, so I took a brief look back at my early notes, and realized that they were right! I hadn't been framing all of my branding choices around the original intentions of the app. Without this honest feedback in an early on preference test, it may have been much further down the line that I realized this error.</p>
+
+            <button class="accordion clickItbrand2"><i id="caretbrand2" class="fas fa-caret-right"></i><h5 id="" class="clickItbrand2">  Second pass sketches and ideas</h5></button>
+            <div class="hidden" id="hiddenbrand2">    
+
+              <div class="hiddenContainerGrid tile">    
+
+
+
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/cardviewmockup.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/Resources Collapsed.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/finallogin.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/uncompressed/styleguidefinal.jpg" />
+
+                </span>
+
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+          </div>
+          <div class="affirmative prototyping">
+            <h3>Prototyping + Testing</h3>
+            <h4>Preference testing</h4>
+            <p>I ran a few preference tests through Maze before continuing with high fidelity prototypes. For these tests I matched up 2-3 elements with differences in style and let participants simply choose which they prefer. If the correllation was strong, say 65% or more, in favor of a certain style, I would expand on that idea and continue testing until I was able to narrow down a consistent aesthetic across UI components.</p>
+
+            <button class="accordion clickItpref"><i id="caretpref" class="fas fa-caret-right"></i><h5 id="" class="clickItpref">  Matchups</h5></button>
+            <div class="hidden" id="hiddenpref">    
+
+              <div class="hiddenContainerGrid winner">    
+                <!--Row 1-->
+                <p>alternative variants</p>
+                <p><em>prevailing variant</em></p>
+                <p>alternative variants</p>
+                <!--Row 2-->
+                <span>
+                  <img src="images/affirmative/cardback1.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/cardback3.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/cardback2.jpg" />
+                </span>
+                <!--Row 3-->
+                <span>    
+                  <img src="images/affirmative/colorcard1.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/colorcard2.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/colorcard3.svg" />
+                </span>
+                <!--Row 4-->
+                <span>
+                  <img src="images/affirmative/login1.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/login2.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/login3.svg" />
+                </span>
+                <!--Row 5-->
+                <span>
+                  <img src="images/affirmative/logo1.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/logo2.svg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/logo3.svg" />
+                </span>
+                <!--Row 6-->
+                <span>
+                  <img src="images/affirmative/brandcard1.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/brandcard4.jpg" />
+                </span>
+
+                <span>
+                  <img src="images/affirmative/brandcard3.jpg" />
+                </span>
+              </div>
+
+
+
+
+
+
+            </div>
+
+            <h4>First Usability Test</h4>
+  
+            <p><em>Successes:</em>
+              <br>Two of the most highly prioritized features recieved 100% success rates, with no users failing to execute the function</p>
+              <p>When asked to <em>pick a card</em> 100% of users found the expected flow in an average of 9 seconds. </p>
+              <p>When asked to <em>find mental health resources</em> 90% of users found the expected flow and 10% took an alternate path in an average of 7 seconds. </p>
+
+              <p><em>Failures:</em>
+              <br>Onboarding was taking too long, and a complex flow was difficult to navigate</p>
+              <p>When asked to <em>create an account</em> only 25% of users found the expected flow, 66.7% found an alternate path, and 8.3% gave up. An average of 19.6 seconds was spent on the task </p>
+              <p>When asked to <em>create a new affirmation</em> 22.2% of users found the expected flow, 55.6% took an alternate path, while a staggering %22.2 percent gave up. This flow is lenghty in and of itself, but the user average was still too high at around 30 seconds. </p>
+
+              <p>Inspecting the heat maps from these sessions gave me further insight as to where exactly users were getting confused, hung up, or frustrated.</p>
+           
+
+            <button class="accordion clickItuse"><i id="caretuse" class="fas fa-caret-right"></i><h5 id="" class="clickItuse">  Heat maps</h5></button>
+            <div class="hidden" id="hiddenuse">    
+
+              <div class="hiddenContainerGrid tile">    
+
+
+                <span>
+
+                  <img src="images/affirmative/map1.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/map2.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/map3.jpg" />
+
+                </span>
+
+                <span>
+
+                  <img src="images/affirmative/map4.jpg" />
+
+                </span>
+
+
+
+                <span>
+
+                  <img src="images/affirmative/map5.jpg" />
+                </span>
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+            <h4>Revisions</h4>
+
+            <div class="hiddenContainerGrid">
+            <span>
+            <p><em>More context</em> was added to the onboarding process in the form of an optional tutorial for first time users. Additionally, a splash page was added and the secondary button to skip the login process was given more prominence.</p>
+                  
+                  <img class="revised" src="images/affirmative/revised1.svg" />
+                </span>
+                <span>
+            <p><em>The action bar</em> was relieved of the <em>More</em> modal menu and given 5 total actions as opposed to 4 in order to center and therefore prioritize the <em>Home</em> button</p>
+            
+                  <img class="revised" src="images/affirmative/revised2.svg" />
+                </span>
+                <span>
+            <p><em>The homepage</em> took on the functions from the now defunct <em>settings</em> page which solidified the home screen as a hub for the majority of the app's major functions. Additionally, this made it easier to display the status of these functions right there on the same page.</p>
+            
+                  <img class="revised" src="images/affirmative/revised3.svg" />
+                </span>
+                <span>
+            <p><em>The gallery view</em> was added to give users the option to look at their content sequentially, rather than be forced to view it at random. This also supplies an easy access point for reorganizing and categorizing cards.</p>
+            
+                  <img class="revised" src="images/affirmative/revised4.svg" />
+                </span>
+
+            </div>
+          
+            <h4>Another Usability Test</h4>
+  <div class="hiddenContainerGrid">
+            <span>
+            <p><em>This time</em> I remotely ran an unstructured test to record how users navigated through the newly revised app without any guidance other than the information provided in the onboarding content.</p>
+          </span>
+          <span>
+            <p><em>The average</em> time spent was over 5 minutes, and in that time frame the vast majority of users were able to explore most if not all of the major functions with minimal misclicks or opt outs. Users also had the option to leave the test whenever they wanted to, so that amount of time tells me that the experience was engaging enough to transcend the clinical testing format and keep the testers occupied.</p>
+</span>
+<span>
+            <p>I was also interested in seeing how each user navigated through the optional onboarding tutorial and what the most frequently chosen path was</p>
+            <img class="revised" src="images/affirmative/onboardflow.png">
+</span>
 </div>
- <p>The home screen and the card view overlay (and subsequent actions) are the most liable to highlight weak spots in the logic and information architecture of the app, and as a new iteration overtook its predecessor, I was finding that it was imparative to triple check that it wasn't interrupting a current flow or path.</p>
-<h4>Brand Development</h4>
-<p>Branding an application that inherently fits into the self-help genre is difficult to do without careening down the slippery slope of new age cliches, but it was vital to avoid these pitfalls. First of all, most users find branding of affirmations related products off-putting. Secondly, a primary motivation of this app is to ensure people reach out for help when they really need it, and the archetypical branding of self-help products relies upon the notion that the product itself is enough to "heal" the user.</p>
-   <button class="accordion clickItbrand"><i id="caretbrand" class="fas fa-caret-right"></i><h5 id="" class="clickItbrand">  Preliminary sketches and ideas</h5></button>
-  <div class="hidden" id="hiddenbrand">    
 
-        <div class="hiddenContainerGrid">    
-          <span>
-    
-          <img src="images/affirmative/uncompressed/logosketches.jpg" />
-  
-         </span>
-
-         <span>
-    
-          <img src="images/affirmative/uncompressed/initialstyle.jpg" />
-  
-         </span>
-         <span>
-    
-          <img src="images/affirmative/uncompressed/initiallogin.jpg" />
-  
-         </span>
-         <span>
-    
-          <img src="images/affirmative/uncompressed/initiallogin2.jpg" />
-  
-         </span>
-          <span>
-    
-          <img src="images/affirmative/brandcard1.jpg" />
-  
-         </span>
-
-         <span>
- 
-          <img src="images/affirmative/brandcard2.jpg" />
- 
-        </span>
-
-        <span>
-        
-          <img src="images/affirmative/brandcard3.jpg" />
-     
-        </span>
+              
+             
 
 
-   </div>
+          </div>
+
+          <div class="affirmative solidify">
+            <h3>Solidification</h3>
+            
+            <img src="images/affirmative/Dribble1.png">
+
+            <p>Click the button below to open up the Figma prototpye in a new tab</p>
+
+<button class="figmaButton" id="figma"><a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/xcE96toHlmSD2rypfzD9ss/Affirmative-Final?node-id=131%3A1876&viewport=381%2C429%2C0.06556179374456406&scaling=scale-down"> Go to Figma Prototype</a></button>
+          </div>
 
 
-
-
-
-
-</div>
-
-   <button class="accordion clickItbrand2"><i id="caretbrand2" class="fas fa-caret-right"></i><h5 id="" class="clickItbrand2">  Second pass sketches and ideas</h5></button>
-  <div class="hidden" id="hiddenbrand2">    
-
-        <div class="hiddenContainerGrid">    
-
-
-          <span>
-      
-          <img src="images/affirmative/uncompressed/styleguidefinal.jpg" />
-  
-         </span>
-
-          <span>
-      
-          <img src="images/affirmative/uncompressed/cardviewmockup.jpg" />
-  
-         </span>
-
-          <span>
-      
-          <img src="images/affirmative/uncompressed/Resources Collapsed.jpg" />
-  
-         </span>
-
-        <span>
-      
-          <img src="images/affirmative/uncompressed/finallogin.jpg" />
-  
-         </span>
-
-
-
-
-   </div>
-
-
-
-
-
-
-</div>
-
-
-
-
-  </div>
-<div class="affirmative prototyping">
-  <h3>Prototyping + Testing</h3>
-    <h4>Preference testing</h4>
-
-    <h4>Usability Testing</h4>
-
-    <button class="seeButton"><a href="https://www.figma.com/proto/xcE96toHlmSD2rypfzD9ss/Affirmative-Final?node-id=131%3A1876&viewport=381%2C429%2C0.06556179374456406&scaling=scale-down"> Go to Figma Prototype</a></button>
-
-       <button class="accordion clickItuse"><i id="caretuse" class="fas fa-caret-right"></i><h5 id="" class="clickItuse">  Heat maps</h5></button>
-         <div class="hidden" id="hiddenuse">    
-
-        <div class="hiddenContainerGrid">    
-
-
-          <span>
-      
-          <img src="images/affirmative/map1.jpg" />
-  
-         </span>
-
-          <span>
-      
-          <img src="images/affirmative/map2.jpg" />
-  
-         </span>
-
-          <span>
-      
-          <img src="images/affirmative/map3.jpg" />
-  
-         </span>
-
-        <span>
-      
-          <img src="images/affirmative/map4.jpg" />
-  
-         </span>
-
- 
-
-        <span>
- 
-          <img src="images/affirmative/map5.jpg" />
-        </span>
-
-
-   </div>
-
-
-
-
-
-
-</div>
-
-
-</div>
-
-<div class="affirmative solidify">
-    <h3>Solidification</h3>
-
-</div>
 
 
   <!--<div class="iframeWrapper">
@@ -498,7 +685,7 @@
 </div>-->
 </div>
 <footer class="footer">
-  <h5>I appreciate your time</h5>
+  <p class="noLine">I appreciate your time</p>
   <p>You can find me elsewhere on the internet or shoot me an email through any of the links below. Take care.</p>
   <nav class="link-list">
     <span class="footer-icon lin">
@@ -522,10 +709,10 @@
       </a>
     </span>
   </nav>
-  <img class="staticImage" src="images/headerlogo.svg">
+  <img class="affirmative footer-icon" src="images/headerlogo.svg">
 </footer>
 <script type="text/javascript" src="js/affirmative.js"></script>
-  <!--<script type="text/javascript" src="js/buttons.js"></script>-->
+<!--<script type="text/javascript" src="js/buttons.js"></script>-->
 </body>
 
 </html>

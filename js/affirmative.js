@@ -148,3 +148,16 @@ $('.accordion.clickItuse').click(function() {
     $ ("#caretuse").css("transform", "rotate(0deg");
 }
 })
+
+$('.accordion.clickItpref').click(function() {
+    var showIt = $('#hiddenpref');
+    var caret = document.getElementById("#caretpref");
+    var disp = showIt.css('display');
+    if (disp === "none") {
+    showIt.removeClass("hidden");
+    $ ("#caretpref").css("transform", "rotate(90deg");
+}   else {
+    showIt.addClass("hidden");
+    $ ("#caretpref").css("transform", "rotate(0deg");
+}
+})

@@ -81,8 +81,11 @@ h2 {
 	color: #1E2221;
 }
 
-h3 {
-	font-family: 'Montserrat', sans-serif;
+
+h3, .noLine {
+	margin-top: 48px;
+	margin-bottom: 32px;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	line-height: 36px;
 	font-size: 24px;
@@ -188,6 +191,13 @@ hr {
 .affirmative {
 	width: 100%;
 }
+
+.affirmative.footer-icon {
+	padding-bottom: 32px;
+}
+
+
+
 .wrapper.affirmative {
 	display: grid;
 	grid-template-columns: 4% 92% 4%;
@@ -206,6 +216,20 @@ hr {
 
 }
 
+	.hiddenContainerGrid.winner {
+	display: grid;
+	grid-template-columns:minmax(0,30%) minmax(0,40%) minmax(0,30%);
+	grid-gap: 8px;	
+	justify-content: center;
+	align-items: center;
+}
+
+	.hiddenContainerGrid.winner span {
+	background-color: transparent;
+	box-shadow: none;
+	padding-bottom: 32px;
+}	
+
 .affirmative p {
 	padding: 16px;
 }
@@ -219,6 +243,10 @@ hr {
 	margin-bottom: 16px;
 	padding-top: 16px;
 	border-bottom: 1px dashed black;
+}
+
+.noLine {
+	border: none;
 }
 
 .affirmative h4  {
@@ -288,6 +316,11 @@ hr {
 
 }
 
+.revised  {
+	max-width: 300px;
+	padding-bottom: 32px;
+}
+
 .hiddenContainerGrid span {
 	background-color: white;
 
@@ -328,9 +361,35 @@ hr {
 .accordion h5 {
 	padding-top: 4px;
 	margin-left: 16px;
+}
+
+.figmaButton {
+	transition: .3s ease;
+	opacity: 1;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 16px;
+	letter-spacing: .96px;
+	text-transform: uppercase;
+	color: #1E2221;
+	width: 70%;
+	display: block;
+	margin: auto;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	margin-bottom: 32px;
+	border: 1px solid #1E2221;
+	border-radius: 4px;
+	box-shadow: -2px 2px 2px gray;
+	background-color: white;
+}
+
+
 
   /*Affirmative Styles END*/ 
-}
+
 
 .seeButton {
 	transition: .3s ease;
@@ -749,7 +808,9 @@ hr {
 	margin-bottom: 32px;
 }
 
-
+.affirmative {
+	margin-bottom: 32px;
+}
 
 .bit {
 	width: 83%;
@@ -802,6 +863,38 @@ iframe {
 
 @media only screen
 and (min-width: 768px) {
+
+
+	.hiddenContainerGrid.tile {
+	display: grid;
+	grid-template-columns:minmax(0,50%) minmax(0,50%) minmax(0,50%);
+	grid-gap: 8px;	
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.hiddenContainerGrid.tile > span:hover{
+	transition: .5s ease .5s;
+	transform: scale(2);
+
+
+}
+
+	.hiddenContainerGrid.winner {
+	display: grid;
+	grid-template-columns:minmax(0,30%) minmax(0,40%) minmax(0,30%);
+	grid-gap: 8px;	
+	justify-content: center;
+	align-items: center;
+}
+
+	.hiddenContainerGrid.winner span {
+	background-color: transparent;
+	box-shadow: none;
+	padding-bottom: 32px;
+}	
+
+
 
 
 	.wrapper.affirmative {
