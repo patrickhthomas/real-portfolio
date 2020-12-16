@@ -69,7 +69,16 @@ h2 {
 
 }
 
-
+.backToBasics {
+	position: absolute;
+	width: 80px;
+	font-family:'Source Sans Pro', sans-serif;
+	right: 60%;
+	font-weight: 600;
+	top: 4%;
+	text-align: center;
+	cursor: pointer;
+}
 
 .container {
 
