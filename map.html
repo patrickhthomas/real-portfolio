@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>map time</title>
+	<script src="https://kit.fontawesome.com/efc9f5799f.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/bus.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<content class="container">
+		<div class="statusBar">
+			<span class="time">9:41</span>
+			<span class="statusIcons"><i class="fad fa-signal-alt-3"></i> <i class="fas fa-wifi"></i> <i class="fad fa-battery-three-quarters"></i></span>
+		</div>
+		<header class="header">
+			<span class="back" onclick="goBack()"><i class="fad fa-arrow-left"></i></span>
+			<h1 class="appH1">Map</h1>		
+		</header>
+
+		<div id='map'> </div>
+
+		<content class="routeMapContainer">
+			<section class="nearMe">
+				<div class="busesNearMe"><p class="arrowDown">&#9660;</p><h2>Buses near me</h2></div>
+				<div class="route">
+					<div class="number"><span>60</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 3 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 15 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Randolph & Harbor</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>124</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 7 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 10 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Navy Pier</p>
+					</div>
+				</div>
+				
+				<div class="route">
+					<div class="number"><span>151</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 11 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 16 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Devon & Clark</p>
+					</div>
+				</div>
+				
+
+
+				<div class="route">
+					<div class="number"><span>J14</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 12 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 15 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>103rd & Stony Island</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>124</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 5 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 10 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Navy Pier</p>
+					</div>
+				</div>
+				
+
+			</section>
+		</content>
+
+		<footer class="footer">
+			<a href="bus.html">
+				<div class="footerLink">
+					<i class="far fa-stars" id="off"></i>
+					<span id="off">Favorites</span>
+				</div>
+			</a>
+			<a href="bushome.html">
+				<div class="footerLink">
+					<i class="fad fa-home" id="off"></i>
+					<span id="off">Home</span>
+				</div>
+			</a>
+			<div class="footerLink">
+				<i class= "
+				fad fa-search"id="off"></i>
+				<span id="off">Search</span>
+			</div>
+			<a href="map.html">
+				<div class="footerLink">
+					<i class="fad fa-map" id="onMap"></i>
+					<span id="onMap">Map</span>
+				</div>
+			</a>
+		</footer>
+	</content>
+
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoicGh0aG9tYXMzMyIsImEiOiJja2d1MjQ0d	2EwODF2MnNueGE5OXM3ZWxmIn0.zW4ptPn0xlKxuM9kj780Iw';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11'
+		});
+		map.addControl(
+			new mapboxgl.GeolocateControl({
+				positionOptions: {
+					enableHighAccuracy: true
+				},
+				trackUserLocation: true
+			})
+			);
+		map.addControl(new mapboxgl.NavigationControl());
+		var marker = new mapboxgl.Marker()
+		.setLngLat([12.550343, 55.665957])
+		.addTo(map);
+		var size = 200;
+
+	// implementation of CustomLayerInterface to draw a pulsing dot icon 	on the map
+	// see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface	 for more info
+	var pulsingDot = {
+		width: size,
+		height: size,
+		data: new Uint8Array(size * size * 4),
+
+	// get rendering context for the map canvas when layer is added to 	the map
+	onAdd: function () {
+		var canvas = document.createElement('canvas');
+		canvas.width = this.width;
+		canvas.height = this.height;
+		this.context = canvas.getContext('2d');
+	},
+
+	// called once before every frame where the icon will be used
+	render: function () {
+		var duration = 1000;
+		var t = (performance.now() % duration) / duration;
+
+		var radius = (size / 2) * 0.3;
+		var outerRadius = (size / 2) * 0.7 * t + radius;
+		var context = this.context;
+
+	// draw outer circle
+	context.clearRect(0, 0, this.width, this.height);
+	context.beginPath();
+	context.arc(
+		this.width / 2,
+		this.height / 2,
+		outerRadius,
+		0,
+		Math.PI * 2
+		);
+	context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
+	context.fill();
+
+	// draw inner circle
+	context.beginPath();
+	context.arc(
+		this.width / 2,
+		this.height / 2,
+		radius,
+		0,
+		Math.PI * 2
+		);
+	context.fillStyle = 'rgba(255, 100, 100, 1)';
+	context.strokeStyle = 'white';
+	context.lineWidth = 2 + 4 * (1 - t);
+	context.fill();
+	context.stroke();
+
+	// update this image's data with data from the canvas
+	this.data = context.getImageData(
+		0,
+		0,
+		this.width,
+		this.height
+		).data;
+
+	// continuously repaint the map, resulting in the smooth animation of 	the dot
+	map.triggerRepaint();
+
+	// return `true` to let the map know that the image was updated
+	return true;
+}
+};
+
+map.on('load', function () {
+	map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+
+	map.addSource('points', {
+		'type': 'geojson',
+		'data': {
+			'type': 'FeatureCollection',
+			'features': [
+			{
+				'type': 'Feature',
+				'geometry': {
+					'type': 'Point',
+					'coordinates': [0, 0]
+				}
+			}
+			]
+		}
+	});
+	map.addLayer({
+		'id': 'points',
+		'type': 'symbol',
+		'source': 'points',
+		'layout': {
+			'icon-image': 'pulsing-dot'
+		}
+	});
+});
+
+</script>
+
+<script type="text/javascript" src="js/bus.js"></script>
+
+</body>
+</html>
+
+

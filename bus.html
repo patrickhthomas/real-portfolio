@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BusyBusHow</title>
+	<script src="https://kit.fontawesome.com/efc9f5799f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/bus.css">
+  	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<content class="container">
+		<div class="statusBar">
+			<span class="time">9:41</span>
+			<span class="statusIcons"><i class="fad fa-signal-alt-3"></i> <i class="fas fa-wifi"></i> <i class="fad fa-battery-three-quarters"></i></span>
+		</div>
+		<header class="header">
+			<span class="back" onclick="goBack()"><i class="fad fa-arrow-left"></i></span>
+			<h1 class="appH1">Washington & State</h1>		
+		</header>
+
+		<content class="routeContainer">
+			<section class="eastbound">
+				<div class="direction"><p class="arrowDown">&#9660;</p><h2>Eastbound</h2></div>
+				<div class="route">
+					<div class="number"><span>60</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 3 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 15 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Randolph & Harbor</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>124</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 7 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 10 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Navy Pier</p>
+					</div>
+				</div>
+				
+			</section>
+			<section class="northbound">
+				<div class="direction"><p class="arrowDown">&#9660;</p><h2>Northbound</h2></div>
+				<div class="route">
+					<div class="number"><span>151</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 11 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 16 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Devon & Clark</p>
+					</div>
+				</div>
+				
+			</section>
+			<section class="southbound">
+				<div class="direction"><p class="arrowDown">&#9660;</p><h2>Southbound</h2></div>
+				<div class="route">
+					<div class="number"><span>J14</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 12 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 15 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>103rd & Stony Island</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>124</span></div>
+					<div class="info">
+						<i class="fad fa-clock"></i><p>Arrives in 5 minutes</p><br><br>
+						<i class="fad fa-repeat-alt"></i><p> Every 10 minutes</p><br><br>
+						<i class="fad fa-compass"></i><p>Navy Pier</p>
+					</div>
+				</div>
+				
+			</section>
+			<section class="reroute">
+				<div class="direction"><p class="arrowDown">&#9660;</p><h2>Rerouted</h2></div>
+				<div class="route">
+					<div class="number"><span>6x</span></div>
+					<div class="infoReroute">
+						<i class="fad fa-clock"></i><p>N/A</p><br><br>
+						<i class="fad fa-compass"></i><p>Jackson Park Express</p>
+					</div>
+				</div>
+				
+			</section>
+			<section class="outOfService">
+				<div class="direction"><p class="arrowDown">&#9660;</p><h2>Out of service</h2></div>
+				<div class="route">
+					<div class="number"><span>4</span></div>
+					<div class="infoOut">
+						<i class="fad fa-clock"></i><p>Resumes at 12:10am</p><br><br>
+						<i class="fad fa-compass"></i><p>Cottage Grove</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>20</span></div>
+					<div class="infoOut">
+						<i class="fad fa-clock"></i><p>Resumes at 12:10am</p><br><br>
+						<i class="fad fa-compass"></i><p>Madison</p>
+					</div>
+				</div>
+				<div class="route">
+					<div class="number"><span>157</span></div>
+					<div class="infoOut">
+						<i class="fad fa-clock"></i><p>Resumes at 6:00am</p><br><br>
+						<i class="fad fa-compass"></i><p>Streeterville & Taylor</p>
+					</div>
+				</div>
+			</section>
+		</content>
+
+		<footer class="footer">
+			<a href="bushtml">
+			<div class="footerLink">
+				<i class="far fa-stars" id="onFavorites"></i>
+				<span id="onFavorites">Favorites</span>
+			</div>
+			</a>
+			<a onclick="location.href = 'bushome.html';">
+			<div class="footerLink">
+				<i class="fad fa-home" id="off"></i>
+				<span id="off">Home</span>
+			</div>
+			</a>
+			<div class="footerLink">
+				<i class= "fad fa-search" id="off"></i>
+				<span id="off">Search</span>
+			</div>
+			<a href="map.html">
+			<div class="footerLink">
+				<i class="fad fa-map" id="off"></i>
+				<span id="off">Map</span>
+			</div>
+			</a>
+		</footer>
+	</content>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
