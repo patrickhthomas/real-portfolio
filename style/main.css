@@ -390,6 +390,212 @@ hr {
 
   /*Affirmative Styles END*/ 
 
+
+/*Dandelion Styles*/
+
+.dandelion {
+	width: 100%;
+}
+
+.dandelion.footer-icon {
+	padding-bottom: 32px;
+}
+
+
+
+.wrapper.dandelion {
+	display: grid;
+	grid-template-columns: 4% 92% 4%;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+	grid-row-gap: 48px;
+	grid-template-areas:
+		". a ."
+		". b ."
+		". c ."
+		". d ."
+		". e ."
+		". f ."
+		". g ."
+		". h ."
+
+}
+
+.hiddenContainerGrid.winner {
+	display: grid;
+	grid-template-columns: minmax(0, 30%) minmax(0, 40%) minmax(0, 30%);
+	grid-gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.hiddenContainerGrid.winner span {
+	background-color: transparent;
+	box-shadow: none;
+	padding-bottom: 32px;
+}
+
+.dandelion p {
+	padding: 16px;
+}
+
+.dandelion h2 {
+	padding-bottom: 16px;
+	padding-top: 32px;
+}
+
+.dandelion h3 {
+	margin-bottom: 16px;
+	padding-top: 16px;
+	border-bottom: 1px dashed black;
+}
+
+.noLine {
+	border: none;
+}
+
+.dandelion h4 {
+	padding-top: 16px;
+}
+
+.dandelion.intro {
+	grid-area: a;
+}
+
+.dandelion.goals {
+	grid-area: b;
+}
+
+.dandelion.evolution {
+	grid-area: c;
+}
+
+.dandelion.discover {
+	grid-area: d;
+}
+
+.dandelion.definition {
+	grid-area: e;
+}
+
+.dandelion.ideate {
+	grid-area: f;
+}
+
+.dandelion.prototyping {
+	grid-area: g;
+}
+
+.dandelion.solidify {
+	grid-area: h;
+}
+
+.quote {
+	width: 80%;
+	margin: auto;
+	padding: 16px;
+}
+
+.hidden {
+	display: none;
+	opacity: 0%;
+	z-index: -2;
+}
+
+
+
+.dandelion.evolution {
+	max-width: 400px;
+}
+
+.hiddenContainerGrid {
+	display: grid;
+	grid-template-columns: minmax(0, 100%);
+	grid-gap: 32px;
+	justify-content: center;
+}
+
+.hiddenContainerGrid img {
+	width: 80%;
+	margin: auto;
+
+}
+
+.revised {
+	max-width: 300px;
+	padding-bottom: 32px;
+}
+
+.hiddenContainerGrid span {
+	background-color: white;
+
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
+}
+
+.stories h5 {
+	text-align: center;
+	text-decoration: underline;
+	padding-top: 16px;
+}
+
+.stories p {
+	padding-left: 36px;
+	padding-right: 36px;
+}
+
+.fas.fa-caret-right {
+	position: absolute;
+	padding-top: 6px;
+	font-size: 24px;
+	color: black;
+
+
+
+}
+
+.accordion {
+	background-color: #EFD05F;
+	text-align: left;
+	padding-left: 16px;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: -2px 2px 4px rgba(0, 0, 0, .2);
+	z-index: 4;
+}
+
+
+.accordion h5 {
+	padding-top: 4px;
+	margin-left: 16px;
+}
+
+.figmaButton {
+	transition: .3s ease;
+	opacity: 1;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 16px;
+	letter-spacing: .96px;
+	text-transform: uppercase;
+	color: #1E2221;
+	width: 70%;
+	display: block;
+	margin: auto;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	margin-bottom: 32px;
+	border: 1px solid #1E2221;
+	border-radius: 4px;
+	box-shadow: -2px 2px 2px gray;
+	background-color: white;
+}
+
+
+
+/*Dandelion Styles END*/
+
 .seeButton {
 	transition: .3s ease;
 	opacity: 1;
